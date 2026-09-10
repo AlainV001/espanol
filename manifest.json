@@ -1,0 +1,16 @@
+{
+  "name": "Español con Astrid",
+  "short_name": "Español",
+  "description": "Practica de español (saludos y vocabulario de clase) con tarjetas, opcion multiple y frases para completar.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14161c",
+  "theme_color": "#2f6fed",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

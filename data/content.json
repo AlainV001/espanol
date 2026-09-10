@@ -1,0 +1,226 @@
+{
+  "themes": [
+    {
+      "id": "saludos",
+      "title": "Saludos y Expresiones de Cortesía",
+      "notes": [
+        "Buenas noches = Bonsoir pour saluer le soir. Pour prendre congé et aller dormir : Bonne nuit.",
+        "Hola est une formule neutre et peut être utilisée tout au long de la journée. Salut est informel en français ; en espagnol, hola fonctionne aussi bien dans des situations informelles que dans de nombreuses situations neutres.",
+        "Formel : ¿Cómo está usted? → Comment allez-vous ?",
+        "Informel : ¿Cómo estás? → Comment vas-tu ?"
+      ],
+      "subsections": [
+        {
+          "id": "saludos-momento",
+          "title": "Saludos según el momento del día",
+          "kind": "phrase",
+          "items": [
+            { "es": "¡Buenos días!", "fr": "Bonjour ! (le matin)" },
+            { "es": "¡Buenas tardes!", "fr": "Bon après-midi ! (l'après-midi)" },
+            { "es": "¡Buenas noches!", "fr": "Bonsoir ! (le soir)" },
+            { "es": "Hola", "fr": "Bonjour / Salut ! (toute la journée)" }
+          ]
+        },
+        {
+          "id": "saludos-neutros",
+          "title": "Saludos neutros",
+          "kind": "phrase",
+          "items": [
+            { "es": "¡Hola!", "fr": "Salut !" },
+            { "es": "¿Qué tal?", "fr": "Comment ça va ?" },
+            { "es": "¿Cómo estás?", "fr": "Comment vas-tu ?" },
+            { "es": "¿Cómo está usted?", "fr": "Comment allez-vous ?" },
+            { "es": "¿Todo bien?", "fr": "Tout va bien ?" },
+            { "es": "¿Cómo va todo?", "fr": "Comment ça se passe ?" }
+          ]
+        },
+        {
+          "id": "saludos-conocer",
+          "title": "Al conocer a alguien",
+          "kind": "phrase",
+          "items": [
+            { "es": "Mucho gusto.", "fr": "Enchanté(e)." },
+            { "es": "Encantado/a de conocerte.", "fr": "Ravi(e) de vous rencontrer." },
+            { "es": "Es un placer.", "fr": "C'est un plaisir." },
+            { "es": "¿Cómo te llamas?", "fr": "Comment tu t'appelles ?" },
+            { "es": "Me llamo...", "fr": "Je m'appelle..." },
+            { "es": "¿Y tú?", "fr": "Et toi ?" },
+            { "es": "Igualmente.", "fr": "De même." }
+          ]
+        },
+        {
+          "id": "saludos-despedidas",
+          "title": "Despedidas",
+          "kind": "phrase",
+          "items": [
+            { "es": "Adiós", "fr": "Au revoir" },
+            { "es": "Hasta luego", "fr": "À plus tard" },
+            { "es": "Hasta pronto", "fr": "À bientôt" },
+            { "es": "Hasta mañana", "fr": "À demain" },
+            { "es": "Nos vemos", "fr": "On se voit" },
+            { "es": "Que tengas un buen día.", "fr": "Bonne journée." },
+            { "es": "Que descanses.", "fr": "Repose-toi bien." },
+            { "es": "Hasta la vista", "fr": "À la prochaine" }
+          ]
+        },
+        {
+          "id": "saludos-cortesia",
+          "title": "Expresiones de cortesía",
+          "kind": "phrase",
+          "items": [
+            { "es": "Por favor", "fr": "S'il vous plaît" },
+            { "es": "Gracias", "fr": "Merci" },
+            { "es": "Muchas gracias", "fr": "Merci beaucoup" },
+            { "es": "De nada", "fr": "De rien" },
+            { "es": "Con permiso", "fr": "Pardon / Excusez-moi" },
+            { "es": "Perdón / Lo siento", "fr": "Pardon / Désolé(e)" },
+            { "es": "No hay problema", "fr": "Pas de problème" },
+            { "es": "Que tenga un buen día.", "fr": "Bonne journée." },
+            { "es": "¡Hasta luego!", "fr": "À plus tard !" }
+          ]
+        },
+        {
+          "id": "saludos-otras",
+          "title": "Otras expresiones útiles",
+          "kind": "phrase",
+          "items": [
+            { "es": "Bien, gracias.", "fr": "Bien, merci." },
+            { "es": "Muy bien.", "fr": "Très bien." },
+            { "es": "Más o menos.", "fr": "Comme ci, comme ça." },
+            { "es": "Aquí estoy.", "fr": "Je suis là." },
+            { "es": "¿Y usted?", "fr": "Et vous ?" },
+            { "es": "Bienvenido/a.", "fr": "Bienvenue." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salon-clase",
+      "title": "El Salón de Clase",
+      "notes": [],
+      "subsections": [
+        {
+          "id": "clase-objetos",
+          "title": "Objetos en el salón de clase",
+          "kind": "vocab",
+          "items": [
+            { "es": "la pizarra", "fr": "le tableau" },
+            { "es": "la pizarra blanca", "fr": "le tableau blanc" },
+            { "es": "el marcador", "fr": "le marqueur" },
+            { "es": "el borrador", "fr": "l'effaceur" },
+            { "es": "la tiza / el yeso", "fr": "la craie" },
+            { "es": "el proyector", "fr": "le projecteur" },
+            { "es": "la pantalla", "fr": "l'écran" },
+            { "es": "el ordenador / la computadora", "fr": "l'ordinateur" },
+            { "es": "el altavoz", "fr": "le haut-parleur" },
+            { "es": "la mesa", "fr": "la table" },
+            { "es": "la silla", "fr": "la chaise" },
+            { "es": "el escritorio", "fr": "le bureau" },
+            { "es": "el cuaderno", "fr": "le cahier" },
+            { "es": "el libro", "fr": "le livre" },
+            { "es": "la carpeta", "fr": "le classeur" },
+            { "es": "la hoja de papel", "fr": "la feuille de papier" },
+            { "es": "el bolígrafo", "fr": "le stylo à bille" },
+            { "es": "el lápiz", "fr": "le crayon" },
+            { "es": "la regla", "fr": "la règle" },
+            { "es": "el sacapuntas", "fr": "le taille-crayon" },
+            { "es": "el pegamento", "fr": "la colle" },
+            { "es": "las tijeras", "fr": "les ciseaux" },
+            { "es": "los colores", "fr": "les crayons de couleur" },
+            { "es": "la mochila", "fr": "le sac à dos" },
+            { "es": "el diccionario", "fr": "le dictionnaire" },
+            { "es": "el estuche", "fr": "la trousse" },
+            { "es": "el mapa", "fr": "la carte" },
+            { "es": "el reloj", "fr": "l'horloge" },
+            { "es": "la papelera", "fr": "la poubelle" },
+            { "es": "la puerta", "fr": "la porte" },
+            { "es": "la ventana", "fr": "la fenêtre" },
+            { "es": "la luz", "fr": "la lumière" },
+            { "es": "el enchufe", "fr": "la prise" },
+            { "es": "el aire acondicionado", "fr": "la climatisation" },
+            { "es": "la calefacción", "fr": "le chauffage" },
+            { "es": "el póster", "fr": "l'affiche" },
+            { "es": "la pizarra digital", "fr": "le tableau interactif" }
+          ]
+        },
+        {
+          "id": "clase-personas",
+          "title": "Personas en la clase",
+          "kind": "vocab",
+          "items": [
+            { "es": "el / la profesor(a)", "fr": "le / la professeur(e)" },
+            { "es": "el estudiante / la estudiante", "fr": "l'étudiant(e)" },
+            { "es": "el compañero / la compañera", "fr": "le / la camarade" },
+            { "es": "el grupo", "fr": "le groupe" },
+            { "es": "la clase", "fr": "le cours" },
+            { "es": "el asistente / la asistenta", "fr": "l'assistant(e)" },
+            { "es": "el voluntario / la voluntaria", "fr": "le / la volontaire" }
+          ]
+        },
+        {
+          "id": "clase-instrucciones",
+          "title": "Expresiones e instrucciones en clase",
+          "kind": "phrase",
+          "items": [
+            { "es": "Vamos a empezar / comenzar.", "fr": "On va commencer." },
+            { "es": "Vamos a continuar.", "fr": "On va continuer." },
+            { "es": "Vamos a terminar.", "fr": "On va terminer." },
+            { "es": "Presta atención.", "fr": "Fais attention." },
+            { "es": "Escucha atentamente.", "fr": "Écoute attentivement." },
+            { "es": "Mira la pizarra.", "fr": "Regarde le tableau." },
+            { "es": "Abre el libro en la página ...", "fr": "Ouvre le livre à la page ..." },
+            { "es": "Lee el texto.", "fr": "Lis le texte." },
+            { "es": "Escribe en tu cuaderno.", "fr": "Écris dans ton cahier." },
+            { "es": "Subraya la palabra.", "fr": "Souligne le mot." },
+            { "es": "Copia en la hoja.", "fr": "Recopie sur la feuille." },
+            { "es": "Repite después de mí.", "fr": "Répète après moi." },
+            { "es": "Trabaja en silencio.", "fr": "Travaille en silence." },
+            { "es": "Trabaja en parejas.", "fr": "Travaille en binômes." },
+            { "es": "Vamos a formar grupos de 3.", "fr": "On va former des groupes de 3." },
+            { "es": "Comenta con tu compañero/a.", "fr": "Discute avec ton/ta camarade." },
+            { "es": "Comparte tus ideas.", "fr": "Partage tes idées." },
+            { "es": "¿Tienen preguntas?", "fr": "Avez-vous des questions ?" },
+            { "es": "¿Algún voluntario?", "fr": "Un volontaire ?" },
+            { "es": "Levanta la mano.", "fr": "Lève la main." },
+            { "es": "Escuchen al profesor / a la profesora.", "fr": "Écoutez le professeur / la professeure." },
+            { "es": "Es tu turno.", "fr": "C'est à toi." },
+            { "es": "Corrige la actividad.", "fr": "Corrige l'activité." },
+            { "es": "Vamos a hacer una pausa.", "fr": "On va faire une pause." },
+            { "es": "Volvemos en cinco minutos.", "fr": "On se retrouve dans cinq minutes." },
+            { "es": "El tiempo ha terminado.", "fr": "Le temps est écoulé." },
+            { "es": "Guarda tus cosas.", "fr": "Range tes affaires." },
+            { "es": "Nos vemos en la próxima clase.", "fr": "On se voit au prochain cours." }
+          ]
+        },
+        {
+          "id": "clase-frases-objetos",
+          "title": "Frases útiles sobre objetos",
+          "kind": "phrase",
+          "items": [
+            { "es": "¿Dónde está el libro?", "fr": "Où est le livre ?" },
+            { "es": "¿Me pasas el marcador, por favor?", "fr": "Tu me passes le marqueur, s'il te plaît ?" },
+            { "es": "Necesito un lápiz.", "fr": "J'ai besoin d'un crayon." },
+            { "es": "¿Tienes una hoja de papel?", "fr": "Tu as une feuille de papier ?" },
+            { "es": "No tengo el diccionario.", "fr": "Je n'ai pas de dictionnaire." },
+            { "es": "¿Puedo usar tu computadora?", "fr": "Je peux utiliser ton ordinateur ?" },
+            { "es": "La silla está rota.", "fr": "La chaise est cassée." }
+          ]
+        },
+        {
+          "id": "clase-organizar",
+          "title": "Expresiones para organizar la clase",
+          "kind": "phrase",
+          "items": [
+            { "es": "¿Quién falta hoy?", "fr": "Qui est absent aujourd'hui ?" },
+            { "es": "¿Cuántos somos?", "fr": "Nous sommes combien ?" },
+            { "es": "Hagan la actividad en pareja.", "fr": "Faites l'activité en binôme." },
+            { "es": "Ahora, en grupos de 4.", "fr": "Maintenant, en groupes de 4." },
+            { "es": "Vamos a compartir las respuestas.", "fr": "On va partager les réponses." },
+            { "es": "¿Están listos?", "fr": "Vous êtes prêts ?" },
+            { "es": "Muy bien, seguimos.", "fr": "Très bien, on continue." }
+          ]
+        }
+      ]
+    }
+  ]
+}
