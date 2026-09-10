@@ -104,26 +104,28 @@ function runMultipleChoice(container, subsectionId, items, onFinish) {
       </div>
     `;
     attachSpeakHandlers(container);
-    let answered = false;
+    let solved = false;
+    let hadMistake = false;
     container.querySelectorAll('.btn-option').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (answered) return;
-        answered = true;
+      btn.addEventListener('click', async () => {
+        if (solved || btn.disabled) return;
         const chosen = decodeURIComponent(btn.dataset.opt);
         const ok = chosen === item.fr;
-        btn.classList.add(ok ? 'correct' : 'incorrect');
         if (!ok) {
-          container.querySelectorAll('.btn-option').forEach(b => {
-            if (decodeURIComponent(b.dataset.opt) === item.fr) b.classList.add('correct');
-          });
+          hadMistake = true;
+          btn.classList.add('incorrect');
+          btn.disabled = true;
+          return;
         }
-        recordResult(id, ok);
-        if (ok) correct += 1;
-        setTimeout(() => {
-          pos += 1;
-          if (pos >= order.length) onFinish({ correct, total: order.length });
-          else render();
-        }, 700);
+        solved = true;
+        btn.classList.add('correct');
+        container.querySelectorAll('.btn-option').forEach(b => { b.disabled = true; });
+        recordResult(id, !hadMistake);
+        if (!hadMistake) correct += 1;
+        await window.speak(item.es);
+        pos += 1;
+        if (pos >= order.length) onFinish({ correct, total: order.length });
+        else render();
       });
     });
   }
@@ -159,26 +161,28 @@ function runFillBlank(container, subsectionId, items, onFinish) {
         ${options.map(opt => `<button class="btn btn-option" data-opt="${encodeURIComponent(opt)}">${opt}</button>`).join('')}
       </div>
     `;
-    let answered = false;
+    let solved = false;
+    let hadMistake = false;
     container.querySelectorAll('.btn-option').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (answered) return;
-        answered = true;
+      btn.addEventListener('click', async () => {
+        if (solved || btn.disabled) return;
         const chosen = decodeURIComponent(btn.dataset.opt);
         const ok = chosen.toLowerCase() === word.toLowerCase();
-        btn.classList.add(ok ? 'correct' : 'incorrect');
         if (!ok) {
-          container.querySelectorAll('.btn-option').forEach(b => {
-            if (decodeURIComponent(b.dataset.opt).toLowerCase() === word.toLowerCase()) b.classList.add('correct');
-          });
+          hadMistake = true;
+          btn.classList.add('incorrect');
+          btn.disabled = true;
+          return;
         }
-        recordResult(id, ok);
-        if (ok) correct += 1;
-        setTimeout(() => {
-          pos += 1;
-          if (pos >= order.length) onFinish({ correct, total: order.length });
-          else render();
-        }, 700);
+        solved = true;
+        btn.classList.add('correct');
+        container.querySelectorAll('.btn-option').forEach(b => { b.disabled = true; });
+        recordResult(id, !hadMistake);
+        if (!hadMistake) correct += 1;
+        await window.speak(item.es);
+        pos += 1;
+        if (pos >= order.length) onFinish({ correct, total: order.length });
+        else render();
       });
     });
   }

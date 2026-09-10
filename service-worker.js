@@ -1,4 +1,4 @@
-const CACHE_NAME = 'espanol-astrid-v2';
+const CACHE_NAME = 'espanol-astrid-v3';
 const ASSETS = [
   './',
   './index.html',

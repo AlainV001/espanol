@@ -190,7 +190,9 @@ body {
 }
 
 .btn-option.correct { background: var(--good); border-color: var(--good); color: white; }
-.btn-option.incorrect { background: var(--bad); border-color: var(--bad); color: white; }
+.btn-option.incorrect { background: var(--bad); border-color: var(--bad); color: white; opacity: 0.6; }
+.btn-option:disabled { cursor: not-allowed; }
+.btn-option:not(.correct):not(.incorrect):disabled { opacity: 0.5; }
 
 .session-actions {
   display: flex;
