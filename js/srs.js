@@ -50,6 +50,12 @@ function isMastered(id) {
   return getItemState(id).reps >= 3;
 }
 
+// mistake = has been seen but the most recent answer was wrong (reps was reset to 0)
+function isMistake(id) {
+  const s = getItemState(id);
+  return s.seen > 0 && s.reps === 0;
+}
+
 function subsectionProgress(subsectionId, items) {
   let mastered = 0;
   let due = 0;
@@ -61,4 +67,4 @@ function subsectionProgress(subsectionId, items) {
   return { mastered, due, total: items.length };
 }
 
-window.SRS = { itemId, getItemState, isDue, recordResult, isMastered, subsectionProgress };
+window.SRS = { itemId, getItemState, isDue, recordResult, isMastered, isMistake, subsectionProgress };

@@ -73,6 +73,15 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.mistakes-card {
+  border-color: var(--bad);
+  margin-bottom: 0.75rem;
+}
+
+.mistakes-card .theme-card-title {
+  color: var(--bad);
+}
+
 .theme-card-meta, .subsection-meta {
   color: var(--muted);
   font-size: 0.85rem;
@@ -109,9 +118,49 @@ body {
   text-align: center;
 }
 
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 .btn-mode {
   background: var(--border);
   color: var(--text);
+}
+
+.btn-mode-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 0.55rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.app-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-direction {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
 .btn-good { background: var(--good); color: white; }

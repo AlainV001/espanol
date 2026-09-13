@@ -1,4 +1,4 @@
-const CACHE_NAME = 'espanol-astrid-v3';
+const CACHE_NAME = 'espanol-astrid-v4';
 const ASSETS = [
   './',
   './index.html',
@@ -7,6 +7,7 @@ const ASSETS = [
   './js/app.js',
   './js/data.js',
   './js/srs.js',
+  './js/direction.js',
   './js/exercises.js',
   './js/speech.js',
   './data/content.json',
@@ -28,19 +29,17 @@ self.addEventListener('activate', event => {
   );
 });
 
+// Network-first: always prefer the latest files, fall back to cache when offline.
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(cached => {
-      const fetchPromise = fetch(event.request)
-        .then(networkResponse => {
-          if (event.request.method === 'GET' && networkResponse.ok) {
-            const clone = networkResponse.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-          }
-          return networkResponse;
-        })
-        .catch(() => cached);
-      return cached || fetchPromise;
-    })
+    fetch(event.request)
+      .then(networkResponse => {
+        if (event.request.method === 'GET' && networkResponse.ok) {
+          const clone = networkResponse.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+        }
+        return networkResponse;
+      })
+      .catch(() => caches.match(event.request))
   );
 });

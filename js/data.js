@@ -20,6 +20,22 @@ function findSubsection(content, subsectionId) {
   return null;
 }
 
+// Every item across all themes/subsections whose most recent answer was wrong.
+// Each item carries its original SRS id (_id) so answering it here updates the
+// same underlying record — get it right and it drops out of this list.
+function collectMistakeItems(content) {
+  const out = [];
+  content.themes.forEach(theme => {
+    theme.subsections.forEach(sub => {
+      sub.items.forEach((item, i) => {
+        const id = itemId(sub.id, i);
+        if (isMistake(id)) out.push({ ...item, _id: id });
+      });
+    });
+  });
+  return out;
+}
+
 // Pool of Spanish words (for multiple-choice distractors), stopwords excluded.
 const STOPWORDS = new Set([
   'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'en', 'a',
@@ -64,6 +80,6 @@ function shuffle(arr) {
 }
 
 window.Data = {
-  loadContent, findTheme, findSubsection,
+  loadContent, findTheme, findSubsection, collectMistakeItems,
   pickBlankWord, buildBlankSentence, keywordPool, shuffle
 };

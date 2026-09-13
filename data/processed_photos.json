@@ -1,0 +1,15 @@
+{
+  "_comment": "Registro de fotos ya transcritas en content.json. El comando /import-photos usa este archivo para no volver a analizar fotos ya procesadas.",
+  "processed": [
+    {
+      "file": "1000007206.jpg",
+      "importedDate": "2026-09-10",
+      "themeIds": ["saludos"]
+    },
+    {
+      "file": "1000007207.jpg",
+      "importedDate": "2026-09-10",
+      "themeIds": ["salon-clase"]
+    }
+  ]
+}

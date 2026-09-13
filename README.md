@@ -14,7 +14,13 @@ tema (ej. "Saludos y Expresiones de Cortesía")
 
 Cada subsección tiene un `kind`: `"vocab"` (palabras sueltas) o `"phrase"` (frases/instrucciones). Las subsecciones de tipo `phrase` habilitan el modo "Completar" (fill-in-the-blank) además de tarjetas y opción múltiple.
 
-Para añadir una nueva ficha fotografiada: transcribir su contenido como un nuevo tema (o subsección) en `data/content.json` siguiendo la misma estructura.
+### Añadir nuevas fichas fotografiadas (rutina semanal)
+
+1. Poner las fotos nuevas en `Photo/inbox/`.
+2. Ejecutar `/import-photos` (comando de Claude Code) — transcribe solo esas fotos nuevas a `data/content.json`, las archiva en `Photo/` y registra el nombre del archivo en `data/processed_photos.json` para no volver a analizarlas nunca.
+3. Revisar rápidamente las traducciones al francés generadas (la transcripción de fotos puede cometer errores de lectura).
+
+`data/processed_photos.json` es el registro de qué fotos ya fueron incorporadas — permite añadir lotes nuevos cada semana sin tener que re-procesar las fotos anteriores.
 
 ## Ejercicios
 
@@ -55,6 +61,9 @@ js/
   exercises.js            lógica y render de cada modo de ejercicio
   speech.js               texto a voz
 data/content.json        contenido transcrito de las fichas
+data/processed_photos.json  registro de fotos ya importadas
 icons/                   iconos de la PWA
-Photo/                   fotos originales de las fichas (fuente del contenido)
+Photo/                   fotos ya procesadas (archivo)
+Photo/inbox/             fotos nuevas pendientes de importar (ver /import-photos)
+.claude/skills/import-photos/  instrucciones del comando /import-photos
 ```
