@@ -1,4 +1,4 @@
-const CACHE_NAME = 'espanol-astrid-v4';
+const CACHE_NAME = 'espanol-astrid-v5';
 const ASSETS = [
   './',
   './index.html',
@@ -30,9 +30,11 @@ self.addEventListener('activate', event => {
 });
 
 // Network-first: always prefer the latest files, fall back to cache when offline.
+// cache: 'no-store' bypasses the browser's own HTTP cache so a stale response
+// there (e.g. GitHub Pages' Cache-Control: max-age=600) can't masquerade as fresh.
 self.addEventListener('fetch', event => {
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: 'no-store' })
       .then(networkResponse => {
         if (event.request.method === 'GET' && networkResponse.ok) {
           const clone = networkResponse.clone();
