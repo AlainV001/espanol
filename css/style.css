@@ -51,6 +51,23 @@ body {
   font-size: 0.95rem;
 }
 
+.btn-stop {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--bad);
+  color: white;
+  font-weight: 600;
+  padding: 0.45rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.session-subtitle {
+  margin: 0.5rem 0 0;
+}
+
 .theme-list, .subsection-list {
   display: flex;
   flex-direction: column;
@@ -71,6 +88,37 @@ body {
 .theme-card-title, .subsection-title {
   font-weight: 600;
   margin-bottom: 0.5rem;
+}
+
+.subsection-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mastery-badge {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.1rem 0.2rem;
+}
+
+.mastery-badge.is-dismissed {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.subsection-notes {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 0.6rem;
+  padding-left: 1.2rem;
+}
+
+.subsection-notes li {
+  margin-bottom: 0.25rem;
 }
 
 .mistakes-card {

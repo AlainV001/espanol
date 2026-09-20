@@ -97,12 +97,22 @@ function renderTheme(content, themeId) {
     <div class="subsection-list">
       ${theme.subsections.map(sub => {
         const p = window.SRS.subsectionProgress(sub.id, sub.items);
+        const fullyMastered = p.total > 0 && p.mastered === p.total;
+        const dismissed = window.SRS.isBadgeDismissed(sub.id);
         const modeKeys = sub.kind === 'vocab'
           ? ['flashcards', 'listen', 'quiz']
           : ['flashcards', 'listen', 'quiz', 'fillblank'];
+        const badgeHtml = fullyMastered ? `
+          <button type="button" class="mastery-badge${dismissed ? ' is-dismissed' : ''}" data-sub="${sub.id}"
+            title="${dismissed ? 'Marcada para repasar — clic para restaurar' : 'Dominada — clic para marcar para repasar'}">
+            ${dismissed ? '↺' : '🏆'}
+          </button>` : '';
         return `
           <div class="subsection-card">
-            <div class="subsection-title">${sub.title}</div>
+            <div class="subsection-title">${sub.title}${badgeHtml}</div>
+            ${sub.notes && sub.notes.length ? `
+              <ul class="subsection-notes">${sub.notes.map(n => `<li>${n}</li>`).join('')}</ul>
+            ` : ''}
             <div class="subsection-meta">${p.mastered} / ${p.total} dominadas ${p.due ? `· ${p.due} para repasar` : ''}</div>
             <div class="mode-buttons">
               ${modeButtonsHtml(`#/session/${sub.id}`, modeKeys)}
@@ -113,6 +123,13 @@ function renderTheme(content, themeId) {
     </div>
   `;
   window.Direction.bindToggle(app, () => renderTheme(content, themeId));
+  app.querySelectorAll('.mastery-badge').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const subId = btn.dataset.sub;
+      window.SRS.setBadgeDismissed(subId, !window.SRS.isBadgeDismissed(subId));
+      renderTheme(content, themeId);
+    });
+  });
 }
 
 function renderMistakesHub(content) {
@@ -151,7 +168,7 @@ function renderMistakesSession(content, mode) {
   app.innerHTML = `
     <header class="app-header">
       <div class="app-header-top">
-        <a class="back-link" href="#/mistakes">&larr; Errores</a>
+        <a class="back-link btn-stop" href="#/mistakes">⏹ Detener</a>
         ${window.Direction.toggleHtml()}
       </div>
     </header>
@@ -201,17 +218,19 @@ function renderSession(content, subsectionId, mode) {
   const found = window.Data.findSubsection(content, subsectionId);
   if (!found) { location.hash = '#/'; return; }
   const { theme, subsection } = found;
+  const lockDirection = subsection.lockDirection || null;
 
   app.innerHTML = `
     <header class="app-header">
       <div class="app-header-top">
-        <a class="back-link" href="#/theme/${theme.id}">&larr; ${subsection.title}</a>
-        ${window.Direction.toggleHtml()}
+        <a class="back-link btn-stop" href="#/theme/${theme.id}">⏹ Detener</a>
+        ${lockDirection ? '' : window.Direction.toggleHtml()}
       </div>
+      <p class="subtitle session-subtitle">${subsection.title}</p>
     </header>
     <div id="session-container"></div>
   `;
-  window.Direction.bindToggle(app, () => renderSession(content, subsectionId, mode));
+  if (!lockDirection) window.Direction.bindToggle(app, () => renderSession(content, subsectionId, mode));
   const container = document.getElementById('session-container');
 
   function onFinish(result) {
@@ -236,11 +255,11 @@ function renderSession(content, subsectionId, mode) {
   }
 
   if (mode === 'flashcards') {
-    window.Exercises.runFlashcards(container, subsectionId, subsection.items, onFinish);
+    window.Exercises.runFlashcards(container, subsectionId, subsection.items, onFinish, lockDirection);
   } else if (mode === 'listen') {
-    window.Exercises.runListening(container, subsectionId, subsection.items, onFinish);
+    window.Exercises.runListening(container, subsectionId, subsection.items, onFinish, lockDirection);
   } else if (mode === 'quiz') {
-    window.Exercises.runMultipleChoice(container, subsectionId, subsection.items, onFinish);
+    window.Exercises.runMultipleChoice(container, subsectionId, subsection.items, onFinish, lockDirection);
   } else if (mode === 'fillblank') {
     window.Exercises.runFillBlank(container, subsectionId, subsection.items, onFinish);
   } else {
@@ -250,7 +269,11 @@ function renderSession(content, subsectionId, mode) {
 
 window.addEventListener('hashchange', router);
 window.addEventListener('DOMContentLoaded', () => {
-  router();
+  if (location.hash && location.hash !== '#/') {
+    location.hash = '#/';
+  } else {
+    router();
+  }
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js').catch(() => {});
   }

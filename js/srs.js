@@ -1,5 +1,6 @@
 // Lightweight spaced-repetition (SM-2 style) state, persisted in localStorage.
 const SRS_KEY = 'espanol_srs_v1';
+const BADGE_KEY = 'espanol_mastery_badge_v1';
 
 function loadSrs() {
   try {
@@ -67,4 +68,31 @@ function subsectionProgress(subsectionId, items) {
   return { mastered, due, total: items.length };
 }
 
-window.SRS = { itemId, getItemState, isDue, recordResult, isMastered, isMistake, subsectionProgress };
+// Manual "mastered at least once" badge, dismissible to flag a subsection for re-study.
+// Independent of live SRS progress so a deliberate dismissal isn't immediately undone.
+function loadBadges() {
+  try {
+    return JSON.parse(localStorage.getItem(BADGE_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function isBadgeDismissed(subsectionId) {
+  return !!loadBadges()[subsectionId];
+}
+
+function setBadgeDismissed(subsectionId, dismissed) {
+  const badges = loadBadges();
+  if (dismissed) {
+    badges[subsectionId] = true;
+  } else {
+    delete badges[subsectionId];
+  }
+  localStorage.setItem(BADGE_KEY, JSON.stringify(badges));
+}
+
+window.SRS = {
+  itemId, getItemState, isDue, recordResult, isMastered, isMistake, subsectionProgress,
+  isBadgeDismissed, setBadgeDismissed
+};

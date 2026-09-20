@@ -10,6 +10,31 @@
       "file": "1000007207.jpg",
       "importedDate": "2026-09-10",
       "themeIds": ["salon-clase"]
+    },
+    {
+      "file": "escribe al plural.jpg",
+      "importedDate": "2026-09-20",
+      "themeIds": ["vocabulario-general", "gramatica"]
+    },
+    {
+      "file": "genre feminin et masculin.jpg",
+      "importedDate": "2026-09-20",
+      "themeIds": ["vocabulario-general", "gramatica"]
+    },
+    {
+      "file": "los articulos determinados.jpg",
+      "importedDate": "2026-09-20",
+      "themeIds": ["gramatica"]
+    },
+    {
+      "file": "los articulos indeterminados.jpg",
+      "importedDate": "2026-09-20",
+      "themeIds": ["vocabulario-general", "gramatica"]
+    },
+    {
+      "file": "nationalite feminin et masculin.jpg",
+      "importedDate": "2026-09-20",
+      "themeIds": ["vocabulario-general", "gramatica"]
     }
   ]
 }

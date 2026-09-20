@@ -221,6 +221,343 @@
           ]
         }
       ]
+    },
+    {
+      "id": "vocabulario-general",
+      "title": "Vocabulario General",
+      "notes": [],
+      "subsections": [
+        {
+          "id": "vocgen-personas",
+          "title": "Nacionalidades y profesiones",
+          "kind": "vocab",
+          "items": [
+            { "es": "el italiano", "fr": "l'Italien" },
+            { "es": "el inglés", "fr": "l'Anglais" },
+            { "es": "el alemán", "fr": "l'Allemand" },
+            { "es": "el mexicano", "fr": "le Mexicain" },
+            { "es": "la holandesa", "fr": "la Néerlandaise" },
+            { "es": "el escritor", "fr": "l'écrivain" },
+            { "es": "el piloto", "fr": "le pilote" },
+            { "es": "el juez", "fr": "le juge" },
+            { "es": "el estudiante", "fr": "l'étudiant" }
+          ]
+        },
+        {
+          "id": "vocgen-objetos",
+          "title": "Objetos y lugares",
+          "kind": "vocab",
+          "items": [
+            { "es": "el lápiz", "fr": "le crayon" },
+            { "es": "la luz", "fr": "la lumière" },
+            { "es": "la bicicleta", "fr": "le vélo" },
+            { "es": "el dólar", "fr": "le dollar" },
+            { "es": "la mesa", "fr": "la table" },
+            { "es": "el hospital", "fr": "l'hôpital" },
+            { "es": "el bar", "fr": "le bar" }
+          ]
+        },
+        {
+          "id": "vocgen-adjetivos",
+          "title": "Sustantivo + adjetivo",
+          "kind": "vocab",
+          "items": [
+            { "es": "el hotel elegante", "fr": "l'hôtel élégant" },
+            { "es": "el reloj antiguo", "fr": "l'horloge ancienne" },
+            { "es": "el pez pequeño", "fr": "le petit poisson" },
+            { "es": "el chico simpático", "fr": "le garçon sympathique" },
+            { "es": "la casa grande", "fr": "la grande maison" },
+            { "es": "el señor español", "fr": "le monsieur espagnol" },
+            { "es": "el ejercicio difícil", "fr": "l'exercice difficile" },
+            { "es": "la camisa negra", "fr": "la chemise noire" },
+            { "es": "la isla bonita", "fr": "la belle île" }
+          ]
+        },
+        {
+          "id": "vocgen-genero",
+          "title": "Género: personas y profesiones",
+          "kind": "vocab",
+          "items": [
+            { "es": "el chico / la chica", "fr": "le garçon / la fille" },
+            { "es": "un francés / una francesa", "fr": "un Français / une Française" },
+            { "es": "el actor / la actriz", "fr": "l'acteur / l'actrice" },
+            { "es": "el hombre / la mujer", "fr": "l'homme / la femme" },
+            { "es": "el / la periodista", "fr": "le / la journaliste" },
+            { "es": "la madre / el padre", "fr": "la mère / le père" },
+            { "es": "el hermano / la hermana", "fr": "le frère / la sœur" },
+            { "es": "el / la cantante", "fr": "le chanteur / la chanteuse" }
+          ]
+        },
+        {
+          "id": "vocgen-mas",
+          "title": "Más palabras útiles",
+          "kind": "vocab",
+          "items": [
+            { "es": "la bandera", "fr": "le drapeau" },
+            { "es": "el señor", "fr": "le monsieur" },
+            { "es": "el dinero", "fr": "l'argent" },
+            { "es": "el autobús", "fr": "le bus" },
+            { "es": "el cielo", "fr": "le ciel" },
+            { "es": "la comida", "fr": "la nourriture" },
+            { "es": "el restaurante", "fr": "le restaurant" },
+            { "es": "el médico", "fr": "le médecin" },
+            { "es": "la página", "fr": "la page" },
+            { "es": "el árbol", "fr": "l'arbre" },
+            { "es": "el castillo", "fr": "le château" },
+            { "es": "la madera", "fr": "le bois" },
+            { "es": "la flor", "fr": "la fleur" },
+            { "es": "la ciudad", "fr": "la ville" },
+            { "es": "el documento", "fr": "le document" },
+            { "es": "la carta", "fr": "la lettre" },
+            { "es": "el cuadro", "fr": "le cadre / tableau" },
+            { "es": "el teléfono móvil", "fr": "le téléphone portable" },
+            { "es": "la canción", "fr": "la chanson" },
+            { "es": "las gafas", "fr": "les lunettes" },
+            { "es": "los zapatos", "fr": "les chaussures" },
+            { "es": "las medias", "fr": "les chaussettes" },
+            { "es": "la playa", "fr": "la plage" },
+            { "es": "el taxi", "fr": "le taxi" },
+            { "es": "el tren", "fr": "le train" },
+            { "es": "el país", "fr": "le pays" },
+            { "es": "la manzana", "fr": "la pomme" },
+            { "es": "la uva", "fr": "le raisin" },
+            { "es": "la película", "fr": "le film" },
+            { "es": "la foto", "fr": "la photo" },
+            { "es": "el mensaje", "fr": "le message" },
+            { "es": "el niño / la niña", "fr": "l'enfant" },
+            { "es": "la habitación / la recámara / el cuarto", "fr": "la chambre" },
+            { "es": "la calle", "fr": "la rue" },
+            { "es": "la maleta", "fr": "la valise" }
+          ]
+        },
+        {
+          "id": "vocgen-adjetivos-articulos",
+          "title": "Adjetivos (artículos)",
+          "kind": "vocab",
+          "items": [
+            { "es": "antiguo / antigua", "fr": "ancien / ancienne", "context": "El castillo es antiguo.", "contextFr": "Le château est ancien." },
+            { "es": "español / española", "fr": "espagnol / espagnole", "context": "El señor es español.", "contextFr": "Le monsieur est espagnol." },
+            { "es": "cómodo / cómoda", "fr": "confortable", "context": "El sofá es cómodo.", "contextFr": "Le canapé est confortable." },
+            { "es": "delicado / delicada", "fr": "délicat / délicate", "context": "La flor es delicada.", "contextFr": "La fleur est délicate." },
+            { "es": "corto / corta", "fr": "court / courte", "context": "El lápiz es corto.", "contextFr": "Le crayon est court." },
+            { "es": "grande", "fr": "grand / grande", "context": "La casa es grande.", "contextFr": "La maison est grande." },
+            { "es": "redondo / redonda", "fr": "rond / ronde", "context": "La mesa es redonda.", "contextFr": "La table est ronde." },
+            { "es": "importante", "fr": "important / importante", "context": "El documento es importante.", "contextFr": "Le document est important." },
+            { "es": "urgente", "fr": "urgent / urgente", "context": "El mensaje es urgente.", "contextFr": "Le message est urgent." },
+            { "es": "caro / cara", "fr": "cher / chère", "context": "El restaurante es caro.", "contextFr": "Le restaurant est cher." },
+            { "es": "alto / alta", "fr": "grand / grande (haut)", "context": "El árbol es alto.", "contextFr": "L'arbre est haut." },
+            { "es": "delgado / delgada", "fr": "mince", "context": "La chica es delgada.", "contextFr": "La fille est mince." },
+            { "es": "nuevo / nueva", "fr": "nouveau / nouvelle", "context": "El libro es nuevo.", "contextFr": "Le livre est neuf." },
+            { "es": "rojo / roja", "fr": "rouge", "context": "El bolígrafo es rojo.", "contextFr": "Le stylo est rouge." },
+            { "es": "interesante", "fr": "intéressant / intéressante", "context": "El libro es interesante.", "contextFr": "Le livre est intéressant." },
+            { "es": "bueno / buena", "fr": "bon / bonne", "context": "El restaurante es bueno.", "contextFr": "Le restaurant est bon." },
+            { "es": "bonito / bonita", "fr": "joli / jolie", "context": "La canción es bonita.", "contextFr": "La chanson est jolie." },
+            { "es": "simpático / simpática", "fr": "sympathique", "context": "El chico es simpático.", "contextFr": "Le garçon est sympathique." },
+            { "es": "educado / educada", "fr": "poli / polie", "context": "El niño es educado.", "contextFr": "L'enfant est poli." },
+            { "es": "moderno / moderna", "fr": "moderne", "context": "La habitación es moderna.", "contextFr": "La chambre est moderne." },
+            { "es": "estrecho / estrecha", "fr": "étroit / étroite", "context": "La calle es estrecha.", "contextFr": "La rue est étroite." },
+            { "es": "pesado / pesada", "fr": "lourd / lourde", "context": "La maleta es pesada.", "contextFr": "La valise est lourde." }
+          ]
+        },
+        {
+          "id": "vocgen-nacionalidades2",
+          "title": "Nacionalidades: masculino y femenino",
+          "kind": "vocab",
+          "items": [
+            { "es": "italiano / italiana", "fr": "italien / italienne" },
+            { "es": "francés / francesa", "fr": "français / française" },
+            { "es": "alemán / alemana", "fr": "allemand / allemande" },
+            { "es": "holandés / holandesa", "fr": "néerlandais / néerlandaise" },
+            { "es": "portugués / portuguesa", "fr": "portugais / portugaise" },
+            { "es": "austriaco / austriaca", "fr": "autrichien / autrichienne" },
+            { "es": "español / española", "fr": "espagnol / espagnole" },
+            { "es": "inglés / inglesa", "fr": "anglais / anglaise" },
+            { "es": "suizo / suiza", "fr": "suisse / suisse" },
+            { "es": "mexicano / mexicana", "fr": "mexicain / mexicaine" },
+            { "es": "cubano / cubana", "fr": "cubain / cubaine" },
+            { "es": "ruso / rusa", "fr": "russe / russe" },
+            { "es": "estadounidense", "fr": "américain / américaine (des Estados Unidos)" },
+            { "es": "chino / china", "fr": "chinois / chinoise" },
+            { "es": "brasileño / brasileña", "fr": "brésilien / brésilienne" },
+            { "es": "marroquí", "fr": "marocain / marocaine" },
+            { "es": "belga", "fr": "belge" }
+          ]
+        },
+        {
+          "id": "vocgen-paises",
+          "title": "Países",
+          "kind": "vocab",
+          "items": [
+            { "es": "Italia", "fr": "Italie" },
+            { "es": "Francia", "fr": "France" },
+            { "es": "Alemania", "fr": "Allemagne" },
+            { "es": "Holanda", "fr": "Pays-Bas" },
+            { "es": "Portugal", "fr": "Portugal" },
+            { "es": "Austria", "fr": "Autriche" },
+            { "es": "España", "fr": "Espagne" },
+            { "es": "Inglaterra", "fr": "Angleterre" },
+            { "es": "Suiza", "fr": "Suisse" },
+            { "es": "México", "fr": "Mexique" },
+            { "es": "Cuba", "fr": "Cuba" },
+            { "es": "Rusia", "fr": "Russie" },
+            { "es": "Estados Unidos", "fr": "États-Unis" },
+            { "es": "China", "fr": "Chine" },
+            { "es": "Brasil", "fr": "Brésil" },
+            { "es": "Marruecos", "fr": "Maroc" },
+            { "es": "Bélgica", "fr": "Belgique" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gramatica",
+      "title": "Gramática",
+      "notes": [],
+      "subsections": [
+        {
+          "id": "gramatica-plural",
+          "title": "El plural: s / es / ces",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "Vocal final → + s (italiano → italianos).",
+            "Consonante final → + es (hotel → hoteles). El acento escrito puede desaparecer si ya no hace falta (alemán → alemanes, inglés → ingleses).",
+            "\"z\" final → cambia a \"c\" + es (luz → luces, lápiz → lápices)."
+          ],
+          "items": [
+            { "es": "italiano", "fr": "italianos" },
+            { "es": "inglés", "fr": "ingleses" },
+            { "es": "lápiz", "fr": "lápices" },
+            { "es": "alemán", "fr": "alemanes" },
+            { "es": "luz", "fr": "luces" },
+            { "es": "el hotel elegante", "fr": "los hoteles elegantes" },
+            { "es": "el reloj antiguo", "fr": "los relojes antiguos" },
+            { "es": "el pez pequeño", "fr": "los peces pequeños" },
+            { "es": "el chico simpático", "fr": "los chicos simpáticos" },
+            { "es": "el señor español", "fr": "los señores españoles" }
+          ]
+        },
+        {
+          "id": "gramatica-genero",
+          "title": "El género: masculino y femenino",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "Los nombres son masculinos o femeninos. En general, masculino → -o, femenino → -a (hay excepciones: la mano, la moto, el problema, el planeta).",
+            "Terminación en -o / -e → se reemplaza por -a: el chico → la chica (excepción: el/la cantante).",
+            "Terminación en consonante → se añade -a (y el acento escrito puede desaparecer): un francés → una francesa.",
+            "Otras terminaciones especiales: el actor → la actriz.",
+            "Algunos nombres son totalmente distintos: el hombre → la mujer, la madre → el padre.",
+            "Los nombres terminados en -ista son invariables: el/la periodista."
+          ],
+          "items": [
+            { "es": "el chico", "fr": "la chica" },
+            { "es": "un francés", "fr": "una francesa" },
+            { "es": "el actor", "fr": "la actriz" },
+            { "es": "un hombre", "fr": "una mujer" },
+            { "es": "una periodista", "fr": "un periodista" },
+            { "es": "la madre", "fr": "el padre" },
+            { "es": "la hermana", "fr": "el hermano" },
+            { "es": "la cantante", "fr": "el cantante" }
+          ]
+        },
+        {
+          "id": "gramatica-articulos-determinados",
+          "title": "Artículos determinados: el / la / los / las",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "El artículo determinado concuerda en género y número con el nombre: el (masc. sing.), la (fem. sing.), los (masc. pl.), las (fem. pl.)."
+          ],
+          "items": [
+            { "es": "bandera", "fr": "la bandera" },
+            { "es": "señor", "fr": "el señor" },
+            { "es": "señores", "fr": "los señores" },
+            { "es": "amigas", "fr": "las amigas" },
+            { "es": "cielo", "fr": "el cielo" },
+            { "es": "lápices", "fr": "los lápices" },
+            { "es": "médicos", "fr": "los médicos" },
+            { "es": "ventanas", "fr": "las ventanas" }
+          ]
+        },
+        {
+          "id": "gramatica-articulos-determinados-plural",
+          "title": "El / la → los / las (frases)",
+          "kind": "phrase",
+          "lockDirection": "es-fr",
+          "items": [
+            { "es": "El castillo es antiguo.", "fr": "Los castillos son antiguos." },
+            { "es": "El señor es español.", "fr": "Los señores son españoles." },
+            { "es": "La silla es cómoda.", "fr": "Las sillas son cómodas." },
+            { "es": "La puerta es de madera.", "fr": "Las puertas son de madera." },
+            { "es": "El lápiz es corto.", "fr": "Los lápices son cortos." },
+            { "es": "La flor es delicada.", "fr": "Las flores son delicadas." },
+            { "es": "El documento es importante.", "fr": "Los documentos son importantes." },
+            { "es": "La chica es alta y delgada.", "fr": "Las chicas son altas y delgadas." }
+          ]
+        },
+        {
+          "id": "gramatica-articulos-indeterminados",
+          "title": "Artículos indeterminados: un / una / unos / unas",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "El artículo indeterminado también concuerda en género y número: un (masc. sing.), una (fem. sing.), unos (masc. pl.), unas (fem. pl.). \"Uno\" significa \"1\"."
+          ],
+          "items": [
+            { "es": "cuadro", "fr": "un cuadro" },
+            { "es": "peces", "fr": "unos peces" },
+            { "es": "páginas", "fr": "unas páginas" },
+            { "es": "reloj", "fr": "un reloj" },
+            { "es": "canción", "fr": "una canción" },
+            { "es": "zapatos", "fr": "unos zapatos" },
+            { "es": "medias", "fr": "unas medias" },
+            { "es": "mujer", "fr": "una mujer" }
+          ]
+        },
+        {
+          "id": "gramatica-articulos-indeterminados-plural",
+          "title": "Un / una → unos / unas (frases)",
+          "kind": "phrase",
+          "lockDirection": "es-fr",
+          "items": [
+            { "es": "Una ciudad muy grande.", "fr": "Unas ciudades muy grandes." },
+            { "es": "Un libro muy interesante.", "fr": "Unos libros muy interesantes." },
+            { "es": "Una película muy buena.", "fr": "Unas películas muy buenas." },
+            { "es": "Un chico muy simpático.", "fr": "Unos chicos muy simpáticos." },
+            { "es": "Un árbol muy alto.", "fr": "Unos árboles muy altos." },
+            { "es": "Un niño muy educado.", "fr": "Unos niños muy educados." },
+            { "es": "Una habitación muy moderna.", "fr": "Unas habitaciones muy modernas." },
+            { "es": "Una calle muy estrecha.", "fr": "Unas calles muy estrechas." }
+          ]
+        },
+        {
+          "id": "gramatica-genero-nacionalidades",
+          "title": "El género de las nacionalidades",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "Las nacionalidades siguen las mismas reglas de género: -o → -a (italiano → italiana), consonante → + a (francés → francesa, sin acento).",
+            "Algunas son invariables: estadounidense, marroquí, belga (el/la mismo/a para los dos géneros)."
+          ],
+          "items": [
+            { "es": "italiano", "fr": "italiana" },
+            { "es": "francés", "fr": "francesa" },
+            { "es": "alemán", "fr": "alemana" },
+            { "es": "holandés", "fr": "holandesa" },
+            { "es": "portugués", "fr": "portuguesa" },
+            { "es": "austriaco", "fr": "austriaca" },
+            { "es": "español", "fr": "española" },
+            { "es": "inglés", "fr": "inglesa" },
+            { "es": "suizo", "fr": "suiza" },
+            { "es": "mexicano", "fr": "mexicana" },
+            { "es": "cubano", "fr": "cubana" },
+            { "es": "ruso", "fr": "rusa" },
+            { "es": "chino", "fr": "china" },
+            { "es": "brasileño", "fr": "brasileña" }
+          ]
+        }
+      ]
     }
   ]
 }
