@@ -12,8 +12,11 @@ function orderForSession(subsectionId, items) {
   return shuffle(due).concat(shuffle(notDue));
 }
 
-function speakBtn(text) {
-  return `<button class="speak-btn" data-speak="${encodeURIComponent(text)}" aria-label="Escuchar">🔊</button>`;
+// lang must be passed explicitly by the caller (es-ES or fr-FR) rather than guessed
+// from the text — short vocab words/phrases are too ambiguous to detect reliably,
+// but callers always know which field (item.es vs item.fr) they're reading from.
+function speakBtn(text, lang = 'es-ES') {
+  return `<button class="speak-btn" data-speak="${encodeURIComponent(text)}" data-lang="${lang}" aria-label="Escuchar">🔊</button>`;
 }
 
 function progressLabel(pos, total) {
@@ -24,7 +27,7 @@ function attachSpeakHandlers(container) {
   container.querySelectorAll('[data-speak]').forEach(btn => {
     btn.addEventListener('click', e => {
       e.stopPropagation();
-      window.speak(decodeURIComponent(btn.dataset.speak));
+      window.speak(decodeURIComponent(btn.dataset.speak), btn.dataset.lang || 'es-ES');
     });
   });
 }
@@ -34,6 +37,7 @@ function runFlashcards(container, subsectionId, items, onFinish, lockDirection) 
   const order = orderForSession(subsectionId, items);
   let pos = 0;
   let correct = 0;
+  let mistakes = [];
   let flipped = false;
 
   function render() {
@@ -42,14 +46,15 @@ function runFlashcards(container, subsectionId, items, onFinish, lockDirection) 
     const esToFr = (lockDirection || window.Direction.get()) === 'es-fr';
     const front = esToFr ? item.es : item.fr;
     const back = esToFr ? item.fr : item.es;
+    const frontLang = esToFr ? 'es-ES' : 'fr-FR';
+    const backLang = esToFr ? 'fr-FR' : 'es-ES';
+    const faceHtml = flippedNow => flippedNow
+      ? `<div class="flashcard-text">${front}</div><div class="flashcard-translation">${back}</div>${speakBtn(back, backLang)}`
+      : `<div class="flashcard-text">${front}</div>${speakBtn(front, frontLang)}<div class="flashcard-hint">Toca la tarjeta para ver la traducción</div>`;
     container.innerHTML = `
       <div class="session-progress">${progressLabel(pos, order.length)}</div>
       <div class="flashcard" id="flashcard">
-        <div class="flashcard-face">
-          <div class="flashcard-text">${front}</div>
-          ${esToFr ? speakBtn(item.es) : ''}
-          <div class="flashcard-hint">Toca la tarjeta para ver la traducción</div>
-        </div>
+        <div class="flashcard-face">${faceHtml(false)}</div>
       </div>
       <div class="session-actions" id="rate-actions" hidden>
         <button class="btn btn-bad" id="btn-no">❌ No sabía</button>
@@ -61,22 +66,23 @@ function runFlashcards(container, subsectionId, items, onFinish, lockDirection) 
     card.addEventListener('click', () => {
       if (flipped) return;
       flipped = true;
-      card.querySelector('.flashcard-text').outerHTML =
-        `<div class="flashcard-text">${front}</div><div class="flashcard-translation">${back}</div>${esToFr ? '' : speakBtn(item.es)}`;
+      card.querySelector('.flashcard-face').innerHTML = faceHtml(true);
       attachSpeakHandlers(container);
       container.querySelector('#rate-actions').hidden = false;
-      window.speak(item.es);
+      window.speak(item.es, 'es-ES');
     });
     container.querySelector('#btn-no').addEventListener('click', () => answer(id, false));
     container.querySelector('#btn-yes').addEventListener('click', () => answer(id, true));
   }
 
   function answer(id, ok) {
+    const item = order[pos].item;
     recordResult(id, ok);
     if (ok) correct += 1;
+    else mistakes.push({ ...item, _id: id });
     pos += 1;
     if (pos >= order.length) {
-      onFinish({ correct, total: order.length });
+      onFinish({ correct, total: order.length, mistakes });
     } else {
       render();
     }
@@ -173,6 +179,7 @@ function runMultipleChoice(container, subsectionId, items, onFinish, lockDirecti
   const order = orderForSession(subsectionId, items);
   let pos = 0;
   let correct = 0;
+  let mistakes = [];
 
   function answerText(it, esToFr) {
     return esToFr ? (it.contextFr || it.fr) : (it.context || it.es);
@@ -189,13 +196,14 @@ function runMultipleChoice(container, subsectionId, items, onFinish, lockDirecti
     const { item, id } = order[pos];
     const esToFr = (lockDirection || window.Direction.get()) === 'es-fr';
     const prompt = esToFr ? (item.context || item.es) : (item.contextFr || item.fr);
+    const promptLang = esToFr ? 'es-ES' : 'fr-FR';
     const answer = answerText(item, esToFr);
     const options = optionsFor(item, esToFr);
     container.innerHTML = `
       <div class="session-progress">${progressLabel(pos, order.length)}</div>
       <div class="quiz-prompt">
         <div class="flashcard-text">${prompt}</div>
-        ${esToFr ? speakBtn(item.context || item.es) : ''}
+        ${speakBtn(prompt, promptLang)}
       </div>
       <div class="quiz-options">
         ${options.map(opt => `<button class="btn btn-option" data-opt="${encodeURIComponent(opt)}">${opt}</button>`).join('')}
@@ -220,9 +228,10 @@ function runMultipleChoice(container, subsectionId, items, onFinish, lockDirecti
         container.querySelectorAll('.btn-option').forEach(b => { b.disabled = true; });
         recordResult(id, !hadMistake);
         if (!hadMistake) correct += 1;
-        await window.speak(item.context || item.es);
+        else mistakes.push({ ...item, _id: id });
+        await window.speak(item.context || item.es, 'es-ES');
         pos += 1;
-        if (pos >= order.length) onFinish({ correct, total: order.length });
+        if (pos >= order.length) onFinish({ correct, total: order.length, mistakes });
         else render();
       });
     });
@@ -238,6 +247,7 @@ function runFillBlank(container, subsectionId, items, onFinish) {
   const pool = keywordPool(usable);
   let pos = 0;
   let correct = 0;
+  let mistakes = [];
 
   function optionsFor(word) {
     const candidates = shuffle(pool.filter(w => w.toLowerCase() !== word.toLowerCase())).slice(0, 3);
@@ -277,9 +287,10 @@ function runFillBlank(container, subsectionId, items, onFinish) {
         container.querySelectorAll('.btn-option').forEach(b => { b.disabled = true; });
         recordResult(id, !hadMistake);
         if (!hadMistake) correct += 1;
-        await window.speak(item.context || item.es);
+        else mistakes.push({ ...item, _id: id });
+        await window.speak(item.context || item.es, 'es-ES');
         pos += 1;
-        if (pos >= order.length) onFinish({ correct, total: order.length });
+        if (pos >= order.length) onFinish({ correct, total: order.length, mistakes });
         else render();
       });
     });

@@ -1,6 +1,7 @@
 // Lightweight spaced-repetition (SM-2 style) state, persisted in localStorage.
 const SRS_KEY = 'espanol_srs_v1';
 const BADGE_KEY = 'espanol_mastery_badge_v1';
+const STAR_KEY = 'espanol_perfect_star_v1';
 
 function loadSrs() {
   try {
@@ -92,7 +93,28 @@ function setBadgeDismissed(subsectionId, dismissed) {
   localStorage.setItem(BADGE_KEY, JSON.stringify(badges));
 }
 
+// Perfect-round star: earned the first time a full pass through a subsection's
+// items (any graded mode) is completed with zero mistakes. Sticks permanently
+// once earned, as a separate achievement from the live-mastery trophy above.
+function loadStars() {
+  try {
+    return JSON.parse(localStorage.getItem(STAR_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function isStarred(subsectionId) {
+  return !!loadStars()[subsectionId];
+}
+
+function markStar(subsectionId) {
+  const stars = loadStars();
+  stars[subsectionId] = true;
+  localStorage.setItem(STAR_KEY, JSON.stringify(stars));
+}
+
 window.SRS = {
   itemId, getItemState, isDue, recordResult, isMastered, isMistake, subsectionProgress,
-  isBadgeDismissed, setBadgeDismissed
+  isBadgeDismissed, setBadgeDismissed, isStarred, markStar
 };

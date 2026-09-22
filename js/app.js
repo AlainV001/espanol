@@ -107,9 +107,11 @@ function renderTheme(content, themeId) {
             title="${dismissed ? 'Marcada para repasar — clic para restaurar' : 'Dominada — clic para marcar para repasar'}">
             ${dismissed ? '↺' : '🏆'}
           </button>` : '';
+        const starHtml = window.SRS.isStarred(sub.id)
+          ? `<span class="star-badge" title="Ronda completa sin errores">⭐</span>` : '';
         return `
           <div class="subsection-card">
-            <div class="subsection-title">${sub.title}${badgeHtml}</div>
+            <div class="subsection-title">${sub.title}${starHtml}${badgeHtml}</div>
             ${sub.notes && sub.notes.length ? `
               <ul class="subsection-notes">${sub.notes.map(n => `<li>${n}</li>`).join('')}</ul>
             ` : ''}
@@ -232,39 +234,90 @@ function renderSession(content, subsectionId, mode) {
   `;
   if (!lockDirection) window.Direction.bindToggle(app, () => renderSession(content, subsectionId, mode));
   const container = document.getElementById('session-container');
+  // Tracks whether this visit has covered the whole series at some point (a fresh
+  // full run, or "Toda la serie"). The star only appears once that's true AND no
+  // mistakes remain — so restarting and slipping up never stars it by itself, but
+  // going on to fix the resulting mistakes (via "Repetir errores") does.
+  let coveredFull = false;
+
+  function runMode(items, cb) {
+    if (mode === 'flashcards') {
+      window.Exercises.runFlashcards(container, subsectionId, items, cb, lockDirection);
+    } else if (mode === 'listen') {
+      window.Exercises.runListening(container, subsectionId, items, cb, lockDirection);
+    } else if (mode === 'quiz') {
+      window.Exercises.runMultipleChoice(container, subsectionId, items, cb, lockDirection);
+    } else if (mode === 'fillblank') {
+      window.Exercises.runFillBlank(container, subsectionId, items, cb);
+    } else {
+      location.hash = `#/theme/${theme.id}`;
+    }
+  }
 
   function onFinish(result) {
+    const mistakes = result.mistakes || [];
     const scoreHtml = mode === 'listen'
       ? `<div class="results-score">✅ ${result.total} / ${result.total}</div>`
       : `<div class="results-score">${result.correct} / ${result.total}</div>
          <div class="results-pct">${result.total ? Math.round((result.correct / result.total) * 100) : 0}% correcto</div>`;
+
+    if (coveredFull && mode !== 'listen') {
+      const stillPending = window.Data.subsectionMistakeItems(subsectionId, subsection.items);
+      if (!stillPending.length) window.SRS.markStar(subsectionId);
+    }
+
     container.innerHTML = `
       <div class="results-box">
         ${scoreHtml}
+        ${mistakes.length ? `<div class="results-pct">${mistakes.length} error${mistakes.length > 1 ? 'es' : ''} en esta ronda</div>` : ''}
         <div class="session-actions">
-          <a class="btn btn-good" href="#/session/${subsectionId}/${mode}">Repetir</a>
+          ${mistakes.length ? `<a class="btn btn-bad" id="btn-retry-mistakes" href="#">Repetir errores</a>` : ''}
+          <a class="btn btn-good" id="btn-repeat" href="#/session/${subsectionId}/${mode}">Repetir</a>
           <a class="btn btn-mode" href="#/theme/${theme.id}">Volver al tema</a>
         </div>
       </div>
     `;
     // Re-bind repeat link since hash may be unchanged (same route) -> force reload
-    container.querySelector('.btn-good').addEventListener('click', e => {
+    container.querySelector('#btn-repeat').addEventListener('click', e => {
       e.preventDefault();
       renderSession(content, subsectionId, mode);
     });
+    if (mistakes.length) {
+      container.querySelector('#btn-retry-mistakes').addEventListener('click', e => {
+        e.preventDefault();
+        runMode(mistakes, onFinish);
+      });
+    }
   }
 
-  if (mode === 'flashcards') {
-    window.Exercises.runFlashcards(container, subsectionId, subsection.items, onFinish, lockDirection);
-  } else if (mode === 'listen') {
-    window.Exercises.runListening(container, subsectionId, subsection.items, onFinish, lockDirection);
-  } else if (mode === 'quiz') {
-    window.Exercises.runMultipleChoice(container, subsectionId, subsection.items, onFinish, lockDirection);
-  } else if (mode === 'fillblank') {
-    window.Exercises.runFillBlank(container, subsectionId, subsection.items, onFinish);
-  } else {
-    location.hash = `#/theme/${theme.id}`;
+  function start() {
+    const pending = window.Data.subsectionMistakeItems(subsectionId, subsection.items);
+    if (!pending.length) {
+      coveredFull = true;
+      runMode(subsection.items, onFinish);
+      return;
+    }
+    container.innerHTML = `
+      <div class="results-box">
+        <p>Tienes ${pending.length} error${pending.length > 1 ? 'es' : ''} pendiente${pending.length > 1 ? 's' : ''} en esta serie.</p>
+        <div class="session-actions">
+          <a class="btn btn-bad" id="btn-choice-mistakes" href="#">Solo los errores (${pending.length})</a>
+          <a class="btn btn-good" id="btn-choice-all" href="#">Toda la serie (${subsection.items.length})</a>
+        </div>
+      </div>
+    `;
+    container.querySelector('#btn-choice-mistakes').addEventListener('click', e => {
+      e.preventDefault();
+      runMode(pending, onFinish);
+    });
+    container.querySelector('#btn-choice-all').addEventListener('click', e => {
+      e.preventDefault();
+      coveredFull = true;
+      runMode(subsection.items, onFinish);
+    });
   }
+
+  start();
 }
 
 window.addEventListener('hashchange', router);

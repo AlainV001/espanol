@@ -36,6 +36,17 @@ function collectMistakeItems(content) {
   return out;
 }
 
+// Same idea as collectMistakeItems, scoped to a single subsection — used to offer
+// a "redo only what you missed" choice when re-entering that subsection's exercises.
+function subsectionMistakeItems(subsectionId, items) {
+  const out = [];
+  items.forEach((item, i) => {
+    const id = itemId(subsectionId, i);
+    if (isMistake(id)) out.push({ ...item, _id: id });
+  });
+  return out;
+}
+
 // Pool of Spanish words (for multiple-choice distractors), stopwords excluded.
 const STOPWORDS = new Set([
   'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'en', 'a',
@@ -80,6 +91,6 @@ function shuffle(arr) {
 }
 
 window.Data = {
-  loadContent, findTheme, findSubsection, collectMistakeItems,
+  loadContent, findTheme, findSubsection, collectMistakeItems, subsectionMistakeItems,
   pickBlankWord, buildBlankSentence, keywordPool, shuffle
 };

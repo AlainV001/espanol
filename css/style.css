@@ -110,6 +110,11 @@ body {
   opacity: 0.6;
 }
 
+.star-badge {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
 .subsection-notes {
   color: var(--muted);
   font-size: 0.85rem;
