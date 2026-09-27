@@ -154,7 +154,8 @@
             { "es": "el grupo", "fr": "le groupe" },
             { "es": "la clase", "fr": "le cours" },
             { "es": "el asistente / la asistenta", "fr": "l'assistant(e)" },
-            { "es": "el voluntario / la voluntaria", "fr": "le / la volontaire" }
+            { "es": "el voluntario / la voluntaria", "fr": "le / la volontaire" },
+            { "es": "el director / la directora", "fr": "le directeur / la directrice" }
           ]
         },
         {
@@ -188,6 +189,7 @@
             { "es": "Vamos a hacer una pausa.", "fr": "On va faire une pause." },
             { "es": "Volvemos en cinco minutos.", "fr": "On se retrouve dans cinq minutes." },
             { "es": "El tiempo ha terminado.", "fr": "Le temps est écoulé." },
+            { "es": "He terminado.", "fr": "J'ai terminé." },
             { "es": "Guarda tus cosas.", "fr": "Range tes affaires." },
             { "es": "Nos vemos en la próxima clase.", "fr": "On se voit au prochain cours." }
           ]
@@ -240,7 +242,8 @@
             { "es": "el escritor", "fr": "l'écrivain" },
             { "es": "el piloto", "fr": "le pilote" },
             { "es": "el juez", "fr": "le juge" },
-            { "es": "el estudiante", "fr": "l'étudiant" }
+            { "es": "el estudiante", "fr": "l'étudiant" },
+            { "es": "el peluquero / la peluquera", "fr": "le coiffeur / la coiffeuse" }
           ]
         },
         {
@@ -254,7 +257,14 @@
             { "es": "el dólar", "fr": "le dollar" },
             { "es": "la mesa", "fr": "la table" },
             { "es": "el hospital", "fr": "l'hôpital" },
-            { "es": "el bar", "fr": "le bar" }
+            { "es": "el bar", "fr": "le bar" },
+            { "es": "la oficina", "fr": "le bureau" },
+            { "es": "el garaje", "fr": "le garage" },
+            { "es": "la estatua", "fr": "la statue" },
+            { "es": "el museo", "fr": "le musée" },
+            { "es": "el armario", "fr": "l'armoire" },
+            { "es": "el gato", "fr": "le chat" },
+            { "es": "el salón", "fr": "le salon" }
           ]
         },
         {
@@ -327,7 +337,21 @@
             { "es": "el niño / la niña", "fr": "l'enfant" },
             { "es": "la habitación / la recámara / el cuarto", "fr": "la chambre" },
             { "es": "la calle", "fr": "la rue" },
-            { "es": "la maleta", "fr": "la valise" }
+            { "es": "la maleta", "fr": "la valise" },
+            { "es": "la llave", "fr": "la clé" },
+            { "es": "la pared", "fr": "le mur" },
+            { "es": "la escuela", "fr": "l'école" },
+            { "es": "el colegio", "fr": "l'école / le collège" },
+            { "es": "la biblioteca", "fr": "la bibliothèque" },
+            { "es": "las vacaciones", "fr": "les vacances" },
+            { "es": "el centro", "fr": "le centre" },
+            { "es": "el periódico", "fr": "le journal" },
+            { "es": "la cámara", "fr": "l'appareil photo" },
+            { "es": "el calendario", "fr": "le calendrier" },
+            { "es": "el disco / el CD", "fr": "le disque / le CD" },
+            { "es": "la impresora", "fr": "l'imprimante" },
+            { "es": "la moneda", "fr": "la pièce de monnaie" },
+            { "es": "el portátil", "fr": "l'ordinateur portable" }
           ]
         },
         {
@@ -404,7 +428,29 @@
             { "es": "China", "fr": "Chine" },
             { "es": "Brasil", "fr": "Brésil" },
             { "es": "Marruecos", "fr": "Maroc" },
-            { "es": "Bélgica", "fr": "Belgique" }
+            { "es": "Bélgica", "fr": "Belgique" },
+            { "es": "Colombia", "fr": "Colombie" }
+          ]
+        },
+        {
+          "id": "vocgen-estados",
+          "title": "Estados físicos y psicológicos (con ESTAR)",
+          "kind": "vocab",
+          "items": [
+            { "es": "cansado / cansada", "fr": "fatigué / fatiguée", "context": "Estoy muy cansada.", "contextFr": "Je suis très fatiguée." },
+            { "es": "contento / contenta", "fr": "content / contente", "context": "Estoy contento.", "contextFr": "Je suis content." },
+            { "es": "resfriado / resfriada", "fr": "enrhumé / enrhumée", "context": "Estoy resfriado.", "contextFr": "Je suis enrhumé." },
+            { "es": "pálido / pálida", "fr": "pâle", "context": "María está pálida.", "contextFr": "María est pâle." },
+            { "es": "embarazada", "fr": "enceinte", "context": "Cristina está embarazada.", "contextFr": "Cristina est enceinte." },
+            { "es": "preocupado / preocupada", "fr": "inquiet / inquiète", "context": "Juan está preocupado.", "contextFr": "Juan est inquiet." },
+            { "es": "enfadado / enfadada", "fr": "fâché / fâchée", "context": "Juan está enfadado.", "contextFr": "Juan est fâché." },
+            { "es": "concentrado / concentrada", "fr": "concentré / concentrée", "context": "Nosotros estamos concentrados.", "contextFr": "Nous sommes concentrés." },
+            { "es": "ocupado / ocupada", "fr": "occupé / occupée", "context": "¿Está usted ocupado?", "contextFr": "Êtes-vous occupé ?" },
+            { "es": "encendido / encendida", "fr": "allumé / allumée", "context": "La luz está encendida.", "contextFr": "La lumière est allumée." },
+            { "es": "lleno / llena", "fr": "plein / pleine", "context": "El autobús está lleno.", "contextFr": "Le bus est plein." },
+            { "es": "cerrado / cerrada", "fr": "fermé / fermée", "context": "Esta puerta está cerrada.", "contextFr": "Cette porte est fermée." },
+            { "es": "amable", "fr": "aimable", "context": "El señor González es muy amable.", "contextFr": "Monsieur González est très aimable." },
+            { "es": "grosero / grosera", "fr": "grossier / grossière", "context": "El señor Pérez es muy grosero.", "contextFr": "Monsieur Pérez est très grossier." }
           ]
         }
       ]
@@ -555,6 +601,244 @@
             { "es": "ruso", "fr": "rusa" },
             { "es": "chino", "fr": "china" },
             { "es": "brasileño", "fr": "brasileña" }
+          ]
+        },
+        {
+          "id": "gramatica-ser-conjugacion",
+          "title": "El verbo SER: conjugación",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "SER se usa para una situación duradera que no cambia (o cambia lenta y difícilmente): la identidad, la nacionalidad, el carácter, la profesión, la apariencia física."
+          ],
+          "items": [
+            { "es": "yo", "fr": "soy" },
+            { "es": "tú", "fr": "eres" },
+            { "es": "él / ella / usted", "fr": "es" },
+            { "es": "nosotros / nosotras", "fr": "somos" },
+            { "es": "vosotros / vosotras", "fr": "sois (*solo en España)" },
+            { "es": "ellos / ellas / ustedes", "fr": "son" }
+          ]
+        },
+        {
+          "id": "gramatica-estar-conjugacion",
+          "title": "El verbo ESTAR: conjugación",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "ESTAR se usa para una situación momentánea que puede cambiar: el estado psicológico (humor), el estado físico (salud) y también la posición/ubicación (Recuerda: para expresar la posición se usa ESTAR)."
+          ],
+          "items": [
+            { "es": "yo", "fr": "estoy" },
+            { "es": "tú", "fr": "estás" },
+            { "es": "él / ella / usted", "fr": "está" },
+            { "es": "nosotros / nosotras", "fr": "estamos" },
+            { "es": "vosotros / vosotras", "fr": "estáis (*solo en España)" },
+            { "es": "ellos / ellas / ustedes", "fr": "están" }
+          ]
+        },
+        {
+          "id": "gramatica-ser-estar-diferencia",
+          "title": "Diferencia entre SER y ESTAR",
+          "kind": "phrase",
+          "notes": [
+            "SER: situación duradera → identidad, nacionalidad, carácter, profesión, apariencia física (Soy Pedro. Soy peruano. Soy simpático. Soy camarero.).",
+            "ESTAR: situación momentánea → estado psicológico, estado físico, y la posición/ubicación (Estoy cansado. Estoy resfriado. Estoy en Caracas.)."
+          ],
+          "items": [
+            { "es": "Soy Pedro.", "fr": "Je suis Pedro." },
+            { "es": "Estoy cansado.", "fr": "Je suis fatigué." },
+            { "es": "Soy peruano.", "fr": "Je suis péruvien." },
+            { "es": "Estoy contento.", "fr": "Je suis content." },
+            { "es": "Soy simpático.", "fr": "Je suis sympathique." },
+            { "es": "Estoy resfriado.", "fr": "Je suis enrhumé." },
+            { "es": "Soy camarero.", "fr": "Je suis serveur." },
+            { "es": "Estoy en Caracas.", "fr": "Je suis à Caracas." },
+            { "es": "Soy moreno y bajo.", "fr": "Je suis brun et petit." },
+            { "es": "Caracas está en Venezuela.", "fr": "Caracas est au Venezuela." }
+          ]
+        },
+        {
+          "id": "gramatica-ser-frases",
+          "title": "Completa con SER (frases)",
+          "kind": "phrase",
+          "items": [
+            { "es": "Carmen es española.", "fr": "Carmen est espagnole." },
+            { "es": "Julio y Hernando son argentinos.", "fr": "Julio et Hernando sont argentins." },
+            { "es": "Nosotros somos italianos.", "fr": "Nous sommes italiens." },
+            { "es": "¿Ustedes también son italianos?", "fr": "Vous êtes aussi italiens ?" },
+            { "es": "¡Hola! Soy Pedro.", "fr": "Salut ! Je suis Pedro." },
+            { "es": "¿Vosotras sois Clara y Teresa?", "fr": "Êtes-vous (vosotras) Clara et Teresa ?" },
+            { "es": "¿Es usted el señor González?", "fr": "Êtes-vous monsieur González ?" },
+            { "es": "Las amigas de Miguel son peluqueras.", "fr": "Les amies de Miguel sont coiffeuses." },
+            { "es": "¿De dónde eres?", "fr": "D'où viens-tu ?" },
+            { "es": "¿Javier es ingeniero?", "fr": "Javier est-il ingénieur ?" }
+          ]
+        },
+        {
+          "id": "gramatica-estar-frases",
+          "title": "Completa con ESTAR (frases)",
+          "kind": "phrase",
+          "items": [
+            { "es": "¡Buenos días, Susana! ¿Cómo estás?", "fr": "Bonjour, Susana ! Comment vas-tu ?" },
+            { "es": "¿Está usted ocupado?", "fr": "Êtes-vous occupé ?" },
+            { "es": "Yo estoy muy cansada.", "fr": "Je suis très fatiguée." },
+            { "es": "Nosotros estamos concentrados.", "fr": "Nous sommes concentrés." },
+            { "es": "Vosotros estáis concentrados.", "fr": "Vous êtes concentrés." },
+            { "es": "¿Están ustedes en casa?", "fr": "Êtes-vous chez vous ?" },
+            { "es": "Ellos están en el hospital porque están enfermos.", "fr": "Ils sont à l'hôpital parce qu'ils sont malades." },
+            { "es": "María está pálida porque está resfriada.", "fr": "María est pâle parce qu'elle est enrhumée." },
+            { "es": "Sevilla está en el sur de España.", "fr": "Séville est dans le sud de l'Espagne." },
+            { "es": "Cristina está embarazada.", "fr": "Cristina est enceinte." }
+          ]
+        },
+        {
+          "id": "gramatica-ser-estar-frases",
+          "title": "Completa con SER o ESTAR (frases)",
+          "kind": "phrase",
+          "items": [
+            { "es": "Nosotras no estamos cansadas.", "fr": "Nous ne sommes pas fatiguées." },
+            { "es": "El señor González es muy amable.", "fr": "Monsieur González est très aimable." },
+            { "es": "En cambio, el señor Pérez es muy grosero.", "fr": "En revanche, monsieur Pérez est très grossier." },
+            { "es": "Esta puerta está cerrada.", "fr": "Cette porte est fermée." },
+            { "es": "Juan está enfadado y preocupado.", "fr": "Juan est fâché et inquiet." },
+            { "es": "Esta computadora es vieja.", "fr": "Cet ordinateur est vieux." },
+            { "es": "El autobús está lleno.", "fr": "Le bus est plein." },
+            { "es": "Nosotros somos ingleses.", "fr": "Nous sommes anglais." },
+            { "es": "Ella no es peluquera.", "fr": "Elle n'est pas coiffeuse." },
+            { "es": "¿Dónde están las llaves?", "fr": "Où sont les clés ?" }
+          ]
+        },
+        {
+          "id": "gramatica-ser-estar-frases-2",
+          "title": "Completa con SER o ESTAR (más frases)",
+          "kind": "phrase",
+          "items": [
+            { "es": "La mesa es cuadrada.", "fr": "La table est carrée." },
+            { "es": "La mesa está limpia.", "fr": "La table est propre." },
+            { "es": "El café está caliente.", "fr": "Le café est chaud." },
+            { "es": "El café es bueno.", "fr": "Le café est bon." },
+            { "es": "Nosotros estamos en Italia.", "fr": "Nous sommes en Italie." },
+            { "es": "Nosotros somos italianos.", "fr": "Nous sommes italiens." },
+            { "es": "Claudia es guapa.", "fr": "Claudia est belle." },
+            { "es": "Claudia está resfriada.", "fr": "Claudia est enrhumée." },
+            { "es": "Lima es la capital de Perú.", "fr": "Lima est la capitale du Pérou." },
+            { "es": "El hotel está en la plaza.", "fr": "L'hôtel est sur la place." }
+          ]
+        },
+        {
+          "id": "gramatica-demostrativos",
+          "title": "Los demostrativos: este, ese, aquel",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "Este/esta/estos/estas = aquí, cerca de quien habla. Ese/esa/esos/esas = ahí, cerca de la persona con quien hablas. Aquel/aquella/aquellos/aquellas = allí/allá, lejos de los dos."
+          ],
+          "diagram": "<svg viewBox='0 0 600 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este, ese, aquel'><line x1='70' y1='90' x2='560' y2='90' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><polygon points='560,90 548,84 548,96' fill='var(--muted)'/><text x='560' y='115' text-anchor='end' font-size='12' fill='var(--muted)'>+ lejos</text><circle cx='35' cy='78' r='10' fill='var(--primary)'/><rect x='25' y='88' width='20' height='26' rx='6' fill='var(--primary)'/><text x='35' y='140' text-anchor='middle' font-size='14' fill='var(--text)'>yo</text><circle cx='170' cy='90' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='170' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>este (aquí)</text><circle cx='350' cy='90' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='350' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>ese (ahí)</text><circle cx='520' cy='90' r='11' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='520' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>aquel (allí/allá)</text></svg>",
+          "items": [
+            { "es": "masculino singular (aquí)", "fr": "este" },
+            { "es": "femenino singular (aquí)", "fr": "esta" },
+            { "es": "masculino plural (aquí)", "fr": "estos" },
+            { "es": "femenino plural (aquí)", "fr": "estas" },
+            { "es": "masculino singular (ahí)", "fr": "ese" },
+            { "es": "femenino singular (ahí)", "fr": "esa" },
+            { "es": "masculino plural (ahí)", "fr": "esos" },
+            { "es": "femenino plural (ahí)", "fr": "esas" },
+            { "es": "masculino singular (allí/allá)", "fr": "aquel" },
+            { "es": "femenino singular (allí/allá)", "fr": "aquella" },
+            { "es": "masculino plural (allí/allá)", "fr": "aquellos" },
+            { "es": "femenino plural (allí/allá)", "fr": "aquellas" }
+          ]
+        },
+        {
+          "id": "gramatica-demostrativos-frases",
+          "title": "Completa con el demostrativo",
+          "kind": "phrase",
+          "items": [
+            { "es": "Este disco es de Miguel.", "fr": "Ce CD-ci est à Miguel.", "blankWord": "Este", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
+            { "es": "Este lápiz es corto.", "fr": "Ce crayon-ci est court.", "blankWord": "Este", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
+            { "es": "Ese ordenador es viejo.", "fr": "Cet ordinateur-là est vieux.", "blankWord": "Ese", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='ese'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
+            { "es": "Esos documentos son importantes.", "fr": "Ces documents-là sont importants.", "blankWord": "Esos", "blankOptions": ["Estos", "Esos", "Aquellos"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='esos'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estos</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esos</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellos</text></svg>" },
+            { "es": "Estas tijeras son rojas.", "fr": "Ces ciseaux-ci sont rouges.", "blankWord": "Estas", "blankOptions": ["Estas", "Esas", "Aquellas"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='estas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>" },
+            { "es": "Estas fotos son de mis vacaciones.", "fr": "Ces photos-ci sont de mes vacances.", "blankWord": "Estas", "blankOptions": ["Estas", "Esas", "Aquellas"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='estas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>" },
+            { "es": "Aquella cámara es de Oscar.", "fr": "Cet appareil photo, là-bas, est à Oscar.", "blankWord": "Aquella", "blankOptions": ["Esta", "Esa", "Aquella"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquella'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esta</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esa</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquella</text></svg>" },
+            { "es": "Aquella impresora es nueva.", "fr": "Cette imprimante, là-bas, est neuve.", "blankWord": "Aquella", "blankOptions": ["Esta", "Esa", "Aquella"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquella'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esta</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esa</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquella</text></svg>" },
+            { "es": "Aquel portátil es nuevo.", "fr": "Cet ordinateur portable, là-bas, est neuf.", "blankWord": "Aquel", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquel'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
+            { "es": "Esas gafas son de David.", "fr": "Ces lunettes-là sont à David.", "blankWord": "Esas", "blankOptions": ["Estas", "Esas", "Aquellas"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='esas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "La Posición",
+      "notes": [
+        "NOTA: de + el = del."
+      ],
+      "diagram": "<svg viewBox='0 0 430 610' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Diagrama de posiciones'><g transform='translate(10,10)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='100' cy='26' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>encima / sobre</text></g><g transform='translate(220,10)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='100' cy='114' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>debajo</text></g><g transform='translate(10,160)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='54' cy='70' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>a la izquierda</text></g><g transform='translate(220,160)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='146' cy='70' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>a la derecha</text></g><g transform='translate(10,310)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='88' cy='96' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>delante</text></g><g transform='translate(220,310)'><circle cx='112' cy='58' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>detrás</text></g><g transform='translate(10,460)'><rect x='78' y='48' width='44' height='44' rx='6' fill='none' stroke='var(--primary)' stroke-width='3'/><circle cx='100' cy='70' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>dentro / en</text></g><g transform='translate(220,460)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='165' cy='105' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>fuera</text></g></svg>",
+      "subsections": [
+        {
+          "id": "posicion-preposiciones",
+          "title": "Preposiciones de posición",
+          "kind": "vocab",
+          "items": [
+            { "es": "sobre / encima de", "fr": "sur / au-dessus de" },
+            { "es": "debajo de", "fr": "sous / en dessous de" },
+            { "es": "a la izquierda de", "fr": "à gauche de" },
+            { "es": "a la derecha de", "fr": "à droite de" },
+            { "es": "delante de", "fr": "devant" },
+            { "es": "detrás de", "fr": "derrière" },
+            { "es": "dentro de / en", "fr": "dans / à l'intérieur de" },
+            { "es": "fuera de", "fr": "hors de / à l'extérieur de" }
+          ]
+        },
+        {
+          "id": "posicion-contrarios",
+          "title": "Forma la frase contraria",
+          "kind": "phrase",
+          "items": [
+            { "es": "El libro está sobre la mesa.", "fr": "Le livre est sur la table." },
+            { "es": "La bicicleta está fuera del garaje.", "fr": "Le vélo est en dehors du garage." },
+            { "es": "La estatua está detrás del museo.", "fr": "La statue est derrière le musée." },
+            { "es": "El diccionario está debajo del cuaderno.", "fr": "Le dictionnaire est sous le cahier." },
+            { "es": "El hotel está a la derecha de la calle.", "fr": "L'hôtel est à droite de la rue." },
+            { "es": "El documento está sobre el libro.", "fr": "Le document est sur le livre." },
+            { "es": "La pelota está fuera del armario.", "fr": "Le ballon est en dehors de l'armoire." },
+            { "es": "El dinero está a la izquierda de la foto.", "fr": "L'argent est à gauche de la photo." },
+            { "es": "El gato está debajo de la silla.", "fr": "Le chat est sous la chaise." },
+            { "es": "La ventana está a la derecha del salón.", "fr": "La fenêtre est à droite du salon." }
+          ]
+        },
+        {
+          "id": "posicion-aqui-ahi-alli-alla",
+          "title": "Aquí, ahí, allí, allá (distancia)",
+          "kind": "vocab",
+          "notes": [
+            "Aquí = muy cerca de quien habla. Ahí = cerca de la persona con quien hablas. Allí = lejos de los dos. Allá = todavía más lejos, o de forma imprecisa (muy usado en América Latina)."
+          ],
+          "diagram": "<svg viewBox='0 0 600 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Distancia: aquí, ahí, allí, allá'><line x1='70' y1='90' x2='560' y2='90' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><polygon points='560,90 548,84 548,96' fill='var(--muted)'/><text x='560' y='115' text-anchor='end' font-size='12' fill='var(--muted)'>+ lejos</text><circle cx='35' cy='78' r='10' fill='var(--primary)'/><rect x='25' y='88' width='20' height='26' rx='6' fill='var(--primary)'/><text x='35' y='140' text-anchor='middle' font-size='14' fill='var(--text)'>yo</text><circle cx='140' cy='90' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='140' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>aquí</text><circle cx='280' cy='90' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='280' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>ahí</text><circle cx='410' cy='90' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='410' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>allí</text><circle cx='530' cy='90' r='10' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='530' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>allá</text></svg>",
+          "items": [
+            { "es": "aquí", "fr": "ici" },
+            { "es": "ahí", "fr": "là" },
+            { "es": "allí", "fr": "là-bas" },
+            { "es": "allá", "fr": "là-bas (más lejos)" }
+          ]
+        },
+        {
+          "id": "posicion-aqui-ahi-alli-alla-frases",
+          "title": "Completa con aquí, ahí, allí o allá",
+          "kind": "phrase",
+          "items": [
+            { "es": "El reloj está allá.", "fr": "L'horloge est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
+            { "es": "El periódico está aquí.", "fr": "Le journal est ici.", "blankWord": "aquí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
+            { "es": "La papelera está allá.", "fr": "La corbeille est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
+            { "es": "La cámara está allá.", "fr": "L'appareil photo est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
+            { "es": "La llave está allí.", "fr": "La clé est là-bas.", "blankWord": "allí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
+            { "es": "Las tijeras están aquí.", "fr": "Les ciseaux sont ici.", "blankWord": "aquí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
+            { "es": "El calendario está allá.", "fr": "Le calendrier est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
+            { "es": "El disco (CD) está allí.", "fr": "Le CD est là-bas.", "blankWord": "allí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
+            { "es": "Las gafas están allí.", "fr": "Les lunettes sont là-bas.", "blankWord": "allí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
+            { "es": "El ordenador está aquí.", "fr": "L'ordinateur est ici.", "blankWord": "aquí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" }
           ]
         }
       ]

@@ -48,9 +48,10 @@ function runFlashcards(container, subsectionId, items, onFinish, lockDirection) 
     const back = esToFr ? item.fr : item.es;
     const frontLang = esToFr ? 'es-ES' : 'fr-FR';
     const backLang = esToFr ? 'fr-FR' : 'es-ES';
+    const cueHtml = item.cue ? `<div class="pos-cue">${item.cue}</div>` : '';
     const faceHtml = flippedNow => flippedNow
-      ? `<div class="flashcard-text">${front}</div><div class="flashcard-translation">${back}</div>${speakBtn(back, backLang)}`
-      : `<div class="flashcard-text">${front}</div>${speakBtn(front, frontLang)}<div class="flashcard-hint">Toca la tarjeta para ver la traducción</div>`;
+      ? `${cueHtml}<div class="flashcard-text">${front}</div><div class="flashcard-translation">${back}</div>${speakBtn(back, backLang)}`
+      : `${cueHtml}<div class="flashcard-text">${front}</div>${speakBtn(front, frontLang)}<div class="flashcard-hint">Toca la tarjeta para ver la traducción</div>`;
     container.innerHTML = `
       <div class="session-progress">${progressLabel(pos, order.length)}</div>
       <div class="flashcard" id="flashcard">
@@ -202,6 +203,7 @@ function runMultipleChoice(container, subsectionId, items, onFinish, lockDirecti
     container.innerHTML = `
       <div class="session-progress">${progressLabel(pos, order.length)}</div>
       <div class="quiz-prompt">
+        ${item.cue ? `<div class="pos-cue">${item.cue}</div>` : ''}
         <div class="flashcard-text">${prompt}</div>
         ${speakBtn(prompt, promptLang)}
       </div>
@@ -249,8 +251,8 @@ function runFillBlank(container, subsectionId, items, onFinish) {
   let correct = 0;
   let mistakes = [];
 
-  function optionsFor(word) {
-    const candidates = shuffle(pool.filter(w => w.toLowerCase() !== word.toLowerCase())).slice(0, 3);
+  function optionsFor(word, candidatePool) {
+    const candidates = shuffle(candidatePool.filter(w => w.toLowerCase() !== word.toLowerCase())).slice(0, 3);
     return shuffle([word, ...candidates]);
   }
 
@@ -258,10 +260,11 @@ function runFillBlank(container, subsectionId, items, onFinish) {
     const { item, id } = order[pos];
     const word = pickBlankWord(item);
     const blanked = buildBlankSentence(item, word);
-    const options = optionsFor(word);
+    const options = optionsFor(word, item.blankOptions || pool);
     container.innerHTML = `
       <div class="session-progress">${progressLabel(pos, order.length)}</div>
       <div class="quiz-prompt">
+        ${item.cue ? `<div class="pos-cue">${item.cue}</div>` : ''}
         <div class="flashcard-text">${blanked}</div>
         <div class="flashcard-translation">${item.fr}</div>
       </div>

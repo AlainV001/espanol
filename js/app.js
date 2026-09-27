@@ -89,6 +89,7 @@ function renderTheme(content, themeId) {
       </div>
       <h1>${theme.title}</h1>
     </header>
+    ${theme.diagram ? `<div class="theme-diagram">${theme.diagram}</div>` : ''}
     ${theme.notes && theme.notes.length ? `
       <details class="notes-box">
         <summary>À retenir</summary>
@@ -112,6 +113,7 @@ function renderTheme(content, themeId) {
         return `
           <div class="subsection-card">
             <div class="subsection-title">${sub.title}${starHtml}${badgeHtml}</div>
+            ${sub.diagram ? `<div class="theme-diagram">${sub.diagram}</div>` : ''}
             ${sub.notes && sub.notes.length ? `
               <ul class="subsection-notes">${sub.notes.map(n => `<li>${n}</li>`).join('')}</ul>
             ` : ''}

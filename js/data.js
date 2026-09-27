@@ -61,8 +61,11 @@ function wordsFromItem(item) {
     .filter(w => w.length > 2 && !STOPWORDS.has(w.toLowerCase()));
 }
 
-// Picks a blank-worthy keyword from an item's Spanish sentence (longest content word).
+// Picks a blank-worthy keyword from an item's Spanish sentence (longest content word,
+// unless the item pins down a specific word via blankWord — used when the word that
+// matters pedagogically isn't the longest one, e.g. aquí/ahí/allí/allá vs. a longer noun).
 function pickBlankWord(item) {
+  if (item.blankWord) return item.blankWord;
   const words = wordsFromItem(item);
   if (!words.length) return null;
   return words.reduce((a, b) => (b.length > a.length ? b : a));

@@ -232,6 +232,18 @@ body {
 .notes-box summary { cursor: pointer; color: var(--text); font-weight: 600; }
 .notes-box ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
 
+.theme-diagram {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+}
+.theme-diagram svg { display: block; width: 100%; height: auto; }
+
+.pos-cue { max-width: 220px; margin: 0 auto 0.75rem; }
+.pos-cue svg { display: block; width: 100%; height: auto; }
+
 .session-progress {
   text-align: center;
   color: var(--muted);

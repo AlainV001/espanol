@@ -35,6 +35,41 @@
       "file": "nationalite feminin et masculin.jpg",
       "importedDate": "2026-09-20",
       "themeIds": ["vocabulario-general", "gramatica"]
+    },
+    {
+      "file": "verbo ser estar 1.jpg",
+      "importedDate": "2026-09-27",
+      "themeIds": ["gramatica"]
+    },
+    {
+      "file": "verbo ser estar 2.jpg",
+      "importedDate": "2026-09-27",
+      "themeIds": ["gramatica"]
+    },
+    {
+      "file": "verbo ser estar 3.jpg",
+      "importedDate": "2026-09-27",
+      "themeIds": ["gramatica"]
+    },
+    {
+      "file": "verbo ser estar 4.jpg",
+      "importedDate": "2026-09-27",
+      "themeIds": ["gramatica", "vocabulario-general"]
+    },
+    {
+      "file": "la posicion 1.jpg",
+      "importedDate": "2026-09-27",
+      "themeIds": ["posicion", "vocabulario-general"]
+    },
+    {
+      "file": "posicion 2.jpg",
+      "importedDate": "2026-09-27",
+      "themeIds": ["posicion", "vocabulario-general", "salon-clase"]
+    },
+    {
+      "file": "los demonstrativos.jpg",
+      "importedDate": "2026-09-27",
+      "themeIds": ["gramatica", "salon-clase"]
     }
   ]
 }
