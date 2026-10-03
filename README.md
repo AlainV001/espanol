@@ -1,6 +1,6 @@
-# Español con Astrid
+# Apprendre l'Espagnol
 
-Aplicación web (PWA) para practicar español a partir de las fichas de la profesora Astrid Domínguez. Pensada para instalarse en un teléfono Android directamente desde el navegador, sin tienda de aplicaciones.
+Aplicación web (PWA) para practicar español a partir de fichas de clase. Pensada para instalarse en un teléfono Android directamente desde el navegador, sin tienda de aplicaciones.
 
 ## Contenido
 

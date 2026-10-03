@@ -1,8 +1,8 @@
 {
   "themes": [
     {
-      "id": "saludos",
-      "title": "Saludos y Expresiones de Cortesía",
+      "id": "vocabulario-general",
+      "title": "Vocabulario General",
       "notes": [
         "Buenas noches = Bonsoir pour saluer le soir. Pour prendre congé et aller dormir : Bonne nuit.",
         "Hola est une formule neutre et peut être utilisée tout au long de la journée. Salut est informel en français ; en espagnol, hola fonctionne aussi bien dans des situations informelles que dans de nombreuses situations neutres.",
@@ -15,10 +15,22 @@
           "title": "Saludos según el momento del día",
           "kind": "phrase",
           "items": [
-            { "es": "¡Buenos días!", "fr": "Bonjour ! (le matin)" },
-            { "es": "¡Buenas tardes!", "fr": "Bon après-midi ! (l'après-midi)" },
-            { "es": "¡Buenas noches!", "fr": "Bonsoir ! (le soir)" },
-            { "es": "Hola", "fr": "Bonjour / Salut ! (toute la journée)" }
+            {
+              "es": "¡Buenos días!",
+              "fr": "Bonjour ! (le matin)"
+            },
+            {
+              "es": "¡Buenas tardes!",
+              "fr": "Bon après-midi ! (l'après-midi)"
+            },
+            {
+              "es": "¡Buenas noches!",
+              "fr": "Bonsoir ! (le soir)"
+            },
+            {
+              "es": "Hola",
+              "fr": "Bonjour / Salut ! (toute la journée)"
+            }
           ]
         },
         {
@@ -26,12 +38,30 @@
           "title": "Saludos neutros",
           "kind": "phrase",
           "items": [
-            { "es": "¡Hola!", "fr": "Salut !" },
-            { "es": "¿Qué tal?", "fr": "Comment ça va ?" },
-            { "es": "¿Cómo estás?", "fr": "Comment vas-tu ?" },
-            { "es": "¿Cómo está usted?", "fr": "Comment allez-vous ?" },
-            { "es": "¿Todo bien?", "fr": "Tout va bien ?" },
-            { "es": "¿Cómo va todo?", "fr": "Comment ça se passe ?" }
+            {
+              "es": "¡Hola!",
+              "fr": "Salut !"
+            },
+            {
+              "es": "¿Qué tal?",
+              "fr": "Comment ça va ?"
+            },
+            {
+              "es": "¿Cómo estás?",
+              "fr": "Comment vas-tu ?"
+            },
+            {
+              "es": "¿Cómo está usted?",
+              "fr": "Comment allez-vous ?"
+            },
+            {
+              "es": "¿Todo bien?",
+              "fr": "Tout va bien ?"
+            },
+            {
+              "es": "¿Cómo va todo?",
+              "fr": "Comment ça se passe ?"
+            }
           ]
         },
         {
@@ -39,13 +69,129 @@
           "title": "Al conocer a alguien",
           "kind": "phrase",
           "items": [
-            { "es": "Mucho gusto.", "fr": "Enchanté(e)." },
-            { "es": "Encantado/a de conocerte.", "fr": "Ravi(e) de vous rencontrer." },
-            { "es": "Es un placer.", "fr": "C'est un plaisir." },
-            { "es": "¿Cómo te llamas?", "fr": "Comment tu t'appelles ?" },
-            { "es": "Me llamo...", "fr": "Je m'appelle..." },
-            { "es": "¿Y tú?", "fr": "Et toi ?" },
-            { "es": "Igualmente.", "fr": "De même." }
+            {
+              "es": "Mucho gusto.",
+              "fr": "Enchanté(e)."
+            },
+            {
+              "es": "Encantado/a de conocerte.",
+              "fr": "Ravi(e) de vous rencontrer."
+            },
+            {
+              "es": "Es un placer.",
+              "fr": "C'est un plaisir."
+            },
+            {
+              "es": "¿Cómo te llamas?",
+              "fr": "Comment tu t'appelles ?"
+            },
+            {
+              "es": "Me llamo...",
+              "fr": "Je m'appelle..."
+            },
+            {
+              "es": "¿Y tú?",
+              "fr": "Et toi ?"
+            },
+            {
+              "es": "Igualmente.",
+              "fr": "De même."
+            }
+          ]
+        },
+        {
+          "id": "saludos-presentarse",
+          "title": "Presentarse: preguntas y respuestas",
+          "kind": "phrase",
+          "items": [
+            {
+              "es": "¿Cómo te llamas?",
+              "fr": "Comment tu t'appelles ?"
+            },
+            {
+              "es": "Me llamo...",
+              "fr": "Je m'appelle..."
+            },
+            {
+              "es": "¿Cuál es tu apellido?",
+              "fr": "Quel est ton nom de famille ?"
+            },
+            {
+              "es": "Mi apellido es...",
+              "fr": "Mon nom de famille est..."
+            },
+            {
+              "es": "¿Cuándo es tu cumpleaños?",
+              "fr": "Quand est ton anniversaire ?"
+            },
+            {
+              "es": "Mi cumpleaños es el...",
+              "fr": "Mon anniversaire est le..."
+            },
+            {
+              "es": "¿Cuál es tu número de teléfono?",
+              "fr": "Quel est ton numéro de téléphone ?"
+            },
+            {
+              "es": "Mi número de teléfono es...",
+              "fr": "Mon numéro de téléphone est..."
+            },
+            {
+              "es": "¿De dónde eres?",
+              "fr": "D'où viens-tu ?"
+            },
+            {
+              "es": "Soy de...",
+              "fr": "Je suis de..."
+            },
+            {
+              "es": "¿Cuál es tu nacionalidad?",
+              "fr": "Quelle est ta nationalité ?"
+            },
+            {
+              "es": "Soy... (nacionalidad)",
+              "fr": "Je suis... (nationalité)"
+            },
+            {
+              "es": "¿Cuántos años tienes?",
+              "fr": "Quel âge as-tu ?"
+            },
+            {
+              "es": "¿Qué edad tienes?",
+              "fr": "Quel âge as-tu ?"
+            },
+            {
+              "es": "Tengo... años.",
+              "fr": "J'ai... ans."
+            },
+            {
+              "es": "¿A qué te dedicas?",
+              "fr": "Qu'est-ce que tu fais dans la vie ?"
+            },
+            {
+              "es": "Soy...",
+              "fr": "Je suis... (+ métier)"
+            },
+            {
+              "es": "¿Dónde trabajas?",
+              "fr": "Où travailles-tu ?"
+            },
+            {
+              "es": "¿Cuál es tu lugar de trabajo?",
+              "fr": "Quel est ton lieu de travail ?"
+            },
+            {
+              "es": "Trabajo en...",
+              "fr": "Je travaille à/chez..."
+            },
+            {
+              "es": "¿Cuál es tu correo electrónico?",
+              "fr": "Quelle est ton adresse email ?"
+            },
+            {
+              "es": "Mi correo electrónico es...",
+              "fr": "Mon adresse email est..."
+            }
           ]
         },
         {
@@ -53,14 +199,38 @@
           "title": "Despedidas",
           "kind": "phrase",
           "items": [
-            { "es": "Adiós", "fr": "Au revoir" },
-            { "es": "Hasta luego", "fr": "À plus tard" },
-            { "es": "Hasta pronto", "fr": "À bientôt" },
-            { "es": "Hasta mañana", "fr": "À demain" },
-            { "es": "Nos vemos", "fr": "On se voit" },
-            { "es": "Que tengas un buen día.", "fr": "Bonne journée." },
-            { "es": "Que descanses.", "fr": "Repose-toi bien." },
-            { "es": "Hasta la vista", "fr": "À la prochaine" }
+            {
+              "es": "Adiós",
+              "fr": "Au revoir"
+            },
+            {
+              "es": "Hasta luego",
+              "fr": "À plus tard"
+            },
+            {
+              "es": "Hasta pronto",
+              "fr": "À bientôt"
+            },
+            {
+              "es": "Hasta mañana",
+              "fr": "À demain"
+            },
+            {
+              "es": "Nos vemos",
+              "fr": "On se voit"
+            },
+            {
+              "es": "Que tengas un buen día.",
+              "fr": "Bonne journée."
+            },
+            {
+              "es": "Que descanses.",
+              "fr": "Repose-toi bien."
+            },
+            {
+              "es": "Hasta la vista",
+              "fr": "À la prochaine"
+            }
           ]
         },
         {
@@ -68,15 +238,42 @@
           "title": "Expresiones de cortesía",
           "kind": "phrase",
           "items": [
-            { "es": "Por favor", "fr": "S'il vous plaît" },
-            { "es": "Gracias", "fr": "Merci" },
-            { "es": "Muchas gracias", "fr": "Merci beaucoup" },
-            { "es": "De nada", "fr": "De rien" },
-            { "es": "Con permiso", "fr": "Pardon / Excusez-moi" },
-            { "es": "Perdón / Lo siento", "fr": "Pardon / Désolé(e)" },
-            { "es": "No hay problema", "fr": "Pas de problème" },
-            { "es": "Que tenga un buen día.", "fr": "Bonne journée." },
-            { "es": "¡Hasta luego!", "fr": "À plus tard !" }
+            {
+              "es": "Por favor",
+              "fr": "S'il vous plaît"
+            },
+            {
+              "es": "Gracias",
+              "fr": "Merci"
+            },
+            {
+              "es": "Muchas gracias",
+              "fr": "Merci beaucoup"
+            },
+            {
+              "es": "De nada",
+              "fr": "De rien"
+            },
+            {
+              "es": "Con permiso",
+              "fr": "Pardon / Excusez-moi"
+            },
+            {
+              "es": "Perdón / Lo siento",
+              "fr": "Pardon / Désolé(e)"
+            },
+            {
+              "es": "No hay problema",
+              "fr": "Pas de problème"
+            },
+            {
+              "es": "Que tenga un buen día.",
+              "fr": "Bonne journée."
+            },
+            {
+              "es": "¡Hasta luego!",
+              "fr": "À plus tard !"
+            }
           ]
         },
         {
@@ -84,63 +281,185 @@
           "title": "Otras expresiones útiles",
           "kind": "phrase",
           "items": [
-            { "es": "Bien, gracias.", "fr": "Bien, merci." },
-            { "es": "Muy bien.", "fr": "Très bien." },
-            { "es": "Más o menos.", "fr": "Comme ci, comme ça." },
-            { "es": "Aquí estoy.", "fr": "Je suis là." },
-            { "es": "¿Y usted?", "fr": "Et vous ?" },
-            { "es": "Bienvenido/a.", "fr": "Bienvenue." }
+            {
+              "es": "Bien, gracias.",
+              "fr": "Bien, merci."
+            },
+            {
+              "es": "Muy bien.",
+              "fr": "Très bien."
+            },
+            {
+              "es": "Más o menos.",
+              "fr": "Comme ci, comme ça."
+            },
+            {
+              "es": "Aquí estoy.",
+              "fr": "Je suis là."
+            },
+            {
+              "es": "¿Y usted?",
+              "fr": "Et vous ?"
+            },
+            {
+              "es": "Bienvenido/a.",
+              "fr": "Bienvenue."
+            }
           ]
-        }
-      ]
-    },
-    {
-      "id": "salon-clase",
-      "title": "El Salón de Clase",
-      "notes": [],
-      "subsections": [
+        },
         {
           "id": "clase-objetos",
           "title": "Objetos en el salón de clase",
           "kind": "vocab",
           "items": [
-            { "es": "la pizarra", "fr": "le tableau" },
-            { "es": "la pizarra blanca", "fr": "le tableau blanc" },
-            { "es": "el marcador", "fr": "le marqueur" },
-            { "es": "el borrador", "fr": "l'effaceur" },
-            { "es": "la tiza / el yeso", "fr": "la craie" },
-            { "es": "el proyector", "fr": "le projecteur" },
-            { "es": "la pantalla", "fr": "l'écran" },
-            { "es": "el ordenador / la computadora", "fr": "l'ordinateur" },
-            { "es": "el altavoz", "fr": "le haut-parleur" },
-            { "es": "la mesa", "fr": "la table" },
-            { "es": "la silla", "fr": "la chaise" },
-            { "es": "el escritorio", "fr": "le bureau" },
-            { "es": "el cuaderno", "fr": "le cahier" },
-            { "es": "el libro", "fr": "le livre" },
-            { "es": "la carpeta", "fr": "le classeur" },
-            { "es": "la hoja de papel", "fr": "la feuille de papier" },
-            { "es": "el bolígrafo", "fr": "le stylo à bille" },
-            { "es": "el lápiz", "fr": "le crayon" },
-            { "es": "la regla", "fr": "la règle" },
-            { "es": "el sacapuntas", "fr": "le taille-crayon" },
-            { "es": "el pegamento", "fr": "la colle" },
-            { "es": "las tijeras", "fr": "les ciseaux" },
-            { "es": "los colores", "fr": "les crayons de couleur" },
-            { "es": "la mochila", "fr": "le sac à dos" },
-            { "es": "el diccionario", "fr": "le dictionnaire" },
-            { "es": "el estuche", "fr": "la trousse" },
-            { "es": "el mapa", "fr": "la carte" },
-            { "es": "el reloj", "fr": "l'horloge" },
-            { "es": "la papelera", "fr": "la poubelle" },
-            { "es": "la puerta", "fr": "la porte" },
-            { "es": "la ventana", "fr": "la fenêtre" },
-            { "es": "la luz", "fr": "la lumière" },
-            { "es": "el enchufe", "fr": "la prise" },
-            { "es": "el aire acondicionado", "fr": "la climatisation" },
-            { "es": "la calefacción", "fr": "le chauffage" },
-            { "es": "el póster", "fr": "l'affiche" },
-            { "es": "la pizarra digital", "fr": "le tableau interactif" }
+            {
+              "es": "la pizarra",
+              "fr": "le tableau"
+            },
+            {
+              "es": "la pizarra blanca",
+              "fr": "le tableau blanc"
+            },
+            {
+              "es": "el marcador",
+              "fr": "le marqueur"
+            },
+            {
+              "es": "el borrador",
+              "fr": "l'effaceur"
+            },
+            {
+              "es": "la tiza / el yeso",
+              "fr": "la craie"
+            },
+            {
+              "es": "el proyector",
+              "fr": "le projecteur"
+            },
+            {
+              "es": "la pantalla",
+              "fr": "l'écran"
+            },
+            {
+              "es": "el ordenador / la computadora",
+              "fr": "l'ordinateur"
+            },
+            {
+              "es": "el altavoz",
+              "fr": "le haut-parleur"
+            },
+            {
+              "es": "la mesa",
+              "fr": "la table"
+            },
+            {
+              "es": "la silla",
+              "fr": "la chaise"
+            },
+            {
+              "es": "el escritorio",
+              "fr": "le bureau"
+            },
+            {
+              "es": "el cuaderno",
+              "fr": "le cahier"
+            },
+            {
+              "es": "el libro",
+              "fr": "le livre"
+            },
+            {
+              "es": "la carpeta",
+              "fr": "le classeur"
+            },
+            {
+              "es": "la hoja de papel",
+              "fr": "la feuille de papier"
+            },
+            {
+              "es": "el bolígrafo",
+              "fr": "le stylo à bille"
+            },
+            {
+              "es": "el lápiz",
+              "fr": "le crayon"
+            },
+            {
+              "es": "la regla",
+              "fr": "la règle"
+            },
+            {
+              "es": "el sacapuntas",
+              "fr": "le taille-crayon"
+            },
+            {
+              "es": "el pegamento",
+              "fr": "la colle"
+            },
+            {
+              "es": "las tijeras",
+              "fr": "les ciseaux"
+            },
+            {
+              "es": "los colores",
+              "fr": "les crayons de couleur"
+            },
+            {
+              "es": "la mochila",
+              "fr": "le sac à dos"
+            },
+            {
+              "es": "el diccionario",
+              "fr": "le dictionnaire"
+            },
+            {
+              "es": "el estuche",
+              "fr": "la trousse"
+            },
+            {
+              "es": "el mapa",
+              "fr": "la carte"
+            },
+            {
+              "es": "el reloj",
+              "fr": "l'horloge"
+            },
+            {
+              "es": "la papelera",
+              "fr": "la poubelle"
+            },
+            {
+              "es": "la puerta",
+              "fr": "la porte"
+            },
+            {
+              "es": "la ventana",
+              "fr": "la fenêtre"
+            },
+            {
+              "es": "la luz",
+              "fr": "la lumière"
+            },
+            {
+              "es": "el enchufe",
+              "fr": "la prise"
+            },
+            {
+              "es": "el aire acondicionado",
+              "fr": "la climatisation"
+            },
+            {
+              "es": "la calefacción",
+              "fr": "le chauffage"
+            },
+            {
+              "es": "el póster",
+              "fr": "l'affiche"
+            },
+            {
+              "es": "la pizarra digital",
+              "fr": "le tableau interactif"
+            }
           ]
         },
         {
@@ -148,14 +467,38 @@
           "title": "Personas en la clase",
           "kind": "vocab",
           "items": [
-            { "es": "el / la profesor(a)", "fr": "le / la professeur(e)" },
-            { "es": "el estudiante / la estudiante", "fr": "l'étudiant(e)" },
-            { "es": "el compañero / la compañera", "fr": "le / la camarade" },
-            { "es": "el grupo", "fr": "le groupe" },
-            { "es": "la clase", "fr": "le cours" },
-            { "es": "el asistente / la asistenta", "fr": "l'assistant(e)" },
-            { "es": "el voluntario / la voluntaria", "fr": "le / la volontaire" },
-            { "es": "el director / la directora", "fr": "le directeur / la directrice" }
+            {
+              "es": "el / la profesor(a)",
+              "fr": "le / la professeur(e)"
+            },
+            {
+              "es": "el estudiante / la estudiante",
+              "fr": "l'étudiant(e)"
+            },
+            {
+              "es": "el compañero / la compañera",
+              "fr": "le / la camarade"
+            },
+            {
+              "es": "el grupo",
+              "fr": "le groupe"
+            },
+            {
+              "es": "la clase",
+              "fr": "le cours"
+            },
+            {
+              "es": "el asistente / la asistenta",
+              "fr": "l'assistant(e)"
+            },
+            {
+              "es": "el voluntario / la voluntaria",
+              "fr": "le / la volontaire"
+            },
+            {
+              "es": "el director / la directora",
+              "fr": "le directeur / la directrice"
+            }
           ]
         },
         {
@@ -163,35 +506,122 @@
           "title": "Expresiones e instrucciones en clase",
           "kind": "phrase",
           "items": [
-            { "es": "Vamos a empezar / comenzar.", "fr": "On va commencer." },
-            { "es": "Vamos a continuar.", "fr": "On va continuer." },
-            { "es": "Vamos a terminar.", "fr": "On va terminer." },
-            { "es": "Presta atención.", "fr": "Fais attention." },
-            { "es": "Escucha atentamente.", "fr": "Écoute attentivement." },
-            { "es": "Mira la pizarra.", "fr": "Regarde le tableau." },
-            { "es": "Abre el libro en la página ...", "fr": "Ouvre le livre à la page ..." },
-            { "es": "Lee el texto.", "fr": "Lis le texte." },
-            { "es": "Escribe en tu cuaderno.", "fr": "Écris dans ton cahier." },
-            { "es": "Subraya la palabra.", "fr": "Souligne le mot." },
-            { "es": "Copia en la hoja.", "fr": "Recopie sur la feuille." },
-            { "es": "Repite después de mí.", "fr": "Répète après moi." },
-            { "es": "Trabaja en silencio.", "fr": "Travaille en silence." },
-            { "es": "Trabaja en parejas.", "fr": "Travaille en binômes." },
-            { "es": "Vamos a formar grupos de 3.", "fr": "On va former des groupes de 3." },
-            { "es": "Comenta con tu compañero/a.", "fr": "Discute avec ton/ta camarade." },
-            { "es": "Comparte tus ideas.", "fr": "Partage tes idées." },
-            { "es": "¿Tienen preguntas?", "fr": "Avez-vous des questions ?" },
-            { "es": "¿Algún voluntario?", "fr": "Un volontaire ?" },
-            { "es": "Levanta la mano.", "fr": "Lève la main." },
-            { "es": "Escuchen al profesor / a la profesora.", "fr": "Écoutez le professeur / la professeure." },
-            { "es": "Es tu turno.", "fr": "C'est à toi." },
-            { "es": "Corrige la actividad.", "fr": "Corrige l'activité." },
-            { "es": "Vamos a hacer una pausa.", "fr": "On va faire une pause." },
-            { "es": "Volvemos en cinco minutos.", "fr": "On se retrouve dans cinq minutes." },
-            { "es": "El tiempo ha terminado.", "fr": "Le temps est écoulé." },
-            { "es": "He terminado.", "fr": "J'ai terminé." },
-            { "es": "Guarda tus cosas.", "fr": "Range tes affaires." },
-            { "es": "Nos vemos en la próxima clase.", "fr": "On se voit au prochain cours." }
+            {
+              "es": "Vamos a empezar / comenzar.",
+              "fr": "On va commencer."
+            },
+            {
+              "es": "Vamos a continuar.",
+              "fr": "On va continuer."
+            },
+            {
+              "es": "Vamos a terminar.",
+              "fr": "On va terminer."
+            },
+            {
+              "es": "Presta atención.",
+              "fr": "Fais attention."
+            },
+            {
+              "es": "Escucha atentamente.",
+              "fr": "Écoute attentivement."
+            },
+            {
+              "es": "Mira la pizarra.",
+              "fr": "Regarde le tableau."
+            },
+            {
+              "es": "Abre el libro en la página ...",
+              "fr": "Ouvre le livre à la page ..."
+            },
+            {
+              "es": "Lee el texto.",
+              "fr": "Lis le texte."
+            },
+            {
+              "es": "Escribe en tu cuaderno.",
+              "fr": "Écris dans ton cahier."
+            },
+            {
+              "es": "Subraya la palabra.",
+              "fr": "Souligne le mot."
+            },
+            {
+              "es": "Copia en la hoja.",
+              "fr": "Recopie sur la feuille."
+            },
+            {
+              "es": "Repite después de mí.",
+              "fr": "Répète après moi."
+            },
+            {
+              "es": "Trabaja en silencio.",
+              "fr": "Travaille en silence."
+            },
+            {
+              "es": "Trabaja en parejas.",
+              "fr": "Travaille en binômes."
+            },
+            {
+              "es": "Vamos a formar grupos de 3.",
+              "fr": "On va former des groupes de 3."
+            },
+            {
+              "es": "Comenta con tu compañero/a.",
+              "fr": "Discute avec ton/ta camarade."
+            },
+            {
+              "es": "Comparte tus ideas.",
+              "fr": "Partage tes idées."
+            },
+            {
+              "es": "¿Tienen preguntas?",
+              "fr": "Avez-vous des questions ?"
+            },
+            {
+              "es": "¿Algún voluntario?",
+              "fr": "Un volontaire ?"
+            },
+            {
+              "es": "Levanta la mano.",
+              "fr": "Lève la main."
+            },
+            {
+              "es": "Escuchen al profesor / a la profesora.",
+              "fr": "Écoutez le professeur / la professeure."
+            },
+            {
+              "es": "Es tu turno.",
+              "fr": "C'est à toi."
+            },
+            {
+              "es": "Corrige la actividad.",
+              "fr": "Corrige l'activité."
+            },
+            {
+              "es": "Vamos a hacer una pausa.",
+              "fr": "On va faire une pause."
+            },
+            {
+              "es": "Volvemos en cinco minutos.",
+              "fr": "On se retrouve dans cinq minutes."
+            },
+            {
+              "es": "El tiempo ha terminado.",
+              "fr": "Le temps est écoulé."
+            },
+            {
+              "es": "He terminado.",
+              "fr": "J'ai terminé."
+            },
+            {
+              "es": "Guarda tus cosas.",
+              "fr": "Range tes affaires."
+            },
+            {
+              "es": "Nos vemos en la próxima clase.",
+              "fr": "On se voit au prochain cours."
+            }
           ]
         },
         {
@@ -199,13 +629,34 @@
           "title": "Frases útiles sobre objetos",
           "kind": "phrase",
           "items": [
-            { "es": "¿Dónde está el libro?", "fr": "Où est le livre ?" },
-            { "es": "¿Me pasas el marcador, por favor?", "fr": "Tu me passes le marqueur, s'il te plaît ?" },
-            { "es": "Necesito un lápiz.", "fr": "J'ai besoin d'un crayon." },
-            { "es": "¿Tienes una hoja de papel?", "fr": "Tu as une feuille de papier ?" },
-            { "es": "No tengo el diccionario.", "fr": "Je n'ai pas de dictionnaire." },
-            { "es": "¿Puedo usar tu computadora?", "fr": "Je peux utiliser ton ordinateur ?" },
-            { "es": "La silla está rota.", "fr": "La chaise est cassée." }
+            {
+              "es": "¿Dónde está el libro?",
+              "fr": "Où est le livre ?"
+            },
+            {
+              "es": "¿Me pasas el marcador, por favor?",
+              "fr": "Tu me passes le marqueur, s'il te plaît ?"
+            },
+            {
+              "es": "Necesito un lápiz.",
+              "fr": "J'ai besoin d'un crayon."
+            },
+            {
+              "es": "¿Tienes una hoja de papel?",
+              "fr": "Tu as une feuille de papier ?"
+            },
+            {
+              "es": "No tengo el diccionario.",
+              "fr": "Je n'ai pas de dictionnaire."
+            },
+            {
+              "es": "¿Puedo usar tu computadora?",
+              "fr": "Je peux utiliser ton ordinateur ?"
+            },
+            {
+              "es": "La silla está rota.",
+              "fr": "La chaise est cassée."
+            }
           ]
         },
         {
@@ -213,37 +664,81 @@
           "title": "Expresiones para organizar la clase",
           "kind": "phrase",
           "items": [
-            { "es": "¿Quién falta hoy?", "fr": "Qui est absent aujourd'hui ?" },
-            { "es": "¿Cuántos somos?", "fr": "Nous sommes combien ?" },
-            { "es": "Hagan la actividad en pareja.", "fr": "Faites l'activité en binôme." },
-            { "es": "Ahora, en grupos de 4.", "fr": "Maintenant, en groupes de 4." },
-            { "es": "Vamos a compartir las respuestas.", "fr": "On va partager les réponses." },
-            { "es": "¿Están listos?", "fr": "Vous êtes prêts ?" },
-            { "es": "Muy bien, seguimos.", "fr": "Très bien, on continue." }
+            {
+              "es": "¿Quién falta hoy?",
+              "fr": "Qui est absent aujourd'hui ?"
+            },
+            {
+              "es": "¿Cuántos somos?",
+              "fr": "Nous sommes combien ?"
+            },
+            {
+              "es": "Hagan la actividad en pareja.",
+              "fr": "Faites l'activité en binôme."
+            },
+            {
+              "es": "Ahora, en grupos de 4.",
+              "fr": "Maintenant, en groupes de 4."
+            },
+            {
+              "es": "Vamos a compartir las respuestas.",
+              "fr": "On va partager les réponses."
+            },
+            {
+              "es": "¿Están listos?",
+              "fr": "Vous êtes prêts ?"
+            },
+            {
+              "es": "Muy bien, seguimos.",
+              "fr": "Très bien, on continue."
+            }
           ]
-        }
-      ]
-    },
-    {
-      "id": "vocabulario-general",
-      "title": "Vocabulario General",
-      "notes": [],
-      "subsections": [
+        },
         {
           "id": "vocgen-personas",
-          "title": "Nacionalidades y profesiones",
+          "title": "Nacionalidades",
           "kind": "vocab",
           "items": [
-            { "es": "el italiano", "fr": "l'Italien" },
-            { "es": "el inglés", "fr": "l'Anglais" },
-            { "es": "el alemán", "fr": "l'Allemand" },
-            { "es": "el mexicano", "fr": "le Mexicain" },
-            { "es": "la holandesa", "fr": "la Néerlandaise" },
-            { "es": "el escritor", "fr": "l'écrivain" },
-            { "es": "el piloto", "fr": "le pilote" },
-            { "es": "el juez", "fr": "le juge" },
-            { "es": "el estudiante", "fr": "l'étudiant" },
-            { "es": "el peluquero / la peluquera", "fr": "le coiffeur / la coiffeuse" }
+            {
+              "es": "el italiano",
+              "fr": "l'Italien"
+            },
+            {
+              "es": "el inglés",
+              "fr": "l'Anglais"
+            },
+            {
+              "es": "el alemán",
+              "fr": "l'Allemand"
+            },
+            {
+              "es": "el mexicano",
+              "fr": "le Mexicain"
+            },
+            {
+              "es": "la holandesa",
+              "fr": "la Néerlandaise"
+            },
+            {
+              "es": "el escritor",
+              "fr": "l'écrivain"
+            },
+            {
+              "es": "el piloto",
+              "fr": "le pilote"
+            },
+            {
+              "es": "el juez",
+              "fr": "le juge"
+            },
+            {
+              "es": "el estudiante",
+              "fr": "l'étudiant"
+            },
+            {
+              "es": "el peluquero / la peluquera",
+              "fr": "le coiffeur / la coiffeuse"
+            }
           ]
         },
         {
@@ -251,20 +746,62 @@
           "title": "Objetos y lugares",
           "kind": "vocab",
           "items": [
-            { "es": "el lápiz", "fr": "le crayon" },
-            { "es": "la luz", "fr": "la lumière" },
-            { "es": "la bicicleta", "fr": "le vélo" },
-            { "es": "el dólar", "fr": "le dollar" },
-            { "es": "la mesa", "fr": "la table" },
-            { "es": "el hospital", "fr": "l'hôpital" },
-            { "es": "el bar", "fr": "le bar" },
-            { "es": "la oficina", "fr": "le bureau" },
-            { "es": "el garaje", "fr": "le garage" },
-            { "es": "la estatua", "fr": "la statue" },
-            { "es": "el museo", "fr": "le musée" },
-            { "es": "el armario", "fr": "l'armoire" },
-            { "es": "el gato", "fr": "le chat" },
-            { "es": "el salón", "fr": "le salon" }
+            {
+              "es": "el lápiz",
+              "fr": "le crayon"
+            },
+            {
+              "es": "la luz",
+              "fr": "la lumière"
+            },
+            {
+              "es": "la bicicleta",
+              "fr": "le vélo"
+            },
+            {
+              "es": "el dólar",
+              "fr": "le dollar"
+            },
+            {
+              "es": "la mesa",
+              "fr": "la table"
+            },
+            {
+              "es": "el hospital",
+              "fr": "l'hôpital"
+            },
+            {
+              "es": "el bar",
+              "fr": "le bar"
+            },
+            {
+              "es": "la oficina",
+              "fr": "le bureau"
+            },
+            {
+              "es": "el garaje",
+              "fr": "le garage"
+            },
+            {
+              "es": "la estatua",
+              "fr": "la statue"
+            },
+            {
+              "es": "el museo",
+              "fr": "le musée"
+            },
+            {
+              "es": "el armario",
+              "fr": "l'armoire"
+            },
+            {
+              "es": "el gato",
+              "fr": "le chat"
+            },
+            {
+              "es": "el salón",
+              "fr": "le salon"
+            }
           ]
         },
         {
@@ -272,15 +809,42 @@
           "title": "Sustantivo + adjetivo",
           "kind": "vocab",
           "items": [
-            { "es": "el hotel elegante", "fr": "l'hôtel élégant" },
-            { "es": "el reloj antiguo", "fr": "l'horloge ancienne" },
-            { "es": "el pez pequeño", "fr": "le petit poisson" },
-            { "es": "el chico simpático", "fr": "le garçon sympathique" },
-            { "es": "la casa grande", "fr": "la grande maison" },
-            { "es": "el señor español", "fr": "le monsieur espagnol" },
-            { "es": "el ejercicio difícil", "fr": "l'exercice difficile" },
-            { "es": "la camisa negra", "fr": "la chemise noire" },
-            { "es": "la isla bonita", "fr": "la belle île" }
+            {
+              "es": "el hotel elegante",
+              "fr": "l'hôtel élégant"
+            },
+            {
+              "es": "el reloj antiguo",
+              "fr": "l'horloge ancienne"
+            },
+            {
+              "es": "el pez pequeño",
+              "fr": "le petit poisson"
+            },
+            {
+              "es": "el chico simpático",
+              "fr": "le garçon sympathique"
+            },
+            {
+              "es": "la casa grande",
+              "fr": "la grande maison"
+            },
+            {
+              "es": "el señor español",
+              "fr": "le monsieur espagnol"
+            },
+            {
+              "es": "el ejercicio difícil",
+              "fr": "l'exercice difficile"
+            },
+            {
+              "es": "la camisa negra",
+              "fr": "la chemise noire"
+            },
+            {
+              "es": "la isla bonita",
+              "fr": "la belle île"
+            }
           ]
         },
         {
@@ -288,14 +852,38 @@
           "title": "Género: personas y profesiones",
           "kind": "vocab",
           "items": [
-            { "es": "el chico / la chica", "fr": "le garçon / la fille" },
-            { "es": "un francés / una francesa", "fr": "un Français / une Française" },
-            { "es": "el actor / la actriz", "fr": "l'acteur / l'actrice" },
-            { "es": "el hombre / la mujer", "fr": "l'homme / la femme" },
-            { "es": "el / la periodista", "fr": "le / la journaliste" },
-            { "es": "la madre / el padre", "fr": "la mère / le père" },
-            { "es": "el hermano / la hermana", "fr": "le frère / la sœur" },
-            { "es": "el / la cantante", "fr": "le chanteur / la chanteuse" }
+            {
+              "es": "el chico / la chica",
+              "fr": "le garçon / la fille"
+            },
+            {
+              "es": "un francés / una francesa",
+              "fr": "un Français / une Française"
+            },
+            {
+              "es": "el actor / la actriz",
+              "fr": "l'acteur / l'actrice"
+            },
+            {
+              "es": "el hombre / la mujer",
+              "fr": "l'homme / la femme"
+            },
+            {
+              "es": "el / la periodista",
+              "fr": "le / la journaliste"
+            },
+            {
+              "es": "la madre / el padre",
+              "fr": "la mère / le père"
+            },
+            {
+              "es": "el hermano / la hermana",
+              "fr": "le frère / la sœur"
+            },
+            {
+              "es": "el / la cantante",
+              "fr": "le chanteur / la chanteuse"
+            }
           ]
         },
         {
@@ -303,55 +891,202 @@
           "title": "Más palabras útiles",
           "kind": "vocab",
           "items": [
-            { "es": "la bandera", "fr": "le drapeau" },
-            { "es": "el señor", "fr": "le monsieur" },
-            { "es": "el dinero", "fr": "l'argent" },
-            { "es": "el autobús", "fr": "le bus" },
-            { "es": "el cielo", "fr": "le ciel" },
-            { "es": "la comida", "fr": "la nourriture" },
-            { "es": "el restaurante", "fr": "le restaurant" },
-            { "es": "el médico", "fr": "le médecin" },
-            { "es": "la página", "fr": "la page" },
-            { "es": "el árbol", "fr": "l'arbre" },
-            { "es": "el castillo", "fr": "le château" },
-            { "es": "la madera", "fr": "le bois" },
-            { "es": "la flor", "fr": "la fleur" },
-            { "es": "la ciudad", "fr": "la ville" },
-            { "es": "el documento", "fr": "le document" },
-            { "es": "la carta", "fr": "la lettre" },
-            { "es": "el cuadro", "fr": "le cadre / tableau" },
-            { "es": "el teléfono móvil", "fr": "le téléphone portable" },
-            { "es": "la canción", "fr": "la chanson" },
-            { "es": "las gafas", "fr": "les lunettes" },
-            { "es": "los zapatos", "fr": "les chaussures" },
-            { "es": "las medias", "fr": "les chaussettes" },
-            { "es": "la playa", "fr": "la plage" },
-            { "es": "el taxi", "fr": "le taxi" },
-            { "es": "el tren", "fr": "le train" },
-            { "es": "el país", "fr": "le pays" },
-            { "es": "la manzana", "fr": "la pomme" },
-            { "es": "la uva", "fr": "le raisin" },
-            { "es": "la película", "fr": "le film" },
-            { "es": "la foto", "fr": "la photo" },
-            { "es": "el mensaje", "fr": "le message" },
-            { "es": "el niño / la niña", "fr": "l'enfant" },
-            { "es": "la habitación / la recámara / el cuarto", "fr": "la chambre" },
-            { "es": "la calle", "fr": "la rue" },
-            { "es": "la maleta", "fr": "la valise" },
-            { "es": "la llave", "fr": "la clé" },
-            { "es": "la pared", "fr": "le mur" },
-            { "es": "la escuela", "fr": "l'école" },
-            { "es": "el colegio", "fr": "l'école / le collège" },
-            { "es": "la biblioteca", "fr": "la bibliothèque" },
-            { "es": "las vacaciones", "fr": "les vacances" },
-            { "es": "el centro", "fr": "le centre" },
-            { "es": "el periódico", "fr": "le journal" },
-            { "es": "la cámara", "fr": "l'appareil photo" },
-            { "es": "el calendario", "fr": "le calendrier" },
-            { "es": "el disco / el CD", "fr": "le disque / le CD" },
-            { "es": "la impresora", "fr": "l'imprimante" },
-            { "es": "la moneda", "fr": "la pièce de monnaie" },
-            { "es": "el portátil", "fr": "l'ordinateur portable" }
+            {
+              "es": "la bandera",
+              "fr": "le drapeau"
+            },
+            {
+              "es": "el señor",
+              "fr": "le monsieur"
+            },
+            {
+              "es": "el dinero",
+              "fr": "l'argent"
+            },
+            {
+              "es": "el autobús",
+              "fr": "le bus"
+            },
+            {
+              "es": "el cielo",
+              "fr": "le ciel"
+            },
+            {
+              "es": "la comida",
+              "fr": "la nourriture"
+            },
+            {
+              "es": "el restaurante",
+              "fr": "le restaurant"
+            },
+            {
+              "es": "el médico",
+              "fr": "le médecin"
+            },
+            {
+              "es": "la página",
+              "fr": "la page"
+            },
+            {
+              "es": "el árbol",
+              "fr": "l'arbre"
+            },
+            {
+              "es": "el castillo",
+              "fr": "le château"
+            },
+            {
+              "es": "la madera",
+              "fr": "le bois"
+            },
+            {
+              "es": "la flor",
+              "fr": "la fleur"
+            },
+            {
+              "es": "la ciudad",
+              "fr": "la ville"
+            },
+            {
+              "es": "el documento",
+              "fr": "le document"
+            },
+            {
+              "es": "la carta",
+              "fr": "la lettre"
+            },
+            {
+              "es": "el cuadro",
+              "fr": "le cadre / tableau"
+            },
+            {
+              "es": "el teléfono móvil",
+              "fr": "le téléphone portable"
+            },
+            {
+              "es": "la canción",
+              "fr": "la chanson"
+            },
+            {
+              "es": "las gafas",
+              "fr": "les lunettes"
+            },
+            {
+              "es": "los zapatos",
+              "fr": "les chaussures"
+            },
+            {
+              "es": "las medias",
+              "fr": "les chaussettes"
+            },
+            {
+              "es": "la playa",
+              "fr": "la plage"
+            },
+            {
+              "es": "el taxi",
+              "fr": "le taxi"
+            },
+            {
+              "es": "el tren",
+              "fr": "le train"
+            },
+            {
+              "es": "el país",
+              "fr": "le pays"
+            },
+            {
+              "es": "la manzana",
+              "fr": "la pomme"
+            },
+            {
+              "es": "la uva",
+              "fr": "le raisin"
+            },
+            {
+              "es": "la película",
+              "fr": "le film"
+            },
+            {
+              "es": "la foto",
+              "fr": "la photo"
+            },
+            {
+              "es": "el mensaje",
+              "fr": "le message"
+            },
+            {
+              "es": "el niño / la niña",
+              "fr": "l'enfant"
+            },
+            {
+              "es": "la habitación / la recámara / el cuarto",
+              "fr": "la chambre"
+            },
+            {
+              "es": "la calle",
+              "fr": "la rue"
+            },
+            {
+              "es": "la maleta",
+              "fr": "la valise"
+            },
+            {
+              "es": "la llave",
+              "fr": "la clé"
+            },
+            {
+              "es": "la pared",
+              "fr": "le mur"
+            },
+            {
+              "es": "la escuela",
+              "fr": "l'école"
+            },
+            {
+              "es": "el colegio",
+              "fr": "l'école / le collège"
+            },
+            {
+              "es": "la biblioteca",
+              "fr": "la bibliothèque"
+            },
+            {
+              "es": "las vacaciones",
+              "fr": "les vacances"
+            },
+            {
+              "es": "el centro",
+              "fr": "le centre"
+            },
+            {
+              "es": "el periódico",
+              "fr": "le journal"
+            },
+            {
+              "es": "la cámara",
+              "fr": "l'appareil photo"
+            },
+            {
+              "es": "el calendario",
+              "fr": "le calendrier"
+            },
+            {
+              "es": "el disco / el CD",
+              "fr": "le disque / le CD"
+            },
+            {
+              "es": "la impresora",
+              "fr": "l'imprimante"
+            },
+            {
+              "es": "la moneda",
+              "fr": "la pièce de monnaie"
+            },
+            {
+              "es": "el portátil",
+              "fr": "l'ordinateur portable"
+            }
           ]
         },
         {
@@ -359,28 +1094,138 @@
           "title": "Adjetivos (artículos)",
           "kind": "vocab",
           "items": [
-            { "es": "antiguo / antigua", "fr": "ancien / ancienne", "context": "El castillo es antiguo.", "contextFr": "Le château est ancien." },
-            { "es": "español / española", "fr": "espagnol / espagnole", "context": "El señor es español.", "contextFr": "Le monsieur est espagnol." },
-            { "es": "cómodo / cómoda", "fr": "confortable", "context": "El sofá es cómodo.", "contextFr": "Le canapé est confortable." },
-            { "es": "delicado / delicada", "fr": "délicat / délicate", "context": "La flor es delicada.", "contextFr": "La fleur est délicate." },
-            { "es": "corto / corta", "fr": "court / courte", "context": "El lápiz es corto.", "contextFr": "Le crayon est court." },
-            { "es": "grande", "fr": "grand / grande", "context": "La casa es grande.", "contextFr": "La maison est grande." },
-            { "es": "redondo / redonda", "fr": "rond / ronde", "context": "La mesa es redonda.", "contextFr": "La table est ronde." },
-            { "es": "importante", "fr": "important / importante", "context": "El documento es importante.", "contextFr": "Le document est important." },
-            { "es": "urgente", "fr": "urgent / urgente", "context": "El mensaje es urgente.", "contextFr": "Le message est urgent." },
-            { "es": "caro / cara", "fr": "cher / chère", "context": "El restaurante es caro.", "contextFr": "Le restaurant est cher." },
-            { "es": "alto / alta", "fr": "grand / grande (haut)", "context": "El árbol es alto.", "contextFr": "L'arbre est haut." },
-            { "es": "delgado / delgada", "fr": "mince", "context": "La chica es delgada.", "contextFr": "La fille est mince." },
-            { "es": "nuevo / nueva", "fr": "nouveau / nouvelle", "context": "El libro es nuevo.", "contextFr": "Le livre est neuf." },
-            { "es": "rojo / roja", "fr": "rouge", "context": "El bolígrafo es rojo.", "contextFr": "Le stylo est rouge." },
-            { "es": "interesante", "fr": "intéressant / intéressante", "context": "El libro es interesante.", "contextFr": "Le livre est intéressant." },
-            { "es": "bueno / buena", "fr": "bon / bonne", "context": "El restaurante es bueno.", "contextFr": "Le restaurant est bon." },
-            { "es": "bonito / bonita", "fr": "joli / jolie", "context": "La canción es bonita.", "contextFr": "La chanson est jolie." },
-            { "es": "simpático / simpática", "fr": "sympathique", "context": "El chico es simpático.", "contextFr": "Le garçon est sympathique." },
-            { "es": "educado / educada", "fr": "poli / polie", "context": "El niño es educado.", "contextFr": "L'enfant est poli." },
-            { "es": "moderno / moderna", "fr": "moderne", "context": "La habitación es moderna.", "contextFr": "La chambre est moderne." },
-            { "es": "estrecho / estrecha", "fr": "étroit / étroite", "context": "La calle es estrecha.", "contextFr": "La rue est étroite." },
-            { "es": "pesado / pesada", "fr": "lourd / lourde", "context": "La maleta es pesada.", "contextFr": "La valise est lourde." }
+            {
+              "es": "antiguo / antigua",
+              "fr": "ancien / ancienne",
+              "context": "El castillo es antiguo.",
+              "contextFr": "Le château est ancien."
+            },
+            {
+              "es": "español / española",
+              "fr": "espagnol / espagnole",
+              "context": "El señor es español.",
+              "contextFr": "Le monsieur est espagnol."
+            },
+            {
+              "es": "cómodo / cómoda",
+              "fr": "confortable",
+              "context": "El sofá es cómodo.",
+              "contextFr": "Le canapé est confortable."
+            },
+            {
+              "es": "delicado / delicada",
+              "fr": "délicat / délicate",
+              "context": "La flor es delicada.",
+              "contextFr": "La fleur est délicate."
+            },
+            {
+              "es": "corto / corta",
+              "fr": "court / courte",
+              "context": "El lápiz es corto.",
+              "contextFr": "Le crayon est court."
+            },
+            {
+              "es": "grande",
+              "fr": "grand / grande",
+              "context": "La casa es grande.",
+              "contextFr": "La maison est grande."
+            },
+            {
+              "es": "redondo / redonda",
+              "fr": "rond / ronde",
+              "context": "La mesa es redonda.",
+              "contextFr": "La table est ronde."
+            },
+            {
+              "es": "importante",
+              "fr": "important / importante",
+              "context": "El documento es importante.",
+              "contextFr": "Le document est important."
+            },
+            {
+              "es": "urgente",
+              "fr": "urgent / urgente",
+              "context": "El mensaje es urgente.",
+              "contextFr": "Le message est urgent."
+            },
+            {
+              "es": "caro / cara",
+              "fr": "cher / chère",
+              "context": "El restaurante es caro.",
+              "contextFr": "Le restaurant est cher."
+            },
+            {
+              "es": "alto / alta",
+              "fr": "grand / grande (haut)",
+              "context": "El árbol es alto.",
+              "contextFr": "L'arbre est haut."
+            },
+            {
+              "es": "delgado / delgada",
+              "fr": "mince",
+              "context": "La chica es delgada.",
+              "contextFr": "La fille est mince."
+            },
+            {
+              "es": "nuevo / nueva",
+              "fr": "nouveau / nouvelle",
+              "context": "El libro es nuevo.",
+              "contextFr": "Le livre est neuf."
+            },
+            {
+              "es": "rojo / roja",
+              "fr": "rouge",
+              "context": "El bolígrafo es rojo.",
+              "contextFr": "Le stylo est rouge."
+            },
+            {
+              "es": "interesante",
+              "fr": "intéressant / intéressante",
+              "context": "El libro es interesante.",
+              "contextFr": "Le livre est intéressant."
+            },
+            {
+              "es": "bueno / buena",
+              "fr": "bon / bonne",
+              "context": "El restaurante es bueno.",
+              "contextFr": "Le restaurant est bon."
+            },
+            {
+              "es": "bonito / bonita",
+              "fr": "joli / jolie",
+              "context": "La canción es bonita.",
+              "contextFr": "La chanson est jolie."
+            },
+            {
+              "es": "simpático / simpática",
+              "fr": "sympathique",
+              "context": "El chico es simpático.",
+              "contextFr": "Le garçon est sympathique."
+            },
+            {
+              "es": "educado / educada",
+              "fr": "poli / polie",
+              "context": "El niño es educado.",
+              "contextFr": "L'enfant est poli."
+            },
+            {
+              "es": "moderno / moderna",
+              "fr": "moderne",
+              "context": "La habitación es moderna.",
+              "contextFr": "La chambre est moderne."
+            },
+            {
+              "es": "estrecho / estrecha",
+              "fr": "étroit / étroite",
+              "context": "La calle es estrecha.",
+              "contextFr": "La rue est étroite."
+            },
+            {
+              "es": "pesado / pesada",
+              "fr": "lourd / lourde",
+              "context": "La maleta es pesada.",
+              "contextFr": "La valise est lourde."
+            }
           ]
         },
         {
@@ -388,23 +1233,74 @@
           "title": "Nacionalidades: masculino y femenino",
           "kind": "vocab",
           "items": [
-            { "es": "italiano / italiana", "fr": "italien / italienne" },
-            { "es": "francés / francesa", "fr": "français / française" },
-            { "es": "alemán / alemana", "fr": "allemand / allemande" },
-            { "es": "holandés / holandesa", "fr": "néerlandais / néerlandaise" },
-            { "es": "portugués / portuguesa", "fr": "portugais / portugaise" },
-            { "es": "austriaco / austriaca", "fr": "autrichien / autrichienne" },
-            { "es": "español / española", "fr": "espagnol / espagnole" },
-            { "es": "inglés / inglesa", "fr": "anglais / anglaise" },
-            { "es": "suizo / suiza", "fr": "suisse / suisse" },
-            { "es": "mexicano / mexicana", "fr": "mexicain / mexicaine" },
-            { "es": "cubano / cubana", "fr": "cubain / cubaine" },
-            { "es": "ruso / rusa", "fr": "russe / russe" },
-            { "es": "estadounidense", "fr": "américain / américaine (des Estados Unidos)" },
-            { "es": "chino / china", "fr": "chinois / chinoise" },
-            { "es": "brasileño / brasileña", "fr": "brésilien / brésilienne" },
-            { "es": "marroquí", "fr": "marocain / marocaine" },
-            { "es": "belga", "fr": "belge" }
+            {
+              "es": "italiano / italiana",
+              "fr": "italien / italienne"
+            },
+            {
+              "es": "francés / francesa",
+              "fr": "français / française"
+            },
+            {
+              "es": "alemán / alemana",
+              "fr": "allemand / allemande"
+            },
+            {
+              "es": "holandés / holandesa",
+              "fr": "néerlandais / néerlandaise"
+            },
+            {
+              "es": "portugués / portuguesa",
+              "fr": "portugais / portugaise"
+            },
+            {
+              "es": "austriaco / austriaca",
+              "fr": "autrichien / autrichienne"
+            },
+            {
+              "es": "español / española",
+              "fr": "espagnol / espagnole"
+            },
+            {
+              "es": "inglés / inglesa",
+              "fr": "anglais / anglaise"
+            },
+            {
+              "es": "suizo / suiza",
+              "fr": "suisse / suisse"
+            },
+            {
+              "es": "mexicano / mexicana",
+              "fr": "mexicain / mexicaine"
+            },
+            {
+              "es": "cubano / cubana",
+              "fr": "cubain / cubaine"
+            },
+            {
+              "es": "ruso / rusa",
+              "fr": "russe / russe"
+            },
+            {
+              "es": "estadounidense",
+              "fr": "américain / américaine (des Estados Unidos)"
+            },
+            {
+              "es": "chino / china",
+              "fr": "chinois / chinoise"
+            },
+            {
+              "es": "brasileño / brasileña",
+              "fr": "brésilien / brésilienne"
+            },
+            {
+              "es": "marroquí",
+              "fr": "marocain / marocaine"
+            },
+            {
+              "es": "belga",
+              "fr": "belge"
+            }
           ]
         },
         {
@@ -412,24 +1308,78 @@
           "title": "Países",
           "kind": "vocab",
           "items": [
-            { "es": "Italia", "fr": "Italie" },
-            { "es": "Francia", "fr": "France" },
-            { "es": "Alemania", "fr": "Allemagne" },
-            { "es": "Holanda", "fr": "Pays-Bas" },
-            { "es": "Portugal", "fr": "Portugal" },
-            { "es": "Austria", "fr": "Autriche" },
-            { "es": "España", "fr": "Espagne" },
-            { "es": "Inglaterra", "fr": "Angleterre" },
-            { "es": "Suiza", "fr": "Suisse" },
-            { "es": "México", "fr": "Mexique" },
-            { "es": "Cuba", "fr": "Cuba" },
-            { "es": "Rusia", "fr": "Russie" },
-            { "es": "Estados Unidos", "fr": "États-Unis" },
-            { "es": "China", "fr": "Chine" },
-            { "es": "Brasil", "fr": "Brésil" },
-            { "es": "Marruecos", "fr": "Maroc" },
-            { "es": "Bélgica", "fr": "Belgique" },
-            { "es": "Colombia", "fr": "Colombie" }
+            {
+              "es": "Italia",
+              "fr": "Italie"
+            },
+            {
+              "es": "Francia",
+              "fr": "France"
+            },
+            {
+              "es": "Alemania",
+              "fr": "Allemagne"
+            },
+            {
+              "es": "Holanda",
+              "fr": "Pays-Bas"
+            },
+            {
+              "es": "Portugal",
+              "fr": "Portugal"
+            },
+            {
+              "es": "Austria",
+              "fr": "Autriche"
+            },
+            {
+              "es": "España",
+              "fr": "Espagne"
+            },
+            {
+              "es": "Inglaterra",
+              "fr": "Angleterre"
+            },
+            {
+              "es": "Suiza",
+              "fr": "Suisse"
+            },
+            {
+              "es": "México",
+              "fr": "Mexique"
+            },
+            {
+              "es": "Cuba",
+              "fr": "Cuba"
+            },
+            {
+              "es": "Rusia",
+              "fr": "Russie"
+            },
+            {
+              "es": "Estados Unidos",
+              "fr": "États-Unis"
+            },
+            {
+              "es": "China",
+              "fr": "Chine"
+            },
+            {
+              "es": "Brasil",
+              "fr": "Brésil"
+            },
+            {
+              "es": "Marruecos",
+              "fr": "Maroc"
+            },
+            {
+              "es": "Bélgica",
+              "fr": "Belgique"
+            },
+            {
+              "es": "Colombia",
+              "fr": "Colombie"
+            }
           ]
         },
         {
@@ -437,20 +1387,160 @@
           "title": "Estados físicos y psicológicos (con ESTAR)",
           "kind": "vocab",
           "items": [
-            { "es": "cansado / cansada", "fr": "fatigué / fatiguée", "context": "Estoy muy cansada.", "contextFr": "Je suis très fatiguée." },
-            { "es": "contento / contenta", "fr": "content / contente", "context": "Estoy contento.", "contextFr": "Je suis content." },
-            { "es": "resfriado / resfriada", "fr": "enrhumé / enrhumée", "context": "Estoy resfriado.", "contextFr": "Je suis enrhumé." },
-            { "es": "pálido / pálida", "fr": "pâle", "context": "María está pálida.", "contextFr": "María est pâle." },
-            { "es": "embarazada", "fr": "enceinte", "context": "Cristina está embarazada.", "contextFr": "Cristina est enceinte." },
-            { "es": "preocupado / preocupada", "fr": "inquiet / inquiète", "context": "Juan está preocupado.", "contextFr": "Juan est inquiet." },
-            { "es": "enfadado / enfadada", "fr": "fâché / fâchée", "context": "Juan está enfadado.", "contextFr": "Juan est fâché." },
-            { "es": "concentrado / concentrada", "fr": "concentré / concentrée", "context": "Nosotros estamos concentrados.", "contextFr": "Nous sommes concentrés." },
-            { "es": "ocupado / ocupada", "fr": "occupé / occupée", "context": "¿Está usted ocupado?", "contextFr": "Êtes-vous occupé ?" },
-            { "es": "encendido / encendida", "fr": "allumé / allumée", "context": "La luz está encendida.", "contextFr": "La lumière est allumée." },
-            { "es": "lleno / llena", "fr": "plein / pleine", "context": "El autobús está lleno.", "contextFr": "Le bus est plein." },
-            { "es": "cerrado / cerrada", "fr": "fermé / fermée", "context": "Esta puerta está cerrada.", "contextFr": "Cette porte est fermée." },
-            { "es": "amable", "fr": "aimable", "context": "El señor González es muy amable.", "contextFr": "Monsieur González est très aimable." },
-            { "es": "grosero / grosera", "fr": "grossier / grossière", "context": "El señor Pérez es muy grosero.", "contextFr": "Monsieur Pérez est très grossier." }
+            {
+              "es": "cansado / cansada",
+              "fr": "fatigué / fatiguée",
+              "context": "Estoy muy cansada.",
+              "contextFr": "Je suis très fatiguée."
+            },
+            {
+              "es": "contento / contenta",
+              "fr": "content / contente",
+              "context": "Estoy contento.",
+              "contextFr": "Je suis content."
+            },
+            {
+              "es": "resfriado / resfriada",
+              "fr": "enrhumé / enrhumée",
+              "context": "Estoy resfriado.",
+              "contextFr": "Je suis enrhumé."
+            },
+            {
+              "es": "pálido / pálida",
+              "fr": "pâle",
+              "context": "María está pálida.",
+              "contextFr": "María est pâle."
+            },
+            {
+              "es": "embarazada",
+              "fr": "enceinte",
+              "context": "Cristina está embarazada.",
+              "contextFr": "Cristina est enceinte."
+            },
+            {
+              "es": "preocupado / preocupada",
+              "fr": "inquiet / inquiète",
+              "context": "Juan está preocupado.",
+              "contextFr": "Juan est inquiet."
+            },
+            {
+              "es": "enfadado / enfadada",
+              "fr": "fâché / fâchée",
+              "context": "Juan está enfadado.",
+              "contextFr": "Juan est fâché."
+            },
+            {
+              "es": "concentrado / concentrada",
+              "fr": "concentré / concentrée",
+              "context": "Nosotros estamos concentrados.",
+              "contextFr": "Nous sommes concentrés."
+            },
+            {
+              "es": "ocupado / ocupada",
+              "fr": "occupé / occupée",
+              "context": "¿Está usted ocupado?",
+              "contextFr": "Êtes-vous occupé ?"
+            },
+            {
+              "es": "encendido / encendida",
+              "fr": "allumé / allumée",
+              "context": "La luz está encendida.",
+              "contextFr": "La lumière est allumée."
+            },
+            {
+              "es": "lleno / llena",
+              "fr": "plein / pleine",
+              "context": "El autobús está lleno.",
+              "contextFr": "Le bus est plein."
+            },
+            {
+              "es": "cerrado / cerrada",
+              "fr": "fermé / fermée",
+              "context": "Esta puerta está cerrada.",
+              "contextFr": "Cette porte est fermée."
+            },
+            {
+              "es": "amable",
+              "fr": "aimable",
+              "context": "El señor González es muy amable.",
+              "contextFr": "Monsieur González est très aimable."
+            },
+            {
+              "es": "grosero / grosera",
+              "fr": "grossier / grossière",
+              "context": "El señor Pérez es muy grosero.",
+              "contextFr": "Monsieur Pérez est très grossier."
+            }
+          ]
+        },
+        {
+          "id": "vocgen-profesiones",
+          "title": "Profesiones",
+          "kind": "vocab",
+          "items": [
+            { "es": "el médico / la médica", "fr": "le médecin / la médecin" },
+            { "es": "el profesor / la profesora", "fr": "le professeur / la professeure" },
+            { "es": "el abogado / la abogada", "fr": "l'avocat / l'avocate" },
+            { "es": "el camarero / la camarera", "fr": "le serveur / la serveuse" },
+            { "es": "el cocinero / la cocinera", "fr": "le cuisinier / la cuisinière" },
+            { "es": "el enfermero / la enfermera", "fr": "l'infirmier / l'infirmière" },
+            { "es": "el ingeniero / la ingeniera", "fr": "l'ingénieur / l'ingénieure" },
+            { "es": "el / la policía", "fr": "le policier / la policière" },
+            { "es": "el bombero / la bombera", "fr": "le pompier / la pompière" },
+            { "es": "el panadero / la panadera", "fr": "le boulanger / la boulangère" },
+            { "es": "el peluquero / la peluquera", "fr": "le coiffeur / la coiffeuse" },
+            { "es": "el mecánico / la mecánica", "fr": "le mécanicien / la mécanicienne" },
+            { "es": "el / la dentista", "fr": "le / la dentiste" },
+            { "es": "el vendedor / la vendedora", "fr": "le vendeur / la vendeuse" },
+            { "es": "el escritor / la escritora", "fr": "l'écrivain / l'écrivaine" },
+            { "es": "el / la chef", "fr": "le chef / la cheffe" },
+            { "es": "el / la astronauta", "fr": "l'astronaute" },
+            { "es": "el piloto / la piloto", "fr": "le pilote / la pilote" },
+            { "es": "el / la coach", "fr": "le coach / la coach" },
+            { "es": "el doctor / la doctora", "fr": "le docteur / la docteure" },
+            { "es": "el actor / la actriz", "fr": "l'acteur / l'actrice" },
+            { "es": "el secretario / la secretaria", "fr": "le secrétaire / la secrétaire" },
+            { "es": "el músico / la música", "fr": "le musicien / la musicienne" },
+            { "es": "el veterinario / la veterinaria", "fr": "le vétérinaire / la vétérinaire" }
+          ]
+        },
+        {
+          "id": "vocgen-puntuacion",
+          "title": "Signos de puntuación",
+          "kind": "vocab",
+          "notes": [
+            "En español, los signos de interrogación (¿?) y de exclamación (¡!) se escriben al principio Y al final de la frase: ¿Cómo estás? ¡Qué bien!"
+          ],
+          "items": [
+            { "es": "el punto (.)", "fr": "le point (.)" },
+            { "es": "la coma (,)", "fr": "la virgule (,)" },
+            { "es": "el punto y coma (;)", "fr": "le point-virgule (;)" },
+            { "es": "los dos puntos (:)", "fr": "les deux-points (:)" },
+            { "es": "el guion (-)", "fr": "le tiret (-)" },
+            { "es": "los signos de interrogación (¿ ?)", "fr": "les points d'interrogation (¿ ?)" },
+            { "es": "los signos de exclamación (¡ !)", "fr": "les points d'exclamation (¡ !)" }
+          ]
+        },
+        {
+          "id": "vocgen-contrarios",
+          "title": "Adjetivos contrarios",
+          "kind": "vocab",
+          "items": [
+            { "es": "alto / bajo", "fr": "grand / petit" },
+            { "es": "cerrado / abierto", "fr": "fermé / ouvert" },
+            { "es": "horrible / maravilloso", "fr": "horrible / merveilleux" },
+            { "es": "grande / pequeño", "fr": "grand / petit" },
+            { "es": "moderno / antiguo", "fr": "moderne / ancien" },
+            { "es": "encendido / apagado", "fr": "allumé / éteint" },
+            { "es": "viejos / nuevos", "fr": "vieux / neufs" },
+            { "es": "larga / corta", "fr": "longue / courte" },
+            { "es": "limpia / sucia", "fr": "propre / sale" },
+            { "es": "caro / barato", "fr": "cher / bon marché" },
+            { "es": "bien / mal", "fr": "bien / mal" },
+            { "es": "nervioso / tranquilo", "fr": "nerveux / calme" },
+            { "es": "triste / contento", "fr": "triste / content" },
+            { "es": "rico / pobre", "fr": "riche / pauvre" },
+            { "es": "lleno / vacío", "fr": "plein / vide" }
           ]
         }
       ]
@@ -458,7 +1548,9 @@
     {
       "id": "gramatica",
       "title": "Gramática",
-      "notes": [],
+      "notes": [
+        "NOTA: de + el = del."
+      ],
       "subsections": [
         {
           "id": "gramatica-plural",
@@ -471,16 +1563,46 @@
             "\"z\" final → cambia a \"c\" + es (luz → luces, lápiz → lápices)."
           ],
           "items": [
-            { "es": "italiano", "fr": "italianos" },
-            { "es": "inglés", "fr": "ingleses" },
-            { "es": "lápiz", "fr": "lápices" },
-            { "es": "alemán", "fr": "alemanes" },
-            { "es": "luz", "fr": "luces" },
-            { "es": "el hotel elegante", "fr": "los hoteles elegantes" },
-            { "es": "el reloj antiguo", "fr": "los relojes antiguos" },
-            { "es": "el pez pequeño", "fr": "los peces pequeños" },
-            { "es": "el chico simpático", "fr": "los chicos simpáticos" },
-            { "es": "el señor español", "fr": "los señores españoles" }
+            {
+              "es": "italiano",
+              "fr": "italianos"
+            },
+            {
+              "es": "inglés",
+              "fr": "ingleses"
+            },
+            {
+              "es": "lápiz",
+              "fr": "lápices"
+            },
+            {
+              "es": "alemán",
+              "fr": "alemanes"
+            },
+            {
+              "es": "luz",
+              "fr": "luces"
+            },
+            {
+              "es": "el hotel elegante",
+              "fr": "los hoteles elegantes"
+            },
+            {
+              "es": "el reloj antiguo",
+              "fr": "los relojes antiguos"
+            },
+            {
+              "es": "el pez pequeño",
+              "fr": "los peces pequeños"
+            },
+            {
+              "es": "el chico simpático",
+              "fr": "los chicos simpáticos"
+            },
+            {
+              "es": "el señor español",
+              "fr": "los señores españoles"
+            }
           ]
         },
         {
@@ -497,14 +1619,38 @@
             "Los nombres terminados en -ista son invariables: el/la periodista."
           ],
           "items": [
-            { "es": "el chico", "fr": "la chica" },
-            { "es": "un francés", "fr": "una francesa" },
-            { "es": "el actor", "fr": "la actriz" },
-            { "es": "un hombre", "fr": "una mujer" },
-            { "es": "una periodista", "fr": "un periodista" },
-            { "es": "la madre", "fr": "el padre" },
-            { "es": "la hermana", "fr": "el hermano" },
-            { "es": "la cantante", "fr": "el cantante" }
+            {
+              "es": "el chico",
+              "fr": "la chica"
+            },
+            {
+              "es": "un francés",
+              "fr": "una francesa"
+            },
+            {
+              "es": "el actor",
+              "fr": "la actriz"
+            },
+            {
+              "es": "un hombre",
+              "fr": "una mujer"
+            },
+            {
+              "es": "una periodista",
+              "fr": "un periodista"
+            },
+            {
+              "es": "la madre",
+              "fr": "el padre"
+            },
+            {
+              "es": "la hermana",
+              "fr": "el hermano"
+            },
+            {
+              "es": "la cantante",
+              "fr": "el cantante"
+            }
           ]
         },
         {
@@ -516,14 +1662,38 @@
             "El artículo determinado concuerda en género y número con el nombre: el (masc. sing.), la (fem. sing.), los (masc. pl.), las (fem. pl.)."
           ],
           "items": [
-            { "es": "bandera", "fr": "la bandera" },
-            { "es": "señor", "fr": "el señor" },
-            { "es": "señores", "fr": "los señores" },
-            { "es": "amigas", "fr": "las amigas" },
-            { "es": "cielo", "fr": "el cielo" },
-            { "es": "lápices", "fr": "los lápices" },
-            { "es": "médicos", "fr": "los médicos" },
-            { "es": "ventanas", "fr": "las ventanas" }
+            {
+              "es": "bandera",
+              "fr": "la bandera"
+            },
+            {
+              "es": "señor",
+              "fr": "el señor"
+            },
+            {
+              "es": "señores",
+              "fr": "los señores"
+            },
+            {
+              "es": "amigas",
+              "fr": "las amigas"
+            },
+            {
+              "es": "cielo",
+              "fr": "el cielo"
+            },
+            {
+              "es": "lápices",
+              "fr": "los lápices"
+            },
+            {
+              "es": "médicos",
+              "fr": "los médicos"
+            },
+            {
+              "es": "ventanas",
+              "fr": "las ventanas"
+            }
           ]
         },
         {
@@ -532,14 +1702,38 @@
           "kind": "phrase",
           "lockDirection": "es-fr",
           "items": [
-            { "es": "El castillo es antiguo.", "fr": "Los castillos son antiguos." },
-            { "es": "El señor es español.", "fr": "Los señores son españoles." },
-            { "es": "La silla es cómoda.", "fr": "Las sillas son cómodas." },
-            { "es": "La puerta es de madera.", "fr": "Las puertas son de madera." },
-            { "es": "El lápiz es corto.", "fr": "Los lápices son cortos." },
-            { "es": "La flor es delicada.", "fr": "Las flores son delicadas." },
-            { "es": "El documento es importante.", "fr": "Los documentos son importantes." },
-            { "es": "La chica es alta y delgada.", "fr": "Las chicas son altas y delgadas." }
+            {
+              "es": "El castillo es antiguo.",
+              "fr": "Los castillos son antiguos."
+            },
+            {
+              "es": "El señor es español.",
+              "fr": "Los señores son españoles."
+            },
+            {
+              "es": "La silla es cómoda.",
+              "fr": "Las sillas son cómodas."
+            },
+            {
+              "es": "La puerta es de madera.",
+              "fr": "Las puertas son de madera."
+            },
+            {
+              "es": "El lápiz es corto.",
+              "fr": "Los lápices son cortos."
+            },
+            {
+              "es": "La flor es delicada.",
+              "fr": "Las flores son delicadas."
+            },
+            {
+              "es": "El documento es importante.",
+              "fr": "Los documentos son importantes."
+            },
+            {
+              "es": "La chica es alta y delgada.",
+              "fr": "Las chicas son altas y delgadas."
+            }
           ]
         },
         {
@@ -551,14 +1745,38 @@
             "El artículo indeterminado también concuerda en género y número: un (masc. sing.), una (fem. sing.), unos (masc. pl.), unas (fem. pl.). \"Uno\" significa \"1\"."
           ],
           "items": [
-            { "es": "cuadro", "fr": "un cuadro" },
-            { "es": "peces", "fr": "unos peces" },
-            { "es": "páginas", "fr": "unas páginas" },
-            { "es": "reloj", "fr": "un reloj" },
-            { "es": "canción", "fr": "una canción" },
-            { "es": "zapatos", "fr": "unos zapatos" },
-            { "es": "medias", "fr": "unas medias" },
-            { "es": "mujer", "fr": "una mujer" }
+            {
+              "es": "cuadro",
+              "fr": "un cuadro"
+            },
+            {
+              "es": "peces",
+              "fr": "unos peces"
+            },
+            {
+              "es": "páginas",
+              "fr": "unas páginas"
+            },
+            {
+              "es": "reloj",
+              "fr": "un reloj"
+            },
+            {
+              "es": "canción",
+              "fr": "una canción"
+            },
+            {
+              "es": "zapatos",
+              "fr": "unos zapatos"
+            },
+            {
+              "es": "medias",
+              "fr": "unas medias"
+            },
+            {
+              "es": "mujer",
+              "fr": "una mujer"
+            }
           ]
         },
         {
@@ -567,14 +1785,38 @@
           "kind": "phrase",
           "lockDirection": "es-fr",
           "items": [
-            { "es": "Una ciudad muy grande.", "fr": "Unas ciudades muy grandes." },
-            { "es": "Un libro muy interesante.", "fr": "Unos libros muy interesantes." },
-            { "es": "Una película muy buena.", "fr": "Unas películas muy buenas." },
-            { "es": "Un chico muy simpático.", "fr": "Unos chicos muy simpáticos." },
-            { "es": "Un árbol muy alto.", "fr": "Unos árboles muy altos." },
-            { "es": "Un niño muy educado.", "fr": "Unos niños muy educados." },
-            { "es": "Una habitación muy moderna.", "fr": "Unas habitaciones muy modernas." },
-            { "es": "Una calle muy estrecha.", "fr": "Unas calles muy estrechas." }
+            {
+              "es": "Una ciudad muy grande.",
+              "fr": "Unas ciudades muy grandes."
+            },
+            {
+              "es": "Un libro muy interesante.",
+              "fr": "Unos libros muy interesantes."
+            },
+            {
+              "es": "Una película muy buena.",
+              "fr": "Unas películas muy buenas."
+            },
+            {
+              "es": "Un chico muy simpático.",
+              "fr": "Unos chicos muy simpáticos."
+            },
+            {
+              "es": "Un árbol muy alto.",
+              "fr": "Unos árboles muy altos."
+            },
+            {
+              "es": "Un niño muy educado.",
+              "fr": "Unos niños muy educados."
+            },
+            {
+              "es": "Una habitación muy moderna.",
+              "fr": "Unas habitaciones muy modernas."
+            },
+            {
+              "es": "Una calle muy estrecha.",
+              "fr": "Unas calles muy estrechas."
+            }
           ]
         },
         {
@@ -587,20 +1829,62 @@
             "Algunas son invariables: estadounidense, marroquí, belga (el/la mismo/a para los dos géneros)."
           ],
           "items": [
-            { "es": "italiano", "fr": "italiana" },
-            { "es": "francés", "fr": "francesa" },
-            { "es": "alemán", "fr": "alemana" },
-            { "es": "holandés", "fr": "holandesa" },
-            { "es": "portugués", "fr": "portuguesa" },
-            { "es": "austriaco", "fr": "austriaca" },
-            { "es": "español", "fr": "española" },
-            { "es": "inglés", "fr": "inglesa" },
-            { "es": "suizo", "fr": "suiza" },
-            { "es": "mexicano", "fr": "mexicana" },
-            { "es": "cubano", "fr": "cubana" },
-            { "es": "ruso", "fr": "rusa" },
-            { "es": "chino", "fr": "china" },
-            { "es": "brasileño", "fr": "brasileña" }
+            {
+              "es": "italiano",
+              "fr": "italiana"
+            },
+            {
+              "es": "francés",
+              "fr": "francesa"
+            },
+            {
+              "es": "alemán",
+              "fr": "alemana"
+            },
+            {
+              "es": "holandés",
+              "fr": "holandesa"
+            },
+            {
+              "es": "portugués",
+              "fr": "portuguesa"
+            },
+            {
+              "es": "austriaco",
+              "fr": "austriaca"
+            },
+            {
+              "es": "español",
+              "fr": "española"
+            },
+            {
+              "es": "inglés",
+              "fr": "inglesa"
+            },
+            {
+              "es": "suizo",
+              "fr": "suiza"
+            },
+            {
+              "es": "mexicano",
+              "fr": "mexicana"
+            },
+            {
+              "es": "cubano",
+              "fr": "cubana"
+            },
+            {
+              "es": "ruso",
+              "fr": "rusa"
+            },
+            {
+              "es": "chino",
+              "fr": "china"
+            },
+            {
+              "es": "brasileño",
+              "fr": "brasileña"
+            }
           ]
         },
         {
@@ -612,12 +1896,30 @@
             "SER se usa para una situación duradera que no cambia (o cambia lenta y difícilmente): la identidad, la nacionalidad, el carácter, la profesión, la apariencia física."
           ],
           "items": [
-            { "es": "yo", "fr": "soy" },
-            { "es": "tú", "fr": "eres" },
-            { "es": "él / ella / usted", "fr": "es" },
-            { "es": "nosotros / nosotras", "fr": "somos" },
-            { "es": "vosotros / vosotras", "fr": "sois (*solo en España)" },
-            { "es": "ellos / ellas / ustedes", "fr": "son" }
+            {
+              "es": "yo",
+              "fr": "soy"
+            },
+            {
+              "es": "tú",
+              "fr": "eres"
+            },
+            {
+              "es": "él / ella / usted",
+              "fr": "es"
+            },
+            {
+              "es": "nosotros / nosotras",
+              "fr": "somos"
+            },
+            {
+              "es": "vosotros / vosotras",
+              "fr": "sois (*solo en España)"
+            },
+            {
+              "es": "ellos / ellas / ustedes",
+              "fr": "son"
+            }
           ]
         },
         {
@@ -629,12 +1931,30 @@
             "ESTAR se usa para una situación momentánea que puede cambiar: el estado psicológico (humor), el estado físico (salud) y también la posición/ubicación (Recuerda: para expresar la posición se usa ESTAR)."
           ],
           "items": [
-            { "es": "yo", "fr": "estoy" },
-            { "es": "tú", "fr": "estás" },
-            { "es": "él / ella / usted", "fr": "está" },
-            { "es": "nosotros / nosotras", "fr": "estamos" },
-            { "es": "vosotros / vosotras", "fr": "estáis (*solo en España)" },
-            { "es": "ellos / ellas / ustedes", "fr": "están" }
+            {
+              "es": "yo",
+              "fr": "estoy"
+            },
+            {
+              "es": "tú",
+              "fr": "estás"
+            },
+            {
+              "es": "él / ella / usted",
+              "fr": "está"
+            },
+            {
+              "es": "nosotros / nosotras",
+              "fr": "estamos"
+            },
+            {
+              "es": "vosotros / vosotras",
+              "fr": "estáis (*solo en España)"
+            },
+            {
+              "es": "ellos / ellas / ustedes",
+              "fr": "están"
+            }
           ]
         },
         {
@@ -646,16 +1966,46 @@
             "ESTAR: situación momentánea → estado psicológico, estado físico, y la posición/ubicación (Estoy cansado. Estoy resfriado. Estoy en Caracas.)."
           ],
           "items": [
-            { "es": "Soy Pedro.", "fr": "Je suis Pedro." },
-            { "es": "Estoy cansado.", "fr": "Je suis fatigué." },
-            { "es": "Soy peruano.", "fr": "Je suis péruvien." },
-            { "es": "Estoy contento.", "fr": "Je suis content." },
-            { "es": "Soy simpático.", "fr": "Je suis sympathique." },
-            { "es": "Estoy resfriado.", "fr": "Je suis enrhumé." },
-            { "es": "Soy camarero.", "fr": "Je suis serveur." },
-            { "es": "Estoy en Caracas.", "fr": "Je suis à Caracas." },
-            { "es": "Soy moreno y bajo.", "fr": "Je suis brun et petit." },
-            { "es": "Caracas está en Venezuela.", "fr": "Caracas est au Venezuela." }
+            {
+              "es": "Soy Pedro.",
+              "fr": "Je suis Pedro."
+            },
+            {
+              "es": "Estoy cansado.",
+              "fr": "Je suis fatigué."
+            },
+            {
+              "es": "Soy peruano.",
+              "fr": "Je suis péruvien."
+            },
+            {
+              "es": "Estoy contento.",
+              "fr": "Je suis content."
+            },
+            {
+              "es": "Soy simpático.",
+              "fr": "Je suis sympathique."
+            },
+            {
+              "es": "Estoy resfriado.",
+              "fr": "Je suis enrhumé."
+            },
+            {
+              "es": "Soy camarero.",
+              "fr": "Je suis serveur."
+            },
+            {
+              "es": "Estoy en Caracas.",
+              "fr": "Je suis à Caracas."
+            },
+            {
+              "es": "Soy moreno y bajo.",
+              "fr": "Je suis brun et petit."
+            },
+            {
+              "es": "Caracas está en Venezuela.",
+              "fr": "Caracas est au Venezuela."
+            }
           ]
         },
         {
@@ -663,16 +2013,46 @@
           "title": "Completa con SER (frases)",
           "kind": "phrase",
           "items": [
-            { "es": "Carmen es española.", "fr": "Carmen est espagnole." },
-            { "es": "Julio y Hernando son argentinos.", "fr": "Julio et Hernando sont argentins." },
-            { "es": "Nosotros somos italianos.", "fr": "Nous sommes italiens." },
-            { "es": "¿Ustedes también son italianos?", "fr": "Vous êtes aussi italiens ?" },
-            { "es": "¡Hola! Soy Pedro.", "fr": "Salut ! Je suis Pedro." },
-            { "es": "¿Vosotras sois Clara y Teresa?", "fr": "Êtes-vous (vosotras) Clara et Teresa ?" },
-            { "es": "¿Es usted el señor González?", "fr": "Êtes-vous monsieur González ?" },
-            { "es": "Las amigas de Miguel son peluqueras.", "fr": "Les amies de Miguel sont coiffeuses." },
-            { "es": "¿De dónde eres?", "fr": "D'où viens-tu ?" },
-            { "es": "¿Javier es ingeniero?", "fr": "Javier est-il ingénieur ?" }
+            {
+              "es": "Carmen es española.",
+              "fr": "Carmen est espagnole."
+            },
+            {
+              "es": "Julio y Hernando son argentinos.",
+              "fr": "Julio et Hernando sont argentins."
+            },
+            {
+              "es": "Nosotros somos italianos.",
+              "fr": "Nous sommes italiens."
+            },
+            {
+              "es": "¿Ustedes también son italianos?",
+              "fr": "Vous êtes aussi italiens ?"
+            },
+            {
+              "es": "¡Hola! Soy Pedro.",
+              "fr": "Salut ! Je suis Pedro."
+            },
+            {
+              "es": "¿Vosotras sois Clara y Teresa?",
+              "fr": "Êtes-vous (vosotras) Clara et Teresa ?"
+            },
+            {
+              "es": "¿Es usted el señor González?",
+              "fr": "Êtes-vous monsieur González ?"
+            },
+            {
+              "es": "Las amigas de Miguel son peluqueras.",
+              "fr": "Les amies de Miguel sont coiffeuses."
+            },
+            {
+              "es": "¿De dónde eres?",
+              "fr": "D'où viens-tu ?"
+            },
+            {
+              "es": "¿Javier es ingeniero?",
+              "fr": "Javier est-il ingénieur ?"
+            }
           ]
         },
         {
@@ -680,16 +2060,46 @@
           "title": "Completa con ESTAR (frases)",
           "kind": "phrase",
           "items": [
-            { "es": "¡Buenos días, Susana! ¿Cómo estás?", "fr": "Bonjour, Susana ! Comment vas-tu ?" },
-            { "es": "¿Está usted ocupado?", "fr": "Êtes-vous occupé ?" },
-            { "es": "Yo estoy muy cansada.", "fr": "Je suis très fatiguée." },
-            { "es": "Nosotros estamos concentrados.", "fr": "Nous sommes concentrés." },
-            { "es": "Vosotros estáis concentrados.", "fr": "Vous êtes concentrés." },
-            { "es": "¿Están ustedes en casa?", "fr": "Êtes-vous chez vous ?" },
-            { "es": "Ellos están en el hospital porque están enfermos.", "fr": "Ils sont à l'hôpital parce qu'ils sont malades." },
-            { "es": "María está pálida porque está resfriada.", "fr": "María est pâle parce qu'elle est enrhumée." },
-            { "es": "Sevilla está en el sur de España.", "fr": "Séville est dans le sud de l'Espagne." },
-            { "es": "Cristina está embarazada.", "fr": "Cristina est enceinte." }
+            {
+              "es": "¡Buenos días, Susana! ¿Cómo estás?",
+              "fr": "Bonjour, Susana ! Comment vas-tu ?"
+            },
+            {
+              "es": "¿Está usted ocupado?",
+              "fr": "Êtes-vous occupé ?"
+            },
+            {
+              "es": "Yo estoy muy cansada.",
+              "fr": "Je suis très fatiguée."
+            },
+            {
+              "es": "Nosotros estamos concentrados.",
+              "fr": "Nous sommes concentrés."
+            },
+            {
+              "es": "Vosotros estáis concentrados.",
+              "fr": "Vous êtes concentrés."
+            },
+            {
+              "es": "¿Están ustedes en casa?",
+              "fr": "Êtes-vous chez vous ?"
+            },
+            {
+              "es": "Ellos están en el hospital porque están enfermos.",
+              "fr": "Ils sont à l'hôpital parce qu'ils sont malades."
+            },
+            {
+              "es": "María está pálida porque está resfriada.",
+              "fr": "María est pâle parce qu'elle est enrhumée."
+            },
+            {
+              "es": "Sevilla está en el sur de España.",
+              "fr": "Séville est dans le sud de l'Espagne."
+            },
+            {
+              "es": "Cristina está embarazada.",
+              "fr": "Cristina est enceinte."
+            }
           ]
         },
         {
@@ -697,16 +2107,46 @@
           "title": "Completa con SER o ESTAR (frases)",
           "kind": "phrase",
           "items": [
-            { "es": "Nosotras no estamos cansadas.", "fr": "Nous ne sommes pas fatiguées." },
-            { "es": "El señor González es muy amable.", "fr": "Monsieur González est très aimable." },
-            { "es": "En cambio, el señor Pérez es muy grosero.", "fr": "En revanche, monsieur Pérez est très grossier." },
-            { "es": "Esta puerta está cerrada.", "fr": "Cette porte est fermée." },
-            { "es": "Juan está enfadado y preocupado.", "fr": "Juan est fâché et inquiet." },
-            { "es": "Esta computadora es vieja.", "fr": "Cet ordinateur est vieux." },
-            { "es": "El autobús está lleno.", "fr": "Le bus est plein." },
-            { "es": "Nosotros somos ingleses.", "fr": "Nous sommes anglais." },
-            { "es": "Ella no es peluquera.", "fr": "Elle n'est pas coiffeuse." },
-            { "es": "¿Dónde están las llaves?", "fr": "Où sont les clés ?" }
+            {
+              "es": "Nosotras no estamos cansadas.",
+              "fr": "Nous ne sommes pas fatiguées."
+            },
+            {
+              "es": "El señor González es muy amable.",
+              "fr": "Monsieur González est très aimable."
+            },
+            {
+              "es": "En cambio, el señor Pérez es muy grosero.",
+              "fr": "En revanche, monsieur Pérez est très grossier."
+            },
+            {
+              "es": "Esta puerta está cerrada.",
+              "fr": "Cette porte est fermée."
+            },
+            {
+              "es": "Juan está enfadado y preocupado.",
+              "fr": "Juan est fâché et inquiet."
+            },
+            {
+              "es": "Esta computadora es vieja.",
+              "fr": "Cet ordinateur est vieux."
+            },
+            {
+              "es": "El autobús está lleno.",
+              "fr": "Le bus est plein."
+            },
+            {
+              "es": "Nosotros somos ingleses.",
+              "fr": "Nous sommes anglais."
+            },
+            {
+              "es": "Ella no es peluquera.",
+              "fr": "Elle n'est pas coiffeuse."
+            },
+            {
+              "es": "¿Dónde están las llaves?",
+              "fr": "Où sont les clés ?"
+            }
           ]
         },
         {
@@ -714,16 +2154,46 @@
           "title": "Completa con SER o ESTAR (más frases)",
           "kind": "phrase",
           "items": [
-            { "es": "La mesa es cuadrada.", "fr": "La table est carrée." },
-            { "es": "La mesa está limpia.", "fr": "La table est propre." },
-            { "es": "El café está caliente.", "fr": "Le café est chaud." },
-            { "es": "El café es bueno.", "fr": "Le café est bon." },
-            { "es": "Nosotros estamos en Italia.", "fr": "Nous sommes en Italie." },
-            { "es": "Nosotros somos italianos.", "fr": "Nous sommes italiens." },
-            { "es": "Claudia es guapa.", "fr": "Claudia est belle." },
-            { "es": "Claudia está resfriada.", "fr": "Claudia est enrhumée." },
-            { "es": "Lima es la capital de Perú.", "fr": "Lima est la capitale du Pérou." },
-            { "es": "El hotel está en la plaza.", "fr": "L'hôtel est sur la place." }
+            {
+              "es": "La mesa es cuadrada.",
+              "fr": "La table est carrée."
+            },
+            {
+              "es": "La mesa está limpia.",
+              "fr": "La table est propre."
+            },
+            {
+              "es": "El café está caliente.",
+              "fr": "Le café est chaud."
+            },
+            {
+              "es": "El café es bueno.",
+              "fr": "Le café est bon."
+            },
+            {
+              "es": "Nosotros estamos en Italia.",
+              "fr": "Nous sommes en Italie."
+            },
+            {
+              "es": "Nosotros somos italianos.",
+              "fr": "Nous sommes italiens."
+            },
+            {
+              "es": "Claudia es guapa.",
+              "fr": "Claudia est belle."
+            },
+            {
+              "es": "Claudia está resfriada.",
+              "fr": "Claudia est enrhumée."
+            },
+            {
+              "es": "Lima es la capital de Perú.",
+              "fr": "Lima est la capitale du Pérou."
+            },
+            {
+              "es": "El hotel está en la plaza.",
+              "fr": "L'hôtel est sur la place."
+            }
           ]
         },
         {
@@ -736,18 +2206,54 @@
           ],
           "diagram": "<svg viewBox='0 0 600 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este, ese, aquel'><line x1='70' y1='90' x2='560' y2='90' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><polygon points='560,90 548,84 548,96' fill='var(--muted)'/><text x='560' y='115' text-anchor='end' font-size='12' fill='var(--muted)'>+ lejos</text><circle cx='35' cy='78' r='10' fill='var(--primary)'/><rect x='25' y='88' width='20' height='26' rx='6' fill='var(--primary)'/><text x='35' y='140' text-anchor='middle' font-size='14' fill='var(--text)'>yo</text><circle cx='170' cy='90' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='170' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>este (aquí)</text><circle cx='350' cy='90' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='350' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>ese (ahí)</text><circle cx='520' cy='90' r='11' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='520' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>aquel (allí/allá)</text></svg>",
           "items": [
-            { "es": "masculino singular (aquí)", "fr": "este" },
-            { "es": "femenino singular (aquí)", "fr": "esta" },
-            { "es": "masculino plural (aquí)", "fr": "estos" },
-            { "es": "femenino plural (aquí)", "fr": "estas" },
-            { "es": "masculino singular (ahí)", "fr": "ese" },
-            { "es": "femenino singular (ahí)", "fr": "esa" },
-            { "es": "masculino plural (ahí)", "fr": "esos" },
-            { "es": "femenino plural (ahí)", "fr": "esas" },
-            { "es": "masculino singular (allí/allá)", "fr": "aquel" },
-            { "es": "femenino singular (allí/allá)", "fr": "aquella" },
-            { "es": "masculino plural (allí/allá)", "fr": "aquellos" },
-            { "es": "femenino plural (allí/allá)", "fr": "aquellas" }
+            {
+              "es": "masculino singular (aquí)",
+              "fr": "este"
+            },
+            {
+              "es": "femenino singular (aquí)",
+              "fr": "esta"
+            },
+            {
+              "es": "masculino plural (aquí)",
+              "fr": "estos"
+            },
+            {
+              "es": "femenino plural (aquí)",
+              "fr": "estas"
+            },
+            {
+              "es": "masculino singular (ahí)",
+              "fr": "ese"
+            },
+            {
+              "es": "femenino singular (ahí)",
+              "fr": "esa"
+            },
+            {
+              "es": "masculino plural (ahí)",
+              "fr": "esos"
+            },
+            {
+              "es": "femenino plural (ahí)",
+              "fr": "esas"
+            },
+            {
+              "es": "masculino singular (allí/allá)",
+              "fr": "aquel"
+            },
+            {
+              "es": "femenino singular (allí/allá)",
+              "fr": "aquella"
+            },
+            {
+              "es": "masculino plural (allí/allá)",
+              "fr": "aquellos"
+            },
+            {
+              "es": "femenino plural (allí/allá)",
+              "fr": "aquellas"
+            }
           ]
         },
         {
@@ -755,58 +2261,203 @@
           "title": "Completa con el demostrativo",
           "kind": "phrase",
           "items": [
-            { "es": "Este disco es de Miguel.", "fr": "Ce CD-ci est à Miguel.", "blankWord": "Este", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
-            { "es": "Este lápiz es corto.", "fr": "Ce crayon-ci est court.", "blankWord": "Este", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
-            { "es": "Ese ordenador es viejo.", "fr": "Cet ordinateur-là est vieux.", "blankWord": "Ese", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='ese'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
-            { "es": "Esos documentos son importantes.", "fr": "Ces documents-là sont importants.", "blankWord": "Esos", "blankOptions": ["Estos", "Esos", "Aquellos"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='esos'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estos</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esos</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellos</text></svg>" },
-            { "es": "Estas tijeras son rojas.", "fr": "Ces ciseaux-ci sont rouges.", "blankWord": "Estas", "blankOptions": ["Estas", "Esas", "Aquellas"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='estas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>" },
-            { "es": "Estas fotos son de mis vacaciones.", "fr": "Ces photos-ci sont de mes vacances.", "blankWord": "Estas", "blankOptions": ["Estas", "Esas", "Aquellas"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='estas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>" },
-            { "es": "Aquella cámara es de Oscar.", "fr": "Cet appareil photo, là-bas, est à Oscar.", "blankWord": "Aquella", "blankOptions": ["Esta", "Esa", "Aquella"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquella'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esta</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esa</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquella</text></svg>" },
-            { "es": "Aquella impresora es nueva.", "fr": "Cette imprimante, là-bas, est neuve.", "blankWord": "Aquella", "blankOptions": ["Esta", "Esa", "Aquella"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquella'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esta</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esa</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquella</text></svg>" },
-            { "es": "Aquel portátil es nuevo.", "fr": "Cet ordinateur portable, là-bas, est neuf.", "blankWord": "Aquel", "blankOptions": ["Este", "Ese", "Aquel"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquel'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>" },
-            { "es": "Esas gafas son de David.", "fr": "Ces lunettes-là sont à David.", "blankWord": "Esas", "blankOptions": ["Estas", "Esas", "Aquellas"], "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='esas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>" }
+            {
+              "es": "Este disco es de Miguel.",
+              "fr": "Ce CD-ci est à Miguel.",
+              "blankWord": "Este",
+              "blankOptions": [
+                "Este",
+                "Ese",
+                "Aquel"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>"
+            },
+            {
+              "es": "Este lápiz es corto.",
+              "fr": "Ce crayon-ci est court.",
+              "blankWord": "Este",
+              "blankOptions": [
+                "Este",
+                "Ese",
+                "Aquel"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>"
+            },
+            {
+              "es": "Ese ordenador es viejo.",
+              "fr": "Cet ordinateur-là est vieux.",
+              "blankWord": "Ese",
+              "blankOptions": [
+                "Este",
+                "Ese",
+                "Aquel"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='ese'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>"
+            },
+            {
+              "es": "Esos documentos son importantes.",
+              "fr": "Ces documents-là sont importants.",
+              "blankWord": "Esos",
+              "blankOptions": [
+                "Estos",
+                "Esos",
+                "Aquellos"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='esos'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estos</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esos</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellos</text></svg>"
+            },
+            {
+              "es": "Estas tijeras son rojas.",
+              "fr": "Ces ciseaux-ci sont rouges.",
+              "blankWord": "Estas",
+              "blankOptions": [
+                "Estas",
+                "Esas",
+                "Aquellas"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='estas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>"
+            },
+            {
+              "es": "Estas fotos son de mis vacaciones.",
+              "fr": "Ces photos-ci sont de mes vacances.",
+              "blankWord": "Estas",
+              "blankOptions": [
+                "Estas",
+                "Esas",
+                "Aquellas"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='estas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>"
+            },
+            {
+              "es": "Aquella cámara es de Oscar.",
+              "fr": "Cet appareil photo, là-bas, est à Oscar.",
+              "blankWord": "Aquella",
+              "blankOptions": [
+                "Esta",
+                "Esa",
+                "Aquella"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquella'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esta</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esa</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquella</text></svg>"
+            },
+            {
+              "es": "Aquella impresora es nueva.",
+              "fr": "Cette imprimante, là-bas, est neuve.",
+              "blankWord": "Aquella",
+              "blankOptions": [
+                "Esta",
+                "Esa",
+                "Aquella"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquella'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esta</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esa</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquella</text></svg>"
+            },
+            {
+              "es": "Aquel portátil es nuevo.",
+              "fr": "Cet ordinateur portable, là-bas, est neuf.",
+              "blankWord": "Aquel",
+              "blankOptions": [
+                "Este",
+                "Ese",
+                "Aquel"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquel'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='12' fill='var(--border)'/><circle cx='230' cy='30' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>este</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>ese</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquel</text></svg>"
+            },
+            {
+              "es": "Esas gafas son de David.",
+              "fr": "Ces lunettes-là sont à David.",
+              "blankWord": "Esas",
+              "blankOptions": [
+                "Estas",
+                "Esas",
+                "Aquellas"
+              ],
+              "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='esas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>"
+            }
           ]
-        }
-      ]
-    },
-    {
-      "id": "posicion",
-      "title": "La Posición",
-      "notes": [
-        "NOTA: de + el = del."
-      ],
-      "diagram": "<svg viewBox='0 0 430 610' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Diagrama de posiciones'><g transform='translate(10,10)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='100' cy='26' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>encima / sobre</text></g><g transform='translate(220,10)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='100' cy='114' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>debajo</text></g><g transform='translate(10,160)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='54' cy='70' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>a la izquierda</text></g><g transform='translate(220,160)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='146' cy='70' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>a la derecha</text></g><g transform='translate(10,310)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='88' cy='96' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>delante</text></g><g transform='translate(220,310)'><circle cx='112' cy='58' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>detrás</text></g><g transform='translate(10,460)'><rect x='78' y='48' width='44' height='44' rx='6' fill='none' stroke='var(--primary)' stroke-width='3'/><circle cx='100' cy='70' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>dentro / en</text></g><g transform='translate(220,460)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='165' cy='105' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>fuera</text></g></svg>",
-      "subsections": [
+        },
         {
           "id": "posicion-preposiciones",
           "title": "Preposiciones de posición",
           "kind": "vocab",
           "items": [
-            { "es": "sobre / encima de", "fr": "sur / au-dessus de" },
-            { "es": "debajo de", "fr": "sous / en dessous de" },
-            { "es": "a la izquierda de", "fr": "à gauche de" },
-            { "es": "a la derecha de", "fr": "à droite de" },
-            { "es": "delante de", "fr": "devant" },
-            { "es": "detrás de", "fr": "derrière" },
-            { "es": "dentro de / en", "fr": "dans / à l'intérieur de" },
-            { "es": "fuera de", "fr": "hors de / à l'extérieur de" }
-          ]
+            {
+              "es": "sobre / encima de",
+              "fr": "sur / au-dessus de"
+            },
+            {
+              "es": "debajo de",
+              "fr": "sous / en dessous de"
+            },
+            {
+              "es": "a la izquierda de",
+              "fr": "à gauche de"
+            },
+            {
+              "es": "a la derecha de",
+              "fr": "à droite de"
+            },
+            {
+              "es": "delante de",
+              "fr": "devant"
+            },
+            {
+              "es": "detrás de",
+              "fr": "derrière"
+            },
+            {
+              "es": "dentro de / en",
+              "fr": "dans / à l'intérieur de"
+            },
+            {
+              "es": "fuera de",
+              "fr": "hors de / à l'extérieur de"
+            }
+          ],
+          "diagram": "<svg viewBox='0 0 430 610' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Diagrama de posiciones'><g transform='translate(10,10)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='100' cy='26' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>encima / sobre</text></g><g transform='translate(220,10)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='100' cy='114' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>debajo</text></g><g transform='translate(10,160)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='54' cy='70' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>a la izquierda</text></g><g transform='translate(220,160)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='146' cy='70' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>a la derecha</text></g><g transform='translate(10,310)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='88' cy='96' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>delante</text></g><g transform='translate(220,310)'><circle cx='112' cy='58' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>detrás</text></g><g transform='translate(10,460)'><rect x='78' y='48' width='44' height='44' rx='6' fill='none' stroke='var(--primary)' stroke-width='3'/><circle cx='100' cy='70' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>dentro / en</text></g><g transform='translate(220,460)'><rect x='78' y='48' width='44' height='44' rx='6' fill='var(--primary)'/><circle cx='165' cy='105' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='100' y='138' text-anchor='middle' font-size='15' fill='var(--text)'>fuera</text></g></svg>"
         },
         {
           "id": "posicion-contrarios",
           "title": "Forma la frase contraria",
           "kind": "phrase",
           "items": [
-            { "es": "El libro está sobre la mesa.", "fr": "Le livre est sur la table." },
-            { "es": "La bicicleta está fuera del garaje.", "fr": "Le vélo est en dehors du garage." },
-            { "es": "La estatua está detrás del museo.", "fr": "La statue est derrière le musée." },
-            { "es": "El diccionario está debajo del cuaderno.", "fr": "Le dictionnaire est sous le cahier." },
-            { "es": "El hotel está a la derecha de la calle.", "fr": "L'hôtel est à droite de la rue." },
-            { "es": "El documento está sobre el libro.", "fr": "Le document est sur le livre." },
-            { "es": "La pelota está fuera del armario.", "fr": "Le ballon est en dehors de l'armoire." },
-            { "es": "El dinero está a la izquierda de la foto.", "fr": "L'argent est à gauche de la photo." },
-            { "es": "El gato está debajo de la silla.", "fr": "Le chat est sous la chaise." },
-            { "es": "La ventana está a la derecha del salón.", "fr": "La fenêtre est à droite du salon." }
+            {
+              "es": "El libro está sobre la mesa.",
+              "fr": "Le livre est sur la table."
+            },
+            {
+              "es": "La bicicleta está fuera del garaje.",
+              "fr": "Le vélo est en dehors du garage."
+            },
+            {
+              "es": "La estatua está detrás del museo.",
+              "fr": "La statue est derrière le musée."
+            },
+            {
+              "es": "El diccionario está debajo del cuaderno.",
+              "fr": "Le dictionnaire est sous le cahier."
+            },
+            {
+              "es": "El hotel está a la derecha de la calle.",
+              "fr": "L'hôtel est à droite de la rue."
+            },
+            {
+              "es": "El documento está sobre el libro.",
+              "fr": "Le document est sur le livre."
+            },
+            {
+              "es": "La pelota está fuera del armario.",
+              "fr": "Le ballon est en dehors de l'armoire."
+            },
+            {
+              "es": "El dinero está a la izquierda de la foto.",
+              "fr": "L'argent est à gauche de la photo."
+            },
+            {
+              "es": "El gato está debajo de la silla.",
+              "fr": "Le chat est sous la chaise."
+            },
+            {
+              "es": "La ventana está a la derecha del salón.",
+              "fr": "La fenêtre est à droite du salon."
+            }
           ]
         },
         {
@@ -818,10 +2469,22 @@
           ],
           "diagram": "<svg viewBox='0 0 600 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Distancia: aquí, ahí, allí, allá'><line x1='70' y1='90' x2='560' y2='90' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><polygon points='560,90 548,84 548,96' fill='var(--muted)'/><text x='560' y='115' text-anchor='end' font-size='12' fill='var(--muted)'>+ lejos</text><circle cx='35' cy='78' r='10' fill='var(--primary)'/><rect x='25' y='88' width='20' height='26' rx='6' fill='var(--primary)'/><text x='35' y='140' text-anchor='middle' font-size='14' fill='var(--text)'>yo</text><circle cx='140' cy='90' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='140' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>aquí</text><circle cx='280' cy='90' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='280' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>ahí</text><circle cx='410' cy='90' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='410' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>allí</text><circle cx='530' cy='90' r='10' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='530' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>allá</text></svg>",
           "items": [
-            { "es": "aquí", "fr": "ici" },
-            { "es": "ahí", "fr": "là" },
-            { "es": "allí", "fr": "là-bas" },
-            { "es": "allá", "fr": "là-bas (más lejos)" }
+            {
+              "es": "aquí",
+              "fr": "ici"
+            },
+            {
+              "es": "ahí",
+              "fr": "là"
+            },
+            {
+              "es": "allí",
+              "fr": "là-bas"
+            },
+            {
+              "es": "allá",
+              "fr": "là-bas (más lejos)"
+            }
           ]
         },
         {
@@ -829,16 +2492,126 @@
           "title": "Completa con aquí, ahí, allí o allá",
           "kind": "phrase",
           "items": [
-            { "es": "El reloj está allá.", "fr": "L'horloge est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
-            { "es": "El periódico está aquí.", "fr": "Le journal est ici.", "blankWord": "aquí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
-            { "es": "La papelera está allá.", "fr": "La corbeille est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
-            { "es": "La cámara está allá.", "fr": "L'appareil photo est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
-            { "es": "La llave está allí.", "fr": "La clé est là-bas.", "blankWord": "allí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
-            { "es": "Las tijeras están aquí.", "fr": "Les ciseaux sont ici.", "blankWord": "aquí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
-            { "es": "El calendario está allá.", "fr": "Le calendrier est là-bas.", "blankWord": "allá", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>" },
-            { "es": "El disco (CD) está allí.", "fr": "Le CD est là-bas.", "blankWord": "allí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
-            { "es": "Las gafas están allí.", "fr": "Les lunettes sont là-bas.", "blankWord": "allí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" },
-            { "es": "El ordenador está aquí.", "fr": "L'ordinateur est ici.", "blankWord": "aquí", "blankOptions": ["aquí", "ahí", "allí", "allá"], "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>" }
+            {
+              "es": "El reloj está allá.",
+              "fr": "L'horloge est là-bas.",
+              "blankWord": "allá",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>"
+            },
+            {
+              "es": "El periódico está aquí.",
+              "fr": "Le journal est ici.",
+              "blankWord": "aquí",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>"
+            },
+            {
+              "es": "La papelera está allá.",
+              "fr": "La corbeille est là-bas.",
+              "blankWord": "allá",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>"
+            },
+            {
+              "es": "La cámara está allá.",
+              "fr": "L'appareil photo est là-bas.",
+              "blankWord": "allá",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>"
+            },
+            {
+              "es": "La llave está allí.",
+              "fr": "La clé est là-bas.",
+              "blankWord": "allí",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>"
+            },
+            {
+              "es": "Las tijeras están aquí.",
+              "fr": "Les ciseaux sont ici.",
+              "blankWord": "aquí",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>"
+            },
+            {
+              "es": "El calendario está allá.",
+              "fr": "Le calendrier est là-bas.",
+              "blankWord": "allá",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allá'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/></svg>"
+            },
+            {
+              "es": "El disco (CD) está allí.",
+              "fr": "Le CD est là-bas.",
+              "blankWord": "allí",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>"
+            },
+            {
+              "es": "Las gafas están allí.",
+              "fr": "Les lunettes sont là-bas.",
+              "blankWord": "allí",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='allí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='6' fill='var(--border)'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>"
+            },
+            {
+              "es": "El ordenador está aquí.",
+              "fr": "L'ordinateur est ici.",
+              "blankWord": "aquí",
+              "blankOptions": [
+                "aquí",
+                "ahí",
+                "allí",
+                "allá"
+              ],
+              "cue": "<svg viewBox='0 0 220 50' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='aquí'><line x1='20' y1='25' x2='200' y2='25' stroke='var(--border)' stroke-width='2'/><circle cx='20' cy='25' r='6' fill='var(--primary)'/><circle cx='60' cy='25' r='9' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='100' cy='25' r='6' fill='var(--border)'/><circle cx='140' cy='25' r='6' fill='var(--border)'/><circle cx='180' cy='25' r='6' fill='var(--border)'/></svg>"
+            }
           ]
         }
       ]

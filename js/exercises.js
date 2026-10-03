@@ -46,8 +46,11 @@ function runFlashcards(container, subsectionId, items, onFinish, lockDirection) 
     const esToFr = (lockDirection || window.Direction.get()) === 'es-fr';
     const front = esToFr ? item.es : item.fr;
     const back = esToFr ? item.fr : item.es;
-    const frontLang = esToFr ? 'es-ES' : 'fr-FR';
-    const backLang = esToFr ? 'fr-FR' : 'es-ES';
+    // lockDirection subsections drill Spanish-only grammar (plural, gender,
+    // conjugation...) and reuse the "fr" field for a second Spanish form —
+    // it's never actual French there, so both sides must be read as es-ES.
+    const frontLang = lockDirection ? 'es-ES' : (esToFr ? 'es-ES' : 'fr-FR');
+    const backLang = lockDirection ? 'es-ES' : (esToFr ? 'fr-FR' : 'es-ES');
     const cueHtml = item.cue ? `<div class="pos-cue">${item.cue}</div>` : '';
     const faceHtml = flippedNow => flippedNow
       ? `${cueHtml}<div class="flashcard-text">${front}</div><div class="flashcard-translation">${back}</div>${speakBtn(back, backLang)}`
@@ -106,11 +109,13 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
   function cardInfo() {
     const { item } = order[pos];
     const esToFr = (lockDirection || window.Direction.get()) === 'es-fr';
+    // Same lockDirection caveat as in runFlashcards: the "fr" field holds a
+    // second Spanish form there, never French, so force es-ES on both sides.
     return {
       front: esToFr ? item.es : item.fr,
       back: esToFr ? item.fr : item.es,
-      frontLang: esToFr ? 'es-ES' : 'fr-FR',
-      backLang: esToFr ? 'fr-FR' : 'es-ES'
+      frontLang: lockDirection ? 'es-ES' : (esToFr ? 'es-ES' : 'fr-FR'),
+      backLang: lockDirection ? 'es-ES' : (esToFr ? 'fr-FR' : 'es-ES')
     };
   }
 

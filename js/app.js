@@ -50,7 +50,7 @@ function renderHome(content) {
   app.innerHTML = `
     <header class="app-header">
       <div class="app-header-top">
-        <h1>Español con Astrid</h1>
+        <h1>Apprendre l'Espagnol</h1>
         ${window.Direction.toggleHtml()}
       </div>
       <p class="subtitle">Elige un tema para practicar</p>

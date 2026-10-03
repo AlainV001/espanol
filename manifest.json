@@ -1,6 +1,6 @@
 {
-  "name": "Español con Astrid",
-  "short_name": "Español",
+  "name": "Apprendre l'Espagnol",
+  "short_name": "Espagnol",
   "description": "Practica de español (saludos y vocabulario de clase) con tarjetas, opcion multiple y frases para completar.",
   "start_url": "./index.html",
   "scope": "./",
