@@ -2,6 +2,7 @@
 const SRS_KEY = 'espanol_srs_v1';
 const BADGE_KEY = 'espanol_mastery_badge_v1';
 const STAR_KEY = 'espanol_perfect_star_v1';
+const COMPLETIONS_KEY = 'espanol_completions_v1';
 
 function loadSrs() {
   try {
@@ -114,7 +115,31 @@ function markStar(subsectionId) {
   localStorage.setItem(STAR_KEY, JSON.stringify(stars));
 }
 
+// Cumulative count of full-series completions per subsection, regardless of
+// score — distinct from the one-off perfect-run star above. Counts a full
+// pass through every item in the subsection, in any exercise mode; a
+// mistakes-only retry round doesn't count (the caller only reports a full run).
+function loadCompletions() {
+  try {
+    return JSON.parse(localStorage.getItem(COMPLETIONS_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function recordCompletion(subsectionId) {
+  const completions = loadCompletions();
+  completions[subsectionId] = (completions[subsectionId] || 0) + 1;
+  localStorage.setItem(COMPLETIONS_KEY, JSON.stringify(completions));
+  return completions[subsectionId];
+}
+
+function getCompletionCount(subsectionId) {
+  return loadCompletions()[subsectionId] || 0;
+}
+
 window.SRS = {
   itemId, getItemState, isDue, recordResult, isMastered, isMistake, subsectionProgress,
-  isBadgeDismissed, setBadgeDismissed, isStarred, markStar
+  isBadgeDismissed, setBadgeDismissed, isStarred, markStar,
+  recordCompletion, getCompletionCount
 };

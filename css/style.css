@@ -115,6 +115,16 @@ body {
   line-height: 1;
 }
 
+.runs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1;
+}
+
 .subsection-notes {
   color: var(--muted);
   font-size: 0.85rem;

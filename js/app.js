@@ -108,11 +108,14 @@ function renderTheme(content, themeId) {
             title="${dismissed ? 'Marcada para repasar — clic para restaurar' : 'Dominada — clic para marcar para repasar'}">
             ${dismissed ? '↺' : '🏆'}
           </button>` : '';
+        const completions = window.SRS.getCompletionCount(sub.id);
+        const runsHtml = completions
+          ? `<span class="runs-badge" title="Completada ${completions} vez${completions > 1 ? 'es' : ''}">🔁 ${completions}</span>` : '';
         const starHtml = window.SRS.isStarred(sub.id)
           ? `<span class="star-badge" title="Ronda completa sin errores">⭐</span>` : '';
         return `
           <div class="subsection-card">
-            <div class="subsection-title">${sub.title}${starHtml}${badgeHtml}</div>
+            <div class="subsection-title">${sub.title}${runsHtml}${starHtml}${badgeHtml}</div>
             ${sub.diagram ? `<div class="theme-diagram">${sub.diagram}</div>` : ''}
             ${sub.notes && sub.notes.length ? `
               <ul class="subsection-notes">${sub.notes.map(n => `<li>${n}</li>`).join('')}</ul>
@@ -241,6 +244,10 @@ function renderSession(content, subsectionId, mode) {
   // mistakes remain — so restarting and slipping up never stars it by itself, but
   // going on to fix the resulting mistakes (via "Repetir errores") does.
   let coveredFull = false;
+  // True only while the round in progress is a full pass through every item —
+  // set right before each runMode() call below, so onFinish can tell a full
+  // completion apart from a mistakes-only retry round.
+  let lastRunWasFull = false;
 
   function runMode(items, cb) {
     if (mode === 'flashcards') {
@@ -262,6 +269,8 @@ function renderSession(content, subsectionId, mode) {
       ? `<div class="results-score">✅ ${result.total} / ${result.total}</div>`
       : `<div class="results-score">${result.correct} / ${result.total}</div>
          <div class="results-pct">${result.total ? Math.round((result.correct / result.total) * 100) : 0}% correcto</div>`;
+
+    if (lastRunWasFull) window.SRS.recordCompletion(subsectionId);
 
     if (coveredFull && mode !== 'listen') {
       const stillPending = window.Data.subsectionMistakeItems(subsectionId, subsection.items);
@@ -287,6 +296,7 @@ function renderSession(content, subsectionId, mode) {
     if (mistakes.length) {
       container.querySelector('#btn-retry-mistakes').addEventListener('click', e => {
         e.preventDefault();
+        lastRunWasFull = false;
         runMode(mistakes, onFinish);
       });
     }
@@ -296,6 +306,7 @@ function renderSession(content, subsectionId, mode) {
     const pending = window.Data.subsectionMistakeItems(subsectionId, subsection.items);
     if (!pending.length) {
       coveredFull = true;
+      lastRunWasFull = true;
       runMode(subsection.items, onFinish);
       return;
     }
@@ -310,11 +321,13 @@ function renderSession(content, subsectionId, mode) {
     `;
     container.querySelector('#btn-choice-mistakes').addEventListener('click', e => {
       e.preventDefault();
+      lastRunWasFull = false;
       runMode(pending, onFinish);
     });
     container.querySelector('#btn-choice-all').addEventListener('click', e => {
       e.preventDefault();
       coveredFull = true;
+      lastRunWasFull = true;
       runMode(subsection.items, onFinish);
     });
   }
