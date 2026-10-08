@@ -61,6 +61,14 @@
             {
               "es": "¿Cómo va todo?",
               "fr": "Comment ça se passe ?"
+            },
+            {
+              "es": "¿Cómo va?",
+              "fr": "Comment ça va ?"
+            },
+            {
+              "es": "¿Qué tú cuentas?",
+              "fr": "Quoi de neuf ?"
             }
           ]
         },
@@ -185,6 +193,14 @@
               "fr": "Je travaille à/chez..."
             },
             {
+              "es": "¿Estás aquí de vacaciones?",
+              "fr": "Tu es ici en vacances ?"
+            },
+            {
+              "es": "¿También eres...?",
+              "fr": "Toi aussi, tu es... ?"
+            },
+            {
               "es": "¿Cuál es tu correo electrónico?",
               "fr": "Quelle est ton adresse email ?"
             },
@@ -267,6 +283,14 @@
               "fr": "Pas de problème"
             },
             {
+              "es": "Disculpa.",
+              "fr": "Excuse-moi / Pardon."
+            },
+            {
+              "es": "¡Salud!",
+              "fr": "Santé !"
+            },
+            {
               "es": "Que tenga un buen día.",
               "fr": "Bonne journée."
             },
@@ -296,6 +320,18 @@
             {
               "es": "Aquí estoy.",
               "fr": "Je suis là."
+            },
+            {
+              "es": "¡Qué interesante!",
+              "fr": "Comme c'est intéressant !"
+            },
+            {
+              "es": "¿Verdad?",
+              "fr": "N'est-ce pas ? / Vraiment ?"
+            },
+            {
+              "es": "¿Qué tienes?",
+              "fr": "Qu'est-ce que tu as ? / Qu'est-ce qui t'arrive ?"
             },
             {
               "es": "¿Y usted?",
@@ -527,6 +563,34 @@
               "fr": "Écoute attentivement."
             },
             {
+              "es": "Ahora vuelve a escuchar.",
+              "fr": "Maintenant, réécoute."
+            },
+            {
+              "es": "Ve el video.",
+              "fr": "Regarde la vidéo."
+            },
+            {
+              "es": "Completa la información.",
+              "fr": "Complète les informations."
+            },
+            {
+              "es": "Fíjate en las palabras en negrita.",
+              "fr": "Fais attention aux mots en gras."
+            },
+            {
+              "es": "¿Cuáles se usan para dirigirse a una persona?",
+              "fr": "Lesquelles sont utilisées pour s'adresser à une personne ?"
+            },
+            {
+              "es": "Escucha las siguientes palabras.",
+              "fr": "Écoute les mots suivants."
+            },
+            {
+              "es": "¿Cómo se pronuncian estas palabras?",
+              "fr": "Comment se prononcent ces mots ?"
+            },
+            {
               "es": "Mira la pizarra.",
               "fr": "Regarde le tableau."
             },
@@ -656,6 +720,14 @@
             {
               "es": "La silla está rota.",
               "fr": "La chaise est cassée."
+            },
+            {
+              "es": "¿Para qué sirve esto?",
+              "fr": "À quoi ça sert ?"
+            },
+            {
+              "es": "¿Para qué sirven estos objetos?",
+              "fr": "À quoi servent ces objets ?"
             }
           ]
         },
@@ -1086,6 +1158,50 @@
             {
               "es": "el portátil",
               "fr": "l'ordinateur portable"
+            },
+            {
+              "es": "la fiesta",
+              "fr": "la fête"
+            },
+            {
+              "es": "la agencia",
+              "fr": "l'agence"
+            },
+            {
+              "es": "los datos personales",
+              "fr": "les données personnelles"
+            },
+            {
+              "es": "el número fijo",
+              "fr": "le numéro fixe"
+            },
+            {
+              "es": "el número móvil",
+              "fr": "le numéro de portable"
+            },
+            {
+              "es": "la recepción",
+              "fr": "la réception"
+            },
+            {
+              "es": "la conversación",
+              "fr": "la conversation"
+            },
+            {
+              "es": "la universidad",
+              "fr": "l'université"
+            },
+            {
+              "es": "la persona",
+              "fr": "la personne"
+            },
+            {
+              "es": "la palabra",
+              "fr": "le mot"
+            },
+            {
+              "es": "las lenguas",
+              "fr": "les langues"
             }
           ]
         },
@@ -1094,6 +1210,12 @@
           "title": "Adjetivos (artículos)",
           "kind": "vocab",
           "items": [
+            {
+              "es": "siguiente",
+              "fr": "suivant / suivante",
+              "context": "Escucha las siguientes palabras.",
+              "contextFr": "Écoute les mots suivants."
+            },
             {
               "es": "antiguo / antigua",
               "fr": "ancien / ancienne",
@@ -1276,6 +1398,10 @@
             {
               "es": "cubano / cubana",
               "fr": "cubain / cubaine"
+            },
+            {
+              "es": "venezolano / venezolana",
+              "fr": "vénézuélien / vénézuélienne"
             },
             {
               "es": "ruso / rusa",
@@ -1478,6 +1604,16 @@
           "title": "Profesiones",
           "kind": "vocab",
           "items": [
+            { "es": "el comercial / la comercial", "fr": "le commercial / la commerciale" },
+            { "es": "el / la deportista", "fr": "le sportif / la sportive" },
+            { "es": "el científico / la científica", "fr": "le scientifique / la scientifique" },
+            { "es": "el / la estudiante de arquitectura", "fr": "l'étudiant(e) en architecture" },
+            { "es": "el diseñador / la diseñadora de moda", "fr": "le / la styliste de mode" },
+            { "es": "el jefe / la jefa", "fr": "le chef / la cheffe (patron/patronne)" },
+            { "es": "el bloguero / la bloguera", "fr": "le blogueur / la blogueuse" },
+            { "es": "el cirujano / la cirujana", "fr": "le chirurgien / la chirurgienne" },
+            { "es": "el / la lingüista", "fr": "le / la linguiste" },
+            { "es": "el psicólogo / la psicóloga", "fr": "le psychologue / la psychologue" },
             { "es": "el médico / la médica", "fr": "le médecin / la médecin" },
             { "es": "el profesor / la profesora", "fr": "le professeur / la professeure" },
             { "es": "el abogado / la abogada", "fr": "l'avocat / l'avocate" },
@@ -1541,6 +1677,25 @@
             { "es": "triste / contento", "fr": "triste / content" },
             { "es": "rico / pobre", "fr": "riche / pauvre" },
             { "es": "lleno / vacío", "fr": "plein / vide" }
+          ]
+        },
+        {
+          "id": "vocgen-verbos",
+          "title": "Verbos útiles",
+          "kind": "vocab",
+          "items": [
+            { "es": "trabajar", "fr": "travailler" },
+            { "es": "dar", "fr": "donner" },
+            { "es": "escuchar", "fr": "écouter" },
+            { "es": "servir", "fr": "servir" },
+            { "es": "hacer", "fr": "faire" },
+            { "es": "hablar", "fr": "parler" },
+            { "es": "ver", "fr": "voir" },
+            { "es": "leer", "fr": "lire" },
+            { "es": "usar", "fr": "utiliser" },
+            { "es": "dirigirse (a)", "fr": "s'adresser (à)" },
+            { "es": "marcar", "fr": "marquer" },
+            { "es": "pronunciar", "fr": "prononcer" }
           ]
         }
       ]
