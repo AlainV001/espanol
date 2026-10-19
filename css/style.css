@@ -325,6 +325,19 @@ body {
   margin-top: 1.25rem;
 }
 
+.speed-actions {
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.speed-label {
+  min-width: 3.2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  align-self: center;
+}
+
 .session-actions[hidden] {
   display: none;
 }

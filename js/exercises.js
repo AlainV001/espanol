@@ -134,6 +134,11 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
         <button class="btn btn-good" id="btn-toggle">${playing ? '⏸ Pausa' : '▶ Seguir'}</button>
         <button class="btn btn-mode" id="btn-next">⏭</button>
       </div>
+      <div class="session-actions speed-actions">
+        <button class="btn btn-mode btn-mode-icon" id="btn-speed-down" aria-label="Más lento" ${window.SpeechRate.get() <= window.SpeechRate.MIN_RATE ? 'disabled' : ''}>🐢</button>
+        <span class="speed-label">${window.SpeechRate.get().toFixed(2)}x</span>
+        <button class="btn btn-mode btn-mode-icon" id="btn-speed-up" aria-label="Más rápido" ${window.SpeechRate.get() >= window.SpeechRate.MAX_RATE ? 'disabled' : ''}>🐇</button>
+      </div>
     `;
     container.querySelector('#btn-prev').addEventListener('click', () => goTo(pos - 1));
     container.querySelector('#btn-next').addEventListener('click', () => goTo(pos + 1));
@@ -144,6 +149,16 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
       render();
       if (playing) playSequence();
     });
+    container.querySelector('#btn-speed-down').addEventListener('click', () => changeRate(-window.SpeechRate.RATE_STEP));
+    container.querySelector('#btn-speed-up').addEventListener('click', () => changeRate(window.SpeechRate.RATE_STEP));
+  }
+
+  function changeRate(delta) {
+    window.SpeechRate.adjust(delta);
+    window.speechSynthesis.cancel();
+    token += 1;
+    render();
+    if (playing) playSequence();
   }
 
   async function playSequence() {

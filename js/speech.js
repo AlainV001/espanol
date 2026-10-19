@@ -2,6 +2,28 @@
 // Returns a promise that resolves once the utterance finishes (or after a
 // safety timeout, in case the 'end' event never fires on some browsers).
 
+// Playback speed, persisted in localStorage so it survives reloads.
+const RATE_KEY = 'espanol_speech_rate_v1';
+const MIN_RATE = 0.5;
+const MAX_RATE = 1.3;
+const RATE_STEP = 0.1;
+const DEFAULT_RATE = 0.8;
+
+function getRate() {
+  const stored = parseFloat(localStorage.getItem(RATE_KEY));
+  return Number.isFinite(stored) ? stored : DEFAULT_RATE;
+}
+
+function setRate(rate) {
+  const clamped = Math.min(MAX_RATE, Math.max(MIN_RATE, rate));
+  localStorage.setItem(RATE_KEY, clamped.toFixed(2));
+  return clamped;
+}
+
+function adjustRate(delta) {
+  return setRate(getRate() + delta);
+}
+
 // Setting utter.lang alone isn't enough on some browsers/devices: if no voice
 // is explicitly attached, they keep using whatever voice was last active
 // (often the device's default language) regardless of the lang tag. So we look
@@ -39,7 +61,7 @@ async function speak(text, lang = 'es-ES') {
     const utter = new SpeechSynthesisUtterance(text);
     utter.lang = lang;
     if (voice) utter.voice = voice;
-    utter.rate = 0.95;
+    utter.rate = getRate();
     let done = false;
     const finish = () => {
       if (done) return;
@@ -54,3 +76,4 @@ async function speak(text, lang = 'es-ES') {
 }
 
 window.speak = speak;
+window.SpeechRate = { get: getRate, set: setRate, adjust: adjustRate, MIN_RATE, MAX_RATE, RATE_STEP };
