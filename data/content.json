@@ -1202,6 +1202,38 @@
             {
               "es": "las lenguas",
               "fr": "les langues"
+            },
+            {
+              "es": "la música clásica",
+              "fr": "la musique classique"
+            },
+            {
+              "es": "las noticias",
+              "fr": "les informations / les nouvelles"
+            },
+            {
+              "es": "todos los días",
+              "fr": "tous les jours"
+            },
+            {
+              "es": "el baño",
+              "fr": "la salle de bain"
+            },
+            {
+              "es": "las estrellas",
+              "fr": "les étoiles"
+            },
+            {
+              "es": "los platillos",
+              "fr": "les plats (cuisine)"
+            },
+            {
+              "es": "una banda famosa",
+              "fr": "un groupe (de musique) célèbre"
+            },
+            {
+              "es": "la tarea",
+              "fr": "le devoir / les devoirs"
             }
           ]
         },
@@ -1695,7 +1727,19 @@
             { "es": "usar", "fr": "utiliser" },
             { "es": "dirigirse (a)", "fr": "s'adresser (à)" },
             { "es": "marcar", "fr": "marquer" },
-            { "es": "pronunciar", "fr": "prononcer" }
+            { "es": "pronunciar", "fr": "prononcer" },
+            { "es": "mirar", "fr": "regarder" },
+            { "es": "tomar", "fr": "prendre" },
+            { "es": "tocar", "fr": "toucher / jouer (d'un instrument)" },
+            { "es": "terminar", "fr": "terminer" }
+          ]
+        },
+        {
+          "id": "vocgen-frases",
+          "title": "Frases útiles",
+          "kind": "phrase",
+          "items": [
+            { "es": "Te puedo hacer daño.", "fr": "Cela peut te faire mal." }
           ]
         }
       ]
@@ -2109,6 +2153,114 @@
             {
               "es": "ellos / ellas / ustedes",
               "fr": "están"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-presente-ar",
+          "title": "El verbo HABLAR: conjugación (-AR)",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "Terminaciones regulares -AR: -o, -as, -a, -amos, -áis, -an.",
+            "Otros verbos en -AR: cantar, viajar, cocinar, estudiar."
+          ],
+          "items": [
+            {
+              "es": "yo",
+              "fr": "hablo"
+            },
+            {
+              "es": "tú",
+              "fr": "hablas"
+            },
+            {
+              "es": "él / ella / usted",
+              "fr": "habla"
+            },
+            {
+              "es": "nosotros / nosotras",
+              "fr": "hablamos"
+            },
+            {
+              "es": "vosotros / vosotras",
+              "fr": "habláis (*solo en España)"
+            },
+            {
+              "es": "ellos / ellas / ustedes",
+              "fr": "hablan"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-presente-er",
+          "title": "El verbo LEER: conjugación (-ER)",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "Terminaciones regulares -ER: -o, -es, -e, -emos, -éis, -en.",
+            "Otros verbos en -ER: ver, comer, beber."
+          ],
+          "items": [
+            {
+              "es": "yo",
+              "fr": "leo"
+            },
+            {
+              "es": "tú",
+              "fr": "lees"
+            },
+            {
+              "es": "él / ella / usted",
+              "fr": "lee"
+            },
+            {
+              "es": "nosotros / nosotras",
+              "fr": "leemos"
+            },
+            {
+              "es": "vosotros / vosotras",
+              "fr": "leéis (*solo en España)"
+            },
+            {
+              "es": "ellos / ellas / ustedes",
+              "fr": "leen"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-presente-ir",
+          "title": "El verbo VIVIR: conjugación (-IR)",
+          "kind": "vocab",
+          "lockDirection": "es-fr",
+          "notes": [
+            "Terminaciones regulares -IR: -o, -es, -e, -imos, -ís, -en.",
+            "Otros verbos en -IR: escribir, asistir, abrir."
+          ],
+          "items": [
+            {
+              "es": "yo",
+              "fr": "vivo"
+            },
+            {
+              "es": "tú",
+              "fr": "vives"
+            },
+            {
+              "es": "él / ella / usted",
+              "fr": "vive"
+            },
+            {
+              "es": "nosotros / nosotras",
+              "fr": "vivimos"
+            },
+            {
+              "es": "vosotros / vosotras",
+              "fr": "vivís (*solo en España)"
+            },
+            {
+              "es": "ellos / ellas / ustedes",
+              "fr": "viven"
             }
           ]
         },
