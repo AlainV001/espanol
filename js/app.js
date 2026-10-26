@@ -15,6 +15,8 @@ async function router() {
     renderMistakesSession(content, parts[1]);
   } else if (parts[0] === 'mistakes') {
     renderMistakesHub(content);
+  } else if (parts[0] === 'auto') {
+    renderAutoListening(content);
   } else {
     renderHome(content);
   }
@@ -32,6 +34,21 @@ function modeButtonsHtml(baseHref, modeKeys) {
     .filter(([key]) => modeKeys.includes(key))
     .map(([key, icon, label]) => `<a class="btn btn-mode btn-mode-icon" href="${baseHref}/${key}" title="${label}" aria-label="${label}">${icon}</a>`)
     .join('');
+}
+
+const UPDATED_BADGE_DAYS = 21;
+
+function isRecentlyUpdated(dateStr) {
+  if (!dateStr) return false;
+  const updated = new Date(dateStr + 'T00:00:00');
+  if (isNaN(updated)) return false;
+  const diffDays = (Date.now() - updated.getTime()) / 86400000;
+  return diffDays >= 0 && diffDays <= UPDATED_BADGE_DAYS;
+}
+
+function formatShortDate(dateStr) {
+  const [y, m, d] = dateStr.split('-');
+  return `${d}/${m}`;
 }
 
 function themeProgress(theme) {
@@ -55,6 +72,10 @@ function renderHome(content) {
       </div>
       <p class="subtitle">Elige un tema para practicar</p>
     </header>
+    <a class="theme-card auto-card" href="#/auto">
+      <div class="theme-card-title">🔀 Lectura automática</div>
+      <div class="theme-card-meta">Escucha secciones al azar, cada una repetida dos veces</div>
+    </a>
     ${mistakeCount ? `
       <a class="theme-card mistakes-card" href="#/mistakes">
         <div class="theme-card-title">⚠️ Errores para repasar</div>
@@ -113,9 +134,11 @@ function renderTheme(content, themeId) {
           ? `<span class="runs-badge" title="Completada ${completions} vez${completions > 1 ? 'es' : ''}">🔁 ${completions}</span>` : '';
         const starHtml = window.SRS.isStarred(sub.id)
           ? `<span class="star-badge" title="Ronda completa sin errores">⭐</span>` : '';
+        const updatedHtml = isRecentlyUpdated(sub.updated)
+          ? `<span class="updated-badge" title="Actualizado el ${formatShortDate(sub.updated)}">🆕 ${formatShortDate(sub.updated)}</span>` : '';
         return `
           <div class="subsection-card">
-            <div class="subsection-title">${sub.title}${runsHtml}${starHtml}${badgeHtml}</div>
+            <div class="subsection-title">${sub.title}${updatedHtml}${runsHtml}${starHtml}${badgeHtml}</div>
             ${sub.diagram ? `<div class="theme-diagram">${sub.diagram}</div>` : ''}
             ${sub.notes && sub.notes.length ? `
               <ul class="subsection-notes">${sub.notes.map(n => `<li>${n}</li>`).join('')}</ul>
@@ -137,6 +160,26 @@ function renderTheme(content, themeId) {
       renderTheme(content, themeId);
     });
   });
+}
+
+function renderAutoListening(content) {
+  const allSubs = window.Data.allSubsections(content);
+  app.innerHTML = `
+    <header class="app-header">
+      <div class="app-header-top">
+        <a class="back-link btn-stop" href="#/">⏹ Detener</a>
+        ${window.Direction.toggleHtml()}
+      </div>
+      <p class="subtitle session-subtitle">🔀 Lectura automática</p>
+    </header>
+    <div id="session-container"></div>
+  `;
+  window.Direction.bindToggle(app, () => renderAutoListening(content));
+  if (!allSubs.length) {
+    document.getElementById('session-container').innerHTML = `<div class="notes-box">No hay secciones para leer.</div>`;
+    return;
+  }
+  window.Exercises.runAutoListening(document.getElementById('session-container'), allSubs);
 }
 
 function renderMistakesHub(content) {
@@ -335,7 +378,10 @@ function renderSession(content, subsectionId, mode) {
   start();
 }
 
-window.addEventListener('hashchange', router);
+window.addEventListener('hashchange', () => {
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  router();
+});
 window.addEventListener('DOMContentLoaded', () => {
   if (location.hash && location.hash !== '#/') {
     location.hash = '#/';

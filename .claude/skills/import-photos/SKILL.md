@@ -39,6 +39,11 @@ re-reads photos that were already imported.
 5. **Edit `data/content.json`** to add the new theme/subsections, keeping
    the existing structure and formatting intact. Validate it's well-formed
    JSON afterwards (e.g. read it back or run a quick parse check).
+   For every subsection you create or add items to, set/refresh its
+   `"updated"` field to today's date (ISO `YYYY-MM-DD`) — this drives the
+   "🆕" recently-updated badge in the app (see `js/app.js`,
+   `isRecentlyUpdated`/`UPDATED_BADGE_DAYS`), which fades on its own after
+   3 weeks. Don't touch `"updated"` on subsections you didn't modify.
 
 6. **Archive the photo**: move it from `Photo/inbox/` to `Photo/` (the
    archive folder — plain `git mv` if the repo tracks it, otherwise a

@@ -3,6 +3,7 @@ const SRS_KEY = 'espanol_srs_v1';
 const BADGE_KEY = 'espanol_mastery_badge_v1';
 const STAR_KEY = 'espanol_perfect_star_v1';
 const COMPLETIONS_KEY = 'espanol_completions_v1';
+const LISTEN_PLAYS_KEY = 'espanol_listen_plays_v1';
 
 function loadSrs() {
   try {
@@ -138,8 +139,30 @@ function getCompletionCount(subsectionId) {
   return loadCompletions()[subsectionId] || 0;
 }
 
+// Cumulative count of full listening passes per subsection — used by auto-play
+// mode to favor sections that have been heard less, regardless of how often
+// they've been practiced in other exercise modes.
+function loadListenPlays() {
+  try {
+    return JSON.parse(localStorage.getItem(LISTEN_PLAYS_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function recordListenPlay(subsectionId) {
+  const plays = loadListenPlays();
+  plays[subsectionId] = (plays[subsectionId] || 0) + 1;
+  localStorage.setItem(LISTEN_PLAYS_KEY, JSON.stringify(plays));
+  return plays[subsectionId];
+}
+
+function getListenPlayCount(subsectionId) {
+  return loadListenPlays()[subsectionId] || 0;
+}
+
 window.SRS = {
   itemId, getItemState, isDue, recordResult, isMastered, isMistake, subsectionProgress,
   isBadgeDismissed, setBadgeDismissed, isStarred, markStar,
-  recordCompletion, getCompletionCount
+  recordCompletion, getCompletionCount, recordListenPlay, getListenPlayCount
 };

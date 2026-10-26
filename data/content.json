@@ -110,6 +110,7 @@
         {
           "id": "saludos-presentarse",
           "title": "Presentarse: preguntas y respuestas",
+          "updated": "2026-10-03",
           "kind": "phrase",
           "items": [
             {
@@ -1234,6 +1235,30 @@
             {
               "es": "la tarea",
               "fr": "le devoir / les devoirs"
+            },
+            {
+              "es": "los regalos",
+              "fr": "les cadeaux"
+            },
+            {
+              "es": "la Navidad",
+              "fr": "Noël"
+            },
+            {
+              "es": "el queque",
+              "fr": "le gâteau"
+            },
+            {
+              "es": "la ropa",
+              "fr": "les vêtements"
+            },
+            {
+              "es": "la decisión",
+              "fr": "la décision"
+            },
+            {
+              "es": "el presidente",
+              "fr": "le président"
             }
           ]
         },
@@ -1634,6 +1659,7 @@
         {
           "id": "vocgen-profesiones",
           "title": "Profesiones",
+          "updated": "2026-10-03",
           "kind": "vocab",
           "items": [
             { "es": "el comercial / la comercial", "fr": "le commercial / la commerciale" },
@@ -1675,6 +1701,7 @@
         {
           "id": "vocgen-puntuacion",
           "title": "Signos de puntuación",
+          "updated": "2026-10-03",
           "kind": "vocab",
           "notes": [
             "En español, los signos de interrogación (¿?) y de exclamación (¡!) se escriben al principio Y al final de la frase: ¿Cómo estás? ¡Qué bien!"
@@ -1692,6 +1719,7 @@
         {
           "id": "vocgen-contrarios",
           "title": "Adjetivos contrarios",
+          "updated": "2026-10-03",
           "kind": "vocab",
           "items": [
             { "es": "alto / bajo", "fr": "grand / petit" },
@@ -1714,6 +1742,7 @@
         {
           "id": "vocgen-verbos",
           "title": "Verbos útiles",
+          "updated": "2026-10-22",
           "kind": "vocab",
           "items": [
             { "es": "trabajar", "fr": "travailler" },
@@ -1731,15 +1760,32 @@
             { "es": "mirar", "fr": "regarder" },
             { "es": "tomar", "fr": "prendre" },
             { "es": "tocar", "fr": "toucher / jouer (d'un instrument)" },
-            { "es": "terminar", "fr": "terminer" }
+            { "es": "terminar", "fr": "terminer" },
+            { "es": "abrir", "fr": "ouvrir" },
+            { "es": "vivir", "fr": "vivre" },
+            { "es": "partir", "fr": "partir" },
+            { "es": "permitir", "fr": "permettre" },
+            { "es": "decidir", "fr": "décider" },
+            { "es": "recibir", "fr": "recevoir" },
+            { "es": "aplaudir", "fr": "applaudir" },
+            { "es": "describir", "fr": "décrire" },
+            { "es": "subir", "fr": "monter" },
+            { "es": "compartir", "fr": "partager" }
           ]
         },
         {
           "id": "vocgen-frases",
           "title": "Frases útiles",
+          "updated": "2026-10-26",
           "kind": "phrase",
           "items": [
-            { "es": "Te puedo hacer daño.", "fr": "Cela peut te faire mal." }
+            { "es": "Te puedo hacer daño.", "fr": "Cela peut te faire mal." },
+            { "es": "un día después", "fr": "un jour après" },
+            { "es": "antes de", "fr": "avant de" },
+            { "es": "de algún familiar", "fr": "d'un membre de la famille" },
+            { "es": "me parece sensata", "fr": "elle me semble sensée" },
+            { "es": "todo tipo de", "fr": "toute sorte de" },
+            { "es": "sube un video", "fr": "il/elle met en ligne une vidéo" }
           ]
         }
       ]
@@ -2159,6 +2205,7 @@
         {
           "id": "gramatica-presente-ar",
           "title": "El verbo HABLAR: conjugación (-AR)",
+          "updated": "2026-10-19",
           "kind": "vocab",
           "lockDirection": "es-fr",
           "notes": [
@@ -2195,6 +2242,7 @@
         {
           "id": "gramatica-presente-er",
           "title": "El verbo LEER: conjugación (-ER)",
+          "updated": "2026-10-19",
           "kind": "vocab",
           "lockDirection": "es-fr",
           "notes": [
@@ -2231,6 +2279,7 @@
         {
           "id": "gramatica-presente-ir",
           "title": "El verbo VIVIR: conjugación (-IR)",
+          "updated": "2026-10-19",
           "kind": "vocab",
           "lockDirection": "es-fr",
           "notes": [

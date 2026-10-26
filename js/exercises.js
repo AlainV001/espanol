@@ -23,6 +23,10 @@ function progressLabel(pos, total) {
   return `${pos + 1} / ${total}`;
 }
 
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function attachSpeakHandlers(container) {
   container.querySelectorAll('[data-speak]').forEach(btn => {
     btn.addEventListener('click', e => {
@@ -102,10 +106,6 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
   let playing = true;
   let token = 0;
 
-  function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-
   function cardInfo() {
     const { item } = order[pos];
     const esToFr = (lockDirection || window.Direction.get()) === 'es-fr';
@@ -135,9 +135,9 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
         <button class="btn btn-mode" id="btn-next">⏭</button>
       </div>
       <div class="session-actions speed-actions">
-        <button class="btn btn-mode btn-mode-icon" id="btn-speed-down" aria-label="Más lento" ${window.SpeechRate.get() <= window.SpeechRate.MIN_RATE ? 'disabled' : ''}>🐢</button>
-        <span class="speed-label">${window.SpeechRate.get().toFixed(2)}x</span>
-        <button class="btn btn-mode btn-mode-icon" id="btn-speed-up" aria-label="Más rápido" ${window.SpeechRate.get() >= window.SpeechRate.MAX_RATE ? 'disabled' : ''}>🐇</button>
+        <button class="btn btn-mode btn-mode-icon" id="btn-speed-down" aria-label="Más tiempo para pensar" ${window.AnswerDelay.get() >= window.AnswerDelay.MAX_DELAY ? 'disabled' : ''}>🐢</button>
+        <span class="speed-label">${window.AnswerDelay.get()}s</span>
+        <button class="btn btn-mode btn-mode-icon" id="btn-speed-up" aria-label="Menos tiempo para pensar" ${window.AnswerDelay.get() <= window.AnswerDelay.MIN_DELAY ? 'disabled' : ''}>🐇</button>
       </div>
     `;
     container.querySelector('#btn-prev').addEventListener('click', () => goTo(pos - 1));
@@ -149,12 +149,12 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
       render();
       if (playing) playSequence();
     });
-    container.querySelector('#btn-speed-down').addEventListener('click', () => changeRate(-window.SpeechRate.RATE_STEP));
-    container.querySelector('#btn-speed-up').addEventListener('click', () => changeRate(window.SpeechRate.RATE_STEP));
+    container.querySelector('#btn-speed-down').addEventListener('click', () => changeDelay(window.AnswerDelay.DELAY_STEP));
+    container.querySelector('#btn-speed-up').addEventListener('click', () => changeDelay(-window.AnswerDelay.DELAY_STEP));
   }
 
-  function changeRate(delta) {
-    window.SpeechRate.adjust(delta);
+  function changeDelay(delta) {
+    window.AnswerDelay.adjust(delta);
     window.speechSynthesis.cancel();
     token += 1;
     render();
@@ -168,7 +168,7 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
 
     await window.speak(front, frontLang);
     if (!stillCurrent()) return;
-    await wait(350);
+    await wait(window.AnswerDelay.get() * 1000);
     if (!stillCurrent()) return;
     const tEl = container.querySelector('#listen-translation');
     if (tEl) tEl.hidden = false;
@@ -193,6 +193,150 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
 
   render();
   playSequence();
+}
+
+// ---------- Auto-play (random section, read twice, then another section) ----------
+function daysSinceDate(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr + 'T00:00:00');
+  if (isNaN(d)) return null;
+  return Math.max(0, (Date.now() - d.getTime()) / 86400000);
+}
+
+// Favors sections updated recently and sections heard less often in auto-play,
+// so the random pick drifts toward "new and under-practiced" content instead
+// of a flat uniform draw.
+function autoWeight(sub) {
+  const days = daysSinceDate(sub.updated);
+  const recencyBoost = days === null ? 1 : 1 + 30 / (days + 3);
+  const rarityBoost = 1 / (window.SRS.getListenPlayCount(sub.id) + 1);
+  return recencyBoost * rarityBoost;
+}
+
+function pickWeighted(entries, excludeIds) {
+  const pool = entries.filter(e => !excludeIds.has(e.subsection.id));
+  const candidates = pool.length ? pool : entries;
+  const weights = candidates.map(e => autoWeight(e.subsection));
+  const total = weights.reduce((a, b) => a + b, 0);
+  let r = Math.random() * total;
+  for (let i = 0; i < candidates.length; i++) {
+    r -= weights[i];
+    if (r <= 0) return candidates[i];
+  }
+  return candidates[candidates.length - 1];
+}
+
+function runAutoListening(container, allSubs) {
+  const history = [];
+  let current = null;
+  let repeat = 0;
+  let pos = 0;
+  let playing = true;
+  let token = 0;
+
+  function startSubsection() {
+    const excludeIds = new Set(history.slice(-Math.min(2, allSubs.length - 1)));
+    const entry = pickWeighted(allSubs, excludeIds);
+    history.push(entry.subsection.id);
+    current = { theme: entry.theme, subsection: entry.subsection, order: shuffle(entry.subsection.items) };
+    repeat = 0;
+    pos = 0;
+    render();
+    playSequence();
+  }
+
+  function cardInfo() {
+    const item = current.order[pos];
+    const esToFr = window.Direction.get() === 'es-fr';
+    return {
+      front: esToFr ? item.es : item.fr,
+      back: esToFr ? item.fr : item.es,
+      frontLang: esToFr ? 'es-ES' : 'fr-FR',
+      backLang: esToFr ? 'fr-FR' : 'es-ES'
+    };
+  }
+
+  function render() {
+    const { front, back } = cardInfo();
+    container.innerHTML = `
+      <div class="session-progress">${current.theme.title} &rsaquo; ${current.subsection.title}</div>
+      <div class="session-progress">🔁 ${repeat + 1}/2 · ${progressLabel(pos, current.order.length)}</div>
+      <div class="flashcard" id="flashcard">
+        <div class="flashcard-face">
+          <div class="flashcard-text">${front}</div>
+          <div class="flashcard-translation" id="listen-translation" hidden>${back}</div>
+        </div>
+      </div>
+      <div class="session-actions">
+        <button class="btn btn-good" id="btn-toggle">${playing ? '⏸ Pausa' : '▶ Seguir'}</button>
+        <button class="btn btn-mode" id="btn-skip">⏭ Otra sección</button>
+      </div>
+      <div class="session-actions speed-actions">
+        <button class="btn btn-mode btn-mode-icon" id="btn-speed-down" aria-label="Más tiempo para pensar" ${window.AnswerDelay.get() >= window.AnswerDelay.MAX_DELAY ? 'disabled' : ''}>🐢</button>
+        <span class="speed-label">${window.AnswerDelay.get()}s</span>
+        <button class="btn btn-mode btn-mode-icon" id="btn-speed-up" aria-label="Menos tiempo para pensar" ${window.AnswerDelay.get() <= window.AnswerDelay.MIN_DELAY ? 'disabled' : ''}>🐇</button>
+      </div>
+    `;
+    container.querySelector('#btn-toggle').addEventListener('click', () => {
+      playing = !playing;
+      window.speechSynthesis.cancel();
+      token += 1;
+      render();
+      if (playing) playSequence();
+    });
+    container.querySelector('#btn-skip').addEventListener('click', () => {
+      window.speechSynthesis.cancel();
+      token += 1;
+      startSubsection();
+    });
+    container.querySelector('#btn-speed-down').addEventListener('click', () => changeDelay(window.AnswerDelay.DELAY_STEP));
+    container.querySelector('#btn-speed-up').addEventListener('click', () => changeDelay(-window.AnswerDelay.DELAY_STEP));
+  }
+
+  function changeDelay(delta) {
+    window.AnswerDelay.adjust(delta);
+    window.speechSynthesis.cancel();
+    token += 1;
+    render();
+    if (playing) playSequence();
+  }
+
+  function goTo(newPos) {
+    token += 1;
+    window.speechSynthesis.cancel();
+    pos = newPos;
+    if (pos >= current.order.length) {
+      pos = 0;
+      repeat += 1;
+      if (repeat >= 2) {
+        window.SRS.recordListenPlay(current.subsection.id);
+        startSubsection();
+        return;
+      }
+    }
+    render();
+    if (playing) playSequence();
+  }
+
+  async function playSequence() {
+    const myToken = token;
+    const { front, back, frontLang, backLang } = cardInfo();
+    const stillCurrent = () => container.isConnected && token === myToken && playing;
+
+    await window.speak(front, frontLang);
+    if (!stillCurrent()) return;
+    await wait(window.AnswerDelay.get() * 1000);
+    if (!stillCurrent()) return;
+    const tEl = container.querySelector('#listen-translation');
+    if (tEl) tEl.hidden = false;
+    await window.speak(back, backLang);
+    if (!stillCurrent()) return;
+    await wait(900);
+    if (!stillCurrent()) return;
+    goTo(pos + 1);
+  }
+
+  startSubsection();
 }
 
 // ---------- Multiple choice ----------
@@ -322,4 +466,4 @@ function runFillBlank(container, subsectionId, items, onFinish) {
   render();
 }
 
-window.Exercises = { runFlashcards, runListening, runMultipleChoice, runFillBlank };
+window.Exercises = { runFlashcards, runListening, runAutoListening, runMultipleChoice, runFillBlank };

@@ -2,26 +2,33 @@
 // Returns a promise that resolves once the utterance finishes (or after a
 // safety timeout, in case the 'end' event never fires on some browsers).
 
-// Playback speed, persisted in localStorage so it survives reloads.
-const RATE_KEY = 'espanol_speech_rate_v1';
-const MIN_RATE = 0.5;
-const MAX_RATE = 1.3;
-const RATE_STEP = 0.1;
-const DEFAULT_RATE = 0.8;
+// The voice always speaks at this fixed, natural pace — it's no longer
+// user-adjustable (see AnswerDelay below for what the speed control now does).
+const FIXED_RATE = 0.8;
 
-function getRate() {
-  const stored = parseFloat(localStorage.getItem(RATE_KEY));
-  return Number.isFinite(stored) ? stored : DEFAULT_RATE;
+// In listening mode, the "speed" control doesn't change how fast the voice
+// talks — it changes how long the silent pause is between the question and
+// the spoken answer, i.e. how much thinking time the user gets to guess the
+// translation before it's read out. Persisted in localStorage.
+const DELAY_KEY = 'espanol_answer_delay_v1';
+const MIN_DELAY = 1;
+const MAX_DELAY = 8;
+const DELAY_STEP = 1;
+const DEFAULT_DELAY = 3;
+
+function getAnswerDelay() {
+  const stored = parseFloat(localStorage.getItem(DELAY_KEY));
+  return Number.isFinite(stored) ? stored : DEFAULT_DELAY;
 }
 
-function setRate(rate) {
-  const clamped = Math.min(MAX_RATE, Math.max(MIN_RATE, rate));
-  localStorage.setItem(RATE_KEY, clamped.toFixed(2));
+function setAnswerDelay(delay) {
+  const clamped = Math.min(MAX_DELAY, Math.max(MIN_DELAY, delay));
+  localStorage.setItem(DELAY_KEY, String(clamped));
   return clamped;
 }
 
-function adjustRate(delta) {
-  return setRate(getRate() + delta);
+function adjustAnswerDelay(delta) {
+  return setAnswerDelay(getAnswerDelay() + delta);
 }
 
 // Setting utter.lang alone isn't enough on some browsers/devices: if no voice
@@ -61,7 +68,7 @@ async function speak(text, lang = 'es-ES') {
     const utter = new SpeechSynthesisUtterance(text);
     utter.lang = lang;
     if (voice) utter.voice = voice;
-    utter.rate = getRate();
+    utter.rate = FIXED_RATE;
     let done = false;
     const finish = () => {
       if (done) return;
@@ -76,4 +83,4 @@ async function speak(text, lang = 'es-ES') {
 }
 
 window.speak = speak;
-window.SpeechRate = { get: getRate, set: setRate, adjust: adjustRate, MIN_RATE, MAX_RATE, RATE_STEP };
+window.AnswerDelay = { get: getAnswerDelay, set: setAnswerDelay, adjust: adjustAnswerDelay, MIN_DELAY, MAX_DELAY, DELAY_STEP };

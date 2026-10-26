@@ -20,6 +20,18 @@ function findSubsection(content, subsectionId) {
   return null;
 }
 
+// Flat list of every non-empty subsection paired with its parent theme —
+// used by auto-play mode to pick randomly across the whole app.
+function allSubsections(content) {
+  const out = [];
+  content.themes.forEach(theme => {
+    theme.subsections.forEach(sub => {
+      if (sub.items && sub.items.length) out.push({ theme, subsection: sub });
+    });
+  });
+  return out;
+}
+
 // Every item across all themes/subsections whose most recent answer was wrong.
 // Each item carries its original SRS id (_id) so answering it here updates the
 // same underlying record — get it right and it drops out of this list.
@@ -94,6 +106,6 @@ function shuffle(arr) {
 }
 
 window.Data = {
-  loadContent, findTheme, findSubsection, collectMistakeItems, subsectionMistakeItems,
+  loadContent, findTheme, findSubsection, allSubsections, collectMistakeItems, subsectionMistakeItems,
   pickBlankWord, buildBlankSentence, keywordPool, shuffle
 };
