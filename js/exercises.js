@@ -242,6 +242,20 @@ function runAutoListening(container, allSubs) {
     repeat = 0;
     pos = 0;
     render();
+    announceTitleAndPlay();
+  }
+
+  // Announces the category title aloud before the first card plays, so a
+  // driver who can't look at the screen still knows what section is starting.
+  async function announceTitleAndPlay() {
+    const myToken = token;
+    const stillCurrent = () => container.isConnected && token === myToken && playing;
+    if (playing) {
+      await window.speak(current.subsection.title, 'es-ES');
+      if (!stillCurrent()) return;
+      await wait(500);
+      if (!stillCurrent()) return;
+    }
     playSequence();
   }
 

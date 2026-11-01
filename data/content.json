@@ -468,7 +468,14 @@
             {
               "es": "la puerta",
               "fr": "la porte"
-            },
+            }
+          ]
+        },
+        {
+          "id": "clase-objetos-p2",
+          "title": "Objetos en el salón de clase P2",
+          "kind": "vocab",
+          "items": [
             {
               "es": "la ventana",
               "fr": "la fenêtre"
@@ -662,7 +669,14 @@
             {
               "es": "Corrige la actividad.",
               "fr": "Corrige l'activité."
-            },
+            }
+          ]
+        },
+        {
+          "id": "clase-instrucciones-p2",
+          "title": "Expresiones e instrucciones en clase P2",
+          "kind": "phrase",
+          "items": [
             {
               "es": "Vamos a hacer una pausa.",
               "fr": "On va faire une pause."
@@ -1083,7 +1097,14 @@
             {
               "es": "la foto",
               "fr": "la photo"
-            },
+            }
+          ]
+        },
+        {
+          "id": "vocgen-mas-p2",
+          "title": "Más palabras útiles P2",
+          "kind": "vocab",
+          "items": [
             {
               "es": "el mensaje",
               "fr": "le message"
@@ -1203,7 +1224,14 @@
             {
               "es": "las lenguas",
               "fr": "les langues"
-            },
+            }
+          ]
+        },
+        {
+          "id": "vocgen-mas-p3",
+          "title": "Más palabras útiles P3",
+          "kind": "vocab",
+          "items": [
             {
               "es": "la música clásica",
               "fr": "la musique classique"
@@ -1259,8 +1287,33 @@
             {
               "es": "el presidente",
               "fr": "le président"
+            },
+            {
+              "es": "solamente",
+              "fr": "seulement"
+            },
+            {
+              "es": "saludable",
+              "fr": "sain(e) / en bonne santé"
+            },
+            {
+              "es": "las donaciones",
+              "fr": "les dons"
+            },
+            {
+              "es": "los fantasmas",
+              "fr": "les fantômes"
+            },
+            {
+              "es": "los productos artesanales",
+              "fr": "les produits artisanaux"
+            },
+            {
+              "es": "rápidamente",
+              "fr": "rapidement"
             }
-          ]
+          ],
+          "updated": "2026-11-01"
         },
         {
           "id": "vocgen-adjetivos-articulos",
@@ -1662,40 +1715,150 @@
           "updated": "2026-10-03",
           "kind": "vocab",
           "items": [
-            { "es": "el comercial / la comercial", "fr": "le commercial / la commerciale" },
-            { "es": "el / la deportista", "fr": "le sportif / la sportive" },
-            { "es": "el científico / la científica", "fr": "le scientifique / la scientifique" },
-            { "es": "el / la estudiante de arquitectura", "fr": "l'étudiant(e) en architecture" },
-            { "es": "el diseñador / la diseñadora de moda", "fr": "le / la styliste de mode" },
-            { "es": "el jefe / la jefa", "fr": "le chef / la cheffe (patron/patronne)" },
-            { "es": "el bloguero / la bloguera", "fr": "le blogueur / la blogueuse" },
-            { "es": "el cirujano / la cirujana", "fr": "le chirurgien / la chirurgienne" },
-            { "es": "el / la lingüista", "fr": "le / la linguiste" },
-            { "es": "el psicólogo / la psicóloga", "fr": "le psychologue / la psychologue" },
-            { "es": "el médico / la médica", "fr": "le médecin / la médecin" },
-            { "es": "el profesor / la profesora", "fr": "le professeur / la professeure" },
-            { "es": "el abogado / la abogada", "fr": "l'avocat / l'avocate" },
-            { "es": "el camarero / la camarera", "fr": "le serveur / la serveuse" },
-            { "es": "el cocinero / la cocinera", "fr": "le cuisinier / la cuisinière" },
-            { "es": "el enfermero / la enfermera", "fr": "l'infirmier / l'infirmière" },
-            { "es": "el ingeniero / la ingeniera", "fr": "l'ingénieur / l'ingénieure" },
-            { "es": "el / la policía", "fr": "le policier / la policière" },
-            { "es": "el bombero / la bombera", "fr": "le pompier / la pompière" },
-            { "es": "el panadero / la panadera", "fr": "le boulanger / la boulangère" },
-            { "es": "el peluquero / la peluquera", "fr": "le coiffeur / la coiffeuse" },
-            { "es": "el mecánico / la mecánica", "fr": "le mécanicien / la mécanicienne" },
-            { "es": "el / la dentista", "fr": "le / la dentiste" },
-            { "es": "el vendedor / la vendedora", "fr": "le vendeur / la vendeuse" },
-            { "es": "el escritor / la escritora", "fr": "l'écrivain / l'écrivaine" },
-            { "es": "el / la chef", "fr": "le chef / la cheffe" },
-            { "es": "el / la astronauta", "fr": "l'astronaute" },
-            { "es": "el piloto / la piloto", "fr": "le pilote / la pilote" },
-            { "es": "el / la coach", "fr": "le coach / la coach" },
-            { "es": "el doctor / la doctora", "fr": "le docteur / la docteure" },
-            { "es": "el actor / la actriz", "fr": "l'acteur / l'actrice" },
-            { "es": "el secretario / la secretaria", "fr": "le secrétaire / la secrétaire" },
-            { "es": "el músico / la música", "fr": "le musicien / la musicienne" },
-            { "es": "el veterinario / la veterinaria", "fr": "le vétérinaire / la vétérinaire" }
+            {
+              "es": "el comercial / la comercial",
+              "fr": "le commercial / la commerciale"
+            },
+            {
+              "es": "el / la deportista",
+              "fr": "le sportif / la sportive"
+            },
+            {
+              "es": "el científico / la científica",
+              "fr": "le scientifique / la scientifique"
+            },
+            {
+              "es": "el / la estudiante de arquitectura",
+              "fr": "l'étudiant(e) en architecture"
+            },
+            {
+              "es": "el diseñador / la diseñadora de moda",
+              "fr": "le / la styliste de mode"
+            },
+            {
+              "es": "el jefe / la jefa",
+              "fr": "le chef / la cheffe (patron/patronne)"
+            },
+            {
+              "es": "el bloguero / la bloguera",
+              "fr": "le blogueur / la blogueuse"
+            },
+            {
+              "es": "el cirujano / la cirujana",
+              "fr": "le chirurgien / la chirurgienne"
+            },
+            {
+              "es": "el / la lingüista",
+              "fr": "le / la linguiste"
+            },
+            {
+              "es": "el psicólogo / la psicóloga",
+              "fr": "le psychologue / la psychologue"
+            },
+            {
+              "es": "el médico / la médica",
+              "fr": "le médecin / la médecin"
+            },
+            {
+              "es": "el profesor / la profesora",
+              "fr": "le professeur / la professeure"
+            },
+            {
+              "es": "el abogado / la abogada",
+              "fr": "l'avocat / l'avocate"
+            },
+            {
+              "es": "el camarero / la camarera",
+              "fr": "le serveur / la serveuse"
+            },
+            {
+              "es": "el cocinero / la cocinera",
+              "fr": "le cuisinier / la cuisinière"
+            },
+            {
+              "es": "el enfermero / la enfermera",
+              "fr": "l'infirmier / l'infirmière"
+            },
+            {
+              "es": "el ingeniero / la ingeniera",
+              "fr": "l'ingénieur / l'ingénieure"
+            },
+            {
+              "es": "el / la policía",
+              "fr": "le policier / la policière"
+            },
+            {
+              "es": "el bombero / la bombera",
+              "fr": "le pompier / la pompière"
+            },
+            {
+              "es": "el panadero / la panadera",
+              "fr": "le boulanger / la boulangère"
+            },
+            {
+              "es": "el peluquero / la peluquera",
+              "fr": "le coiffeur / la coiffeuse"
+            },
+            {
+              "es": "el mecánico / la mecánica",
+              "fr": "le mécanicien / la mécanicienne"
+            },
+            {
+              "es": "el / la dentista",
+              "fr": "le / la dentiste"
+            },
+            {
+              "es": "el vendedor / la vendedora",
+              "fr": "le vendeur / la vendeuse"
+            },
+            {
+              "es": "el escritor / la escritora",
+              "fr": "l'écrivain / l'écrivaine"
+            },
+            {
+              "es": "el / la chef",
+              "fr": "le chef / la cheffe"
+            },
+            {
+              "es": "el / la astronauta",
+              "fr": "l'astronaute"
+            },
+            {
+              "es": "el piloto / la piloto",
+              "fr": "le pilote / la pilote"
+            },
+            {
+              "es": "el / la coach",
+              "fr": "le coach / la coach"
+            },
+            {
+              "es": "el doctor / la doctora",
+              "fr": "le docteur / la docteure"
+            }
+          ]
+        },
+        {
+          "id": "vocgen-profesiones-p2",
+          "title": "Profesiones P2",
+          "updated": "2026-10-03",
+          "kind": "vocab",
+          "items": [
+            {
+              "es": "el actor / la actriz",
+              "fr": "l'acteur / l'actrice"
+            },
+            {
+              "es": "el secretario / la secretaria",
+              "fr": "le secrétaire / la secrétaire"
+            },
+            {
+              "es": "el músico / la música",
+              "fr": "le musicien / la musicienne"
+            },
+            {
+              "es": "el veterinario / la veterinaria",
+              "fr": "le vétérinaire / la vétérinaire"
+            }
           ]
         },
         {
@@ -1707,13 +1870,34 @@
             "En español, los signos de interrogación (¿?) y de exclamación (¡!) se escriben al principio Y al final de la frase: ¿Cómo estás? ¡Qué bien!"
           ],
           "items": [
-            { "es": "el punto (.)", "fr": "le point (.)" },
-            { "es": "la coma (,)", "fr": "la virgule (,)" },
-            { "es": "el punto y coma (;)", "fr": "le point-virgule (;)" },
-            { "es": "los dos puntos (:)", "fr": "les deux-points (:)" },
-            { "es": "el guion (-)", "fr": "le tiret (-)" },
-            { "es": "los signos de interrogación (¿ ?)", "fr": "les points d'interrogation (¿ ?)" },
-            { "es": "los signos de exclamación (¡ !)", "fr": "les points d'exclamation (¡ !)" }
+            {
+              "es": "el punto (.)",
+              "fr": "le point (.)"
+            },
+            {
+              "es": "la coma (,)",
+              "fr": "la virgule (,)"
+            },
+            {
+              "es": "el punto y coma (;)",
+              "fr": "le point-virgule (;)"
+            },
+            {
+              "es": "los dos puntos (:)",
+              "fr": "les deux-points (:)"
+            },
+            {
+              "es": "el guion (-)",
+              "fr": "le tiret (-)"
+            },
+            {
+              "es": "los signos de interrogación (¿ ?)",
+              "fr": "les points d'interrogation (¿ ?)"
+            },
+            {
+              "es": "los signos de exclamación (¡ !)",
+              "fr": "les points d'exclamation (¡ !)"
+            }
           ]
         },
         {
@@ -1722,70 +1906,262 @@
           "updated": "2026-10-03",
           "kind": "vocab",
           "items": [
-            { "es": "alto / bajo", "fr": "grand / petit" },
-            { "es": "cerrado / abierto", "fr": "fermé / ouvert" },
-            { "es": "horrible / maravilloso", "fr": "horrible / merveilleux" },
-            { "es": "grande / pequeño", "fr": "grand / petit" },
-            { "es": "moderno / antiguo", "fr": "moderne / ancien" },
-            { "es": "encendido / apagado", "fr": "allumé / éteint" },
-            { "es": "viejos / nuevos", "fr": "vieux / neufs" },
-            { "es": "larga / corta", "fr": "longue / courte" },
-            { "es": "limpia / sucia", "fr": "propre / sale" },
-            { "es": "caro / barato", "fr": "cher / bon marché" },
-            { "es": "bien / mal", "fr": "bien / mal" },
-            { "es": "nervioso / tranquilo", "fr": "nerveux / calme" },
-            { "es": "triste / contento", "fr": "triste / content" },
-            { "es": "rico / pobre", "fr": "riche / pauvre" },
-            { "es": "lleno / vacío", "fr": "plein / vide" }
+            {
+              "es": "alto / bajo",
+              "fr": "grand / petit"
+            },
+            {
+              "es": "cerrado / abierto",
+              "fr": "fermé / ouvert"
+            },
+            {
+              "es": "horrible / maravilloso",
+              "fr": "horrible / merveilleux"
+            },
+            {
+              "es": "grande / pequeño",
+              "fr": "grand / petit"
+            },
+            {
+              "es": "moderno / antiguo",
+              "fr": "moderne / ancien"
+            },
+            {
+              "es": "encendido / apagado",
+              "fr": "allumé / éteint"
+            },
+            {
+              "es": "viejos / nuevos",
+              "fr": "vieux / neufs"
+            },
+            {
+              "es": "larga / corta",
+              "fr": "longue / courte"
+            },
+            {
+              "es": "limpia / sucia",
+              "fr": "propre / sale"
+            },
+            {
+              "es": "caro / barato",
+              "fr": "cher / bon marché"
+            },
+            {
+              "es": "bien / mal",
+              "fr": "bien / mal"
+            },
+            {
+              "es": "nervioso / tranquilo",
+              "fr": "nerveux / calme"
+            },
+            {
+              "es": "triste / contento",
+              "fr": "triste / content"
+            },
+            {
+              "es": "rico / pobre",
+              "fr": "riche / pauvre"
+            },
+            {
+              "es": "lleno / vacío",
+              "fr": "plein / vide"
+            }
           ]
         },
         {
           "id": "vocgen-verbos",
           "title": "Verbos útiles",
-          "updated": "2026-10-22",
+          "updated": "2026-11-01",
           "kind": "vocab",
           "items": [
-            { "es": "trabajar", "fr": "travailler" },
-            { "es": "dar", "fr": "donner" },
-            { "es": "escuchar", "fr": "écouter" },
-            { "es": "servir", "fr": "servir" },
-            { "es": "hacer", "fr": "faire" },
-            { "es": "hablar", "fr": "parler" },
-            { "es": "ver", "fr": "voir" },
-            { "es": "leer", "fr": "lire" },
-            { "es": "usar", "fr": "utiliser" },
-            { "es": "dirigirse (a)", "fr": "s'adresser (à)" },
-            { "es": "marcar", "fr": "marquer" },
-            { "es": "pronunciar", "fr": "prononcer" },
-            { "es": "mirar", "fr": "regarder" },
-            { "es": "tomar", "fr": "prendre" },
-            { "es": "tocar", "fr": "toucher / jouer (d'un instrument)" },
-            { "es": "terminar", "fr": "terminer" },
-            { "es": "abrir", "fr": "ouvrir" },
-            { "es": "vivir", "fr": "vivre" },
-            { "es": "partir", "fr": "partir" },
-            { "es": "permitir", "fr": "permettre" },
-            { "es": "decidir", "fr": "décider" },
-            { "es": "recibir", "fr": "recevoir" },
-            { "es": "aplaudir", "fr": "applaudir" },
-            { "es": "describir", "fr": "décrire" },
-            { "es": "subir", "fr": "monter" },
-            { "es": "compartir", "fr": "partager" }
+            {
+              "es": "trabajar",
+              "fr": "travailler"
+            },
+            {
+              "es": "dar",
+              "fr": "donner"
+            },
+            {
+              "es": "escuchar",
+              "fr": "écouter"
+            },
+            {
+              "es": "servir",
+              "fr": "servir"
+            },
+            {
+              "es": "hacer",
+              "fr": "faire"
+            },
+            {
+              "es": "hablar",
+              "fr": "parler"
+            },
+            {
+              "es": "ver",
+              "fr": "voir"
+            },
+            {
+              "es": "leer",
+              "fr": "lire"
+            },
+            {
+              "es": "usar",
+              "fr": "utiliser"
+            },
+            {
+              "es": "dirigirse (a)",
+              "fr": "s'adresser (à)"
+            },
+            {
+              "es": "marcar",
+              "fr": "marquer"
+            },
+            {
+              "es": "pronunciar",
+              "fr": "prononcer"
+            },
+            {
+              "es": "mirar",
+              "fr": "regarder"
+            },
+            {
+              "es": "tomar",
+              "fr": "prendre"
+            },
+            {
+              "es": "tocar",
+              "fr": "toucher / jouer (d'un instrument)"
+            },
+            {
+              "es": "terminar",
+              "fr": "terminer"
+            },
+            {
+              "es": "abrir",
+              "fr": "ouvrir"
+            },
+            {
+              "es": "vivir",
+              "fr": "vivre"
+            },
+            {
+              "es": "partir",
+              "fr": "partir"
+            },
+            {
+              "es": "permitir",
+              "fr": "permettre"
+            },
+            {
+              "es": "decidir",
+              "fr": "décider"
+            },
+            {
+              "es": "recibir",
+              "fr": "recevoir"
+            },
+            {
+              "es": "aplaudir",
+              "fr": "applaudir"
+            },
+            {
+              "es": "describir",
+              "fr": "décrire"
+            },
+            {
+              "es": "subir",
+              "fr": "monter"
+            },
+            {
+              "es": "compartir",
+              "fr": "partager"
+            },
+            {
+              "es": "comer",
+              "fr": "manger"
+            },
+            {
+              "es": "beber",
+              "fr": "boire"
+            },
+            {
+              "es": "correr",
+              "fr": "courir"
+            },
+            {
+              "es": "depender (de)",
+              "fr": "dépendre (de)"
+            }
+          ]
+        },
+        {
+          "id": "vocgen-verbos-p2",
+          "title": "Verbos útiles P2",
+          "updated": "2026-11-01",
+          "kind": "vocab",
+          "items": [
+            {
+              "es": "temer",
+              "fr": "craindre"
+            },
+            {
+              "es": "aprender",
+              "fr": "apprendre"
+            },
+            {
+              "es": "vender",
+              "fr": "vendre"
+            },
+            {
+              "es": "responder",
+              "fr": "répondre"
+            },
+            {
+              "es": "prometer",
+              "fr": "promettre"
+            }
           ]
         },
         {
           "id": "vocgen-frases",
           "title": "Frases útiles",
-          "updated": "2026-10-26",
+          "updated": "2026-11-01",
           "kind": "phrase",
           "items": [
-            { "es": "Te puedo hacer daño.", "fr": "Cela peut te faire mal." },
-            { "es": "un día después", "fr": "un jour après" },
-            { "es": "antes de", "fr": "avant de" },
-            { "es": "de algún familiar", "fr": "d'un membre de la famille" },
-            { "es": "me parece sensata", "fr": "elle me semble sensée" },
-            { "es": "todo tipo de", "fr": "toute sorte de" },
-            { "es": "sube un video", "fr": "il/elle met en ligne une vidéo" }
+            {
+              "es": "Te puedo hacer daño.",
+              "fr": "Cela peut te faire mal."
+            },
+            {
+              "es": "un día después",
+              "fr": "un jour après"
+            },
+            {
+              "es": "antes de",
+              "fr": "avant de"
+            },
+            {
+              "es": "de algún familiar",
+              "fr": "d'un membre de la famille"
+            },
+            {
+              "es": "me parece sensata",
+              "fr": "elle me semble sensée"
+            },
+            {
+              "es": "todo tipo de",
+              "fr": "toute sorte de"
+            },
+            {
+              "es": "sube un video",
+              "fr": "il/elle met en ligne une vidéo"
+            },
+            {
+              "es": "que no lo harás de nuevo",
+              "fr": "que tu ne le referas plus"
+            }
           ]
         }
       ]
