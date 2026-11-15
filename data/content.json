@@ -2121,6 +2121,30 @@
             {
               "es": "prometer",
               "fr": "promettre"
+            },
+            {
+              "es": "caminar",
+              "fr": "marcher"
+            },
+            {
+              "es": "escribir",
+              "fr": "écrire"
+            },
+            {
+              "es": "esperar",
+              "fr": "attendre / espérer"
+            },
+            {
+              "es": "preguntar",
+              "fr": "demander"
+            },
+            {
+              "es": "imprimir",
+              "fr": "imprimer"
+            },
+            {
+              "es": "saber hacer",
+              "fr": "savoir faire"
             }
           ]
         },
@@ -2161,6 +2185,82 @@
             {
               "es": "que no lo harás de nuevo",
               "fr": "que tu ne le referas plus"
+            },
+            {
+              "es": "por la playa",
+              "fr": "le long de la plage"
+            },
+            {
+              "es": "en demasía",
+              "fr": "en excès / de trop"
+            },
+            {
+              "es": "a su novio",
+              "fr": "à son copain / à son petit ami"
+            }
+          ]
+        },
+        {
+          "id": "vocgen-mas-p4",
+          "title": "Más palabras útiles P4",
+          "updated": "2026-11-15",
+          "kind": "vocab",
+          "items": [
+            {
+              "es": "estudiando",
+              "fr": "étudiant (en train d'étudier)"
+            },
+            {
+              "es": "el taxista",
+              "fr": "le chauffeur de taxi"
+            },
+            {
+              "es": "la estación",
+              "fr": "la station / la gare"
+            },
+            {
+              "es": "la gente",
+              "fr": "les gens"
+            },
+            {
+              "es": "los alumnos",
+              "fr": "les élèves"
+            },
+            {
+              "es": "un pan",
+              "fr": "un pain"
+            },
+            {
+              "es": "la panadería",
+              "fr": "la boulangerie"
+            },
+            {
+              "es": "un zumo de melocotón",
+              "fr": "un jus de pêche"
+            },
+            {
+              "es": "los deberes",
+              "fr": "les devoirs"
+            },
+            {
+              "es": "un profesional",
+              "fr": "un professionnel"
+            },
+            {
+              "es": "verduras y frutas",
+              "fr": "légumes et fruits"
+            },
+            {
+              "es": "la carnicería",
+              "fr": "la boucherie"
+            },
+            {
+              "es": "el carnicero",
+              "fr": "le boucher"
+            },
+            {
+              "es": "el mercado",
+              "fr": "le marché"
             }
           ]
         }
@@ -3102,6 +3202,175 @@
                 "Aquellas"
               ],
               "cue": "<svg viewBox='0 0 260 70' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='esas'><line x1='20' y1='30' x2='240' y2='30' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><circle cx='20' cy='22' r='8' fill='var(--primary)'/><rect x='12' y='30' width='16' height='20' rx='5' fill='var(--primary)'/><circle cx='90' cy='30' r='14' fill='var(--border)'/><circle cx='160' cy='30' r='15' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><circle cx='230' cy='30' r='9' fill='var(--border)'/><text x='90' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>estas</text><text x='160' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>esas</text><text x='230' y='58' text-anchor='middle' font-size='13' fill='var(--text)'>aquellas</text></svg>"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-gustar-estructura",
+          "title": "El verbo GUSTAR: estructura",
+          "kind": "vocab",
+          "updated": "2026-11-15",
+          "notes": [
+            "GUSTAR funciona al revés que en francés: el sujeto gramatical es la cosa que gusta, no la persona. Se usa siempre con un pronombre de objeto indirecto: me, te, le, nos, os, les."
+          ],
+          "items": [
+            {
+              "es": "me gusta",
+              "fr": "ça me plaît / j'aime (à moi)"
+            },
+            {
+              "es": "te gusta",
+              "fr": "ça te plaît / tu aimes (à toi)"
+            },
+            {
+              "es": "le gusta",
+              "fr": "ça lui plaît / il/elle aime"
+            },
+            {
+              "es": "nos gusta",
+              "fr": "ça nous plaît / nous aimons"
+            },
+            {
+              "es": "os gusta",
+              "fr": "ça vous plaît / vous aimez (vosotros)"
+            },
+            {
+              "es": "les gusta",
+              "fr": "ça leur plaît / ils/elles aiment"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-gustar-singular-plural",
+          "title": "GUSTA o GUSTAN",
+          "kind": "vocab",
+          "updated": "2026-11-15",
+          "notes": [
+            "GUSTA se usa delante de un infinitivo (o varios infinitivos juntos) y delante de un sustantivo singular. GUSTAN se usa delante de un sustantivo plural."
+          ],
+          "items": [
+            {
+              "es": "Me gusta bailar.",
+              "fr": "J'aime danser."
+            },
+            {
+              "es": "Me gusta nadar y bailar.",
+              "fr": "J'aime nager et danser."
+            },
+            {
+              "es": "Me gusta el chocolate.",
+              "fr": "J'aime le chocolat."
+            },
+            {
+              "es": "Me gustan los chocolates.",
+              "fr": "J'aime les chocolats."
+            },
+            {
+              "es": "Nos gusta la música.",
+              "fr": "Nous aimons la musique."
+            },
+            {
+              "es": "Nos gustan las películas de terror.",
+              "fr": "Nous aimons les films d'horreur."
+            },
+            {
+              "es": "¿Te gusta el fútbol?",
+              "fr": "Tu aimes le foot ?"
+            },
+            {
+              "es": "¿Te gustan los deportes?",
+              "fr": "Tu aimes les sports ?"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-gustar-enfasis",
+          "title": "Énfasis con GUSTAR: a mí me, a ti te...",
+          "kind": "vocab",
+          "updated": "2026-11-15",
+          "notes": [
+            "Para insistir o aclarar a quién le gusta algo, se puede añadir 'a + pronombre tónico' delante del pronombre normal: a mí me, a ti te, a él/ella le, a nosotros nos, a vosotros os, a ellos/ellas les."
+          ],
+          "items": [
+            {
+              "es": "a mí me gusta",
+              "fr": "à moi, j'aime (bien)"
+            },
+            {
+              "es": "a ti te gusta",
+              "fr": "à toi, tu aimes (bien)"
+            },
+            {
+              "es": "a él / a ella le gusta",
+              "fr": "à lui / à elle, il/elle aime (bien)"
+            },
+            {
+              "es": "a nosotros nos gusta",
+              "fr": "à nous, nous aimons (bien)"
+            },
+            {
+              "es": "a vosotros os gusta",
+              "fr": "à vous, vous aimez (bien) (vosotros)"
+            },
+            {
+              "es": "a ellos / a ellas les gusta",
+              "fr": "à eux / à elles, ils/elles aiment (bien)"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-gustar-frases",
+          "title": "Completa con GUSTA o GUSTAN",
+          "kind": "phrase",
+          "updated": "2026-11-15",
+          "items": [
+            {
+              "es": "A Pedro le gusta el cine.",
+              "fr": "Pedro aime le cinéma.",
+              "blankWord": "gusta",
+              "blankOptions": ["gusta", "gustan"]
+            },
+            {
+              "es": "A mis padres les gustan los viajes.",
+              "fr": "Mes parents aiment les voyages.",
+              "blankWord": "gustan",
+              "blankOptions": ["gusta", "gustan"]
+            },
+            {
+              "es": "Nos gusta cocinar.",
+              "fr": "Nous aimons cuisiner.",
+              "blankWord": "gusta",
+              "blankOptions": ["gusta", "gustan"]
+            },
+            {
+              "es": "¿Os gustan las fiestas?",
+              "fr": "Vous aimez les fêtes ? (vosotros)",
+              "blankWord": "gustan",
+              "blankOptions": ["gusta", "gustan"]
+            },
+            {
+              "es": "A ella le gusta leer novelas.",
+              "fr": "Elle aime lire des romans.",
+              "blankWord": "gusta",
+              "blankOptions": ["gusta", "gustan"]
+            },
+            {
+              "es": "Me gustan mucho los animales.",
+              "fr": "J'aime beaucoup les animaux.",
+              "blankWord": "gustan",
+              "blankOptions": ["gusta", "gustan"]
+            },
+            {
+              "es": "¿Te gusta este regalo?",
+              "fr": "Tu aimes ce cadeau ?",
+              "blankWord": "gusta",
+              "blankOptions": ["gusta", "gustan"]
+            },
+            {
+              "es": "A los niños les gustan los dulces.",
+              "fr": "Les enfants aiment les bonbons.",
+              "blankWord": "gustan",
+              "blankOptions": ["gusta", "gustan"]
             }
           ]
         },
