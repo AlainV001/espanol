@@ -3473,6 +3473,73 @@
           ]
         },
         {
+          "id": "gramatica-gustar-persona",
+          "title": "GUSTAR cuando el sujeto es una persona",
+          "kind": "vocab",
+          "updated": "2026-11-15",
+          "notes": [
+            "GUSTAR es un verbo regular en -AR con sus 6 personas (gusto, gustas, gusta, gustamos, gustáis, gustan). Casi siempre se usa en 3ª persona (gusta/gustan) porque lo que gusta suele ser una cosa. Pero si lo que gusta es una PERSONA, esa persona es el sujeto gramatical y el verbo se conjuga según ella. El pronombre sujeto puede ir antes o después del verbo: 'Tú me gustas' = 'Me gustas tú'."
+          ],
+          "items": [
+            {
+              "es": "yo",
+              "fr": "gusto"
+            },
+            {
+              "es": "tú",
+              "fr": "gustas"
+            },
+            {
+              "es": "él / ella / usted",
+              "fr": "gusta"
+            },
+            {
+              "es": "nosotros / nosotras",
+              "fr": "gustamos"
+            },
+            {
+              "es": "vosotros / vosotras",
+              "fr": "gustáis (*solo en España)"
+            },
+            {
+              "es": "ellos / ellas / ustedes",
+              "fr": "gustan"
+            },
+            {
+              "es": "Me gustas tú.",
+              "fr": "Tu me plais."
+            },
+            {
+              "es": "Te gusto yo.",
+              "fr": "Je te plais."
+            },
+            {
+              "es": "Me gusta él.",
+              "fr": "Il me plaît."
+            },
+            {
+              "es": "Nos gustáis vosotros.",
+              "fr": "Vous nous plaisez."
+            },
+            {
+              "es": "Les gusto yo.",
+              "fr": "Je leur plais."
+            },
+            {
+              "es": "Tú me gustas.",
+              "fr": "Tu me plais."
+            },
+            {
+              "es": "Él me gusta.",
+              "fr": "Il me plaît."
+            },
+            {
+              "es": "Vosotros nos gustáis.",
+              "fr": "Vous nous plaisez."
+            }
+          ]
+        },
+        {
           "id": "posicion-preposiciones",
           "title": "Preposiciones de posición",
           "kind": "vocab",
