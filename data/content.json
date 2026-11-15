@@ -2261,6 +2261,18 @@
             {
               "es": "el mercado",
               "fr": "le marché"
+            },
+            {
+              "es": "el fútbol",
+              "fr": "le football"
+            },
+            {
+              "es": "el baloncesto",
+              "fr": "le basket-ball"
+            },
+            {
+              "es": "el tenis",
+              "fr": "le tennis"
             }
           ]
         }
@@ -3371,6 +3383,92 @@
               "fr": "Les enfants aiment les bonbons.",
               "blankWord": "gustan",
               "blankOptions": ["gusta", "gustan"]
+            }
+          ]
+        },
+        {
+          "id": "gramatica-gustar-grados",
+          "title": "¿Cuánto te gusta? (escala de preferencia)",
+          "kind": "vocab",
+          "updated": "2026-11-15",
+          "notes": [
+            "Para decir cuánto te gusta algo, se añade un adverbio de grado después de gusta/gustan: muchísimo, mucho, bastante, un poco. En la forma negativa, 'nada' refuerza la negación. ENCANTAR sustituye a GUSTAR para el grado más alto."
+          ],
+          "items": [
+            {
+              "es": "Me encanta.",
+              "fr": "J'adore ça."
+            },
+            {
+              "es": "Me gusta mucho.",
+              "fr": "J'aime ça beaucoup."
+            },
+            {
+              "es": "Me gusta bastante.",
+              "fr": "J'aime ça pas mal / assez."
+            },
+            {
+              "es": "Me gusta.",
+              "fr": "J'aime ça."
+            },
+            {
+              "es": "Me gusta un poco.",
+              "fr": "J'aime ça un peu."
+            },
+            {
+              "es": "No me gusta mucho.",
+              "fr": "Je n'aime pas trop ça."
+            },
+            {
+              "es": "No me gusta.",
+              "fr": "Je n'aime pas ça."
+            },
+            {
+              "es": "No me gusta nada.",
+              "fr": "Je n'aime pas du tout ça."
+            }
+          ]
+        },
+        {
+          "id": "gramatica-gustar-contrastar",
+          "title": "Contrastar gustos: a mí también, a mí no...",
+          "kind": "vocab",
+          "updated": "2026-11-15",
+          "notes": [
+            "Para estar de acuerdo con una frase afirmativa se usa TAMBIÉN (a mí también = moi aussi). Para estar de acuerdo con una frase negativa se usa TAMPOCO (a mí tampoco = moi non plus). Para decir lo contrario de lo que dice la otra persona se usa NO (si ella dijo algo positivo) o SÍ (si ella dijo algo negativo)."
+          ],
+          "items": [
+            {
+              "es": "a mí también",
+              "fr": "moi aussi (acuerdo con algo positivo)"
+            },
+            {
+              "es": "a mí tampoco",
+              "fr": "moi non plus (acuerdo con algo negativo)"
+            },
+            {
+              "es": "a mí no",
+              "fr": "moi non / pas moi (desacuerdo con algo positivo)"
+            },
+            {
+              "es": "a mí sí",
+              "fr": "moi si (desacuerdo con algo negativo)"
+            },
+            {
+              "es": "Me gusta el café. —A mí también.",
+              "fr": "J'aime le café. —Moi aussi."
+            },
+            {
+              "es": "No me gusta el café. —A mí tampoco.",
+              "fr": "Je n'aime pas le café. —Moi non plus."
+            },
+            {
+              "es": "Me gusta el café. —A mí no.",
+              "fr": "J'aime le café. —Pas moi."
+            },
+            {
+              "es": "No me gusta el café. —A mí sí.",
+              "fr": "Je n'aime pas le café. —Moi si."
             }
           ]
         },
