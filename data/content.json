@@ -3440,19 +3440,19 @@
           "items": [
             {
               "es": "a mí también",
-              "fr": "moi aussi (acuerdo con algo positivo)"
+              "fr": "moi aussi (accord avec une phrase positive)"
             },
             {
               "es": "a mí tampoco",
-              "fr": "moi non plus (acuerdo con algo negativo)"
+              "fr": "moi non plus (accord avec une phrase négative)"
             },
             {
               "es": "a mí no",
-              "fr": "moi non / pas moi (desacuerdo con algo positivo)"
+              "fr": "moi non / pas moi (désaccord avec une phrase positive)"
             },
             {
               "es": "a mí sí",
-              "fr": "moi si (desacuerdo con algo negativo)"
+              "fr": "moi si (désaccord avec une phrase négative)"
             },
             {
               "es": "Me gusta el café. —A mí también.",
@@ -3550,35 +3550,35 @@
           "items": [
             {
               "es": "muy alto",
-              "fr": "très grand (muy + adjetivo, invariable)"
+              "fr": "très grand (adjectif, invariable)"
             },
             {
               "es": "muy bien",
-              "fr": "très bien (muy + adverbio, invariable)"
+              "fr": "très bien (adverbe, invariable)"
             },
             {
               "es": "mucho dinero",
-              "fr": "beaucoup d'argent (mucho + sustantivo masc. sing.)"
+              "fr": "beaucoup d'argent (nom masc. singulier)"
             },
             {
               "es": "mucha suerte",
-              "fr": "beaucoup de chance (mucha + sustantivo fem. sing.)"
+              "fr": "beaucoup de chance (nom fém. singulier)"
             },
             {
               "es": "muchos libros",
-              "fr": "beaucoup de livres (muchos + sustantivo masc. pl.)"
+              "fr": "beaucoup de livres (nom masc. pluriel)"
             },
             {
               "es": "muchas casas",
-              "fr": "beaucoup de maisons (muchas + sustantivo fem. pl.)"
+              "fr": "beaucoup de maisons (nom fém. pluriel)"
             },
             {
               "es": "Como mucho.",
-              "fr": "Je mange beaucoup. (mucho + verbo, invariable)"
+              "fr": "Je mange beaucoup. (après un verbe, invariable)"
             },
             {
               "es": "Trabaja mucho.",
-              "fr": "Il/Elle travaille beaucoup. (mucho + verbo, invariable)"
+              "fr": "Il/Elle travaille beaucoup. (après un verbe, invariable)"
             }
           ]
         },
