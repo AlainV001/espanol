@@ -1457,6 +1457,12 @@
               "fr": "lourd / lourde",
               "context": "La maleta es pesada.",
               "contextFr": "La valise est lourde."
+            },
+            {
+              "es": "desagradable",
+              "fr": "désagréable",
+              "context": "El tiempo es desagradable hoy.",
+              "contextFr": "Le temps est désagréable aujourd'hui."
             }
           ]
         },
@@ -2145,6 +2151,10 @@
             {
               "es": "saber hacer",
               "fr": "savoir faire"
+            },
+            {
+              "es": "poseer",
+              "fr": "posséder"
             }
           ]
         },
@@ -2273,6 +2283,46 @@
             {
               "es": "el tenis",
               "fr": "le tennis"
+            },
+            {
+              "es": "en verano",
+              "fr": "en été"
+            },
+            {
+              "es": "en invierno",
+              "fr": "en hiver"
+            },
+            {
+              "es": "hoy",
+              "fr": "aujourd'hui"
+            },
+            {
+              "es": "temprano",
+              "fr": "tôt",
+              "context": "Todavía es muy temprano.",
+              "contextFr": "C'est encore très tôt."
+            },
+            {
+              "es": "todavía",
+              "fr": "encore",
+              "context": "Todavía es muy temprano.",
+              "contextFr": "C'est encore très tôt."
+            },
+            {
+              "es": "ya",
+              "fr": "déjà",
+              "context": "Ya es muy tarde.",
+              "contextFr": "Il est déjà très tard."
+            },
+            {
+              "es": "tarde",
+              "fr": "tard",
+              "context": "Ya es muy tarde.",
+              "contextFr": "Il est déjà très tard."
+            },
+            {
+              "es": "un tiempo",
+              "fr": "un certain temps"
             }
           ]
         }
