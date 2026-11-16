@@ -1463,6 +1463,12 @@
               "fr": "désagréable",
               "context": "El tiempo es desagradable hoy.",
               "contextFr": "Le temps est désagréable aujourd'hui."
+            },
+            {
+              "es": "ruidoso / ruidosa",
+              "fr": "bruyant / bruyante",
+              "context": "El restaurante es muy ruidoso.",
+              "contextFr": "Le restaurant est très bruyant."
             }
           ]
         },
@@ -2207,6 +2213,10 @@
             {
               "es": "a su novio",
               "fr": "à son copain / à son petit ami"
+            },
+            {
+              "es": "Quiero ir a otro.",
+              "fr": "Je veux aller ailleurs (dans un autre endroit)."
             }
           ]
         },
@@ -2291,6 +2301,14 @@
             {
               "es": "en invierno",
               "fr": "en hiver"
+            },
+            {
+              "es": "en otoño",
+              "fr": "en automne"
+            },
+            {
+              "es": "llueve",
+              "fr": "il pleut"
             },
             {
               "es": "hoy",
