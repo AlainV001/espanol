@@ -3540,6 +3540,117 @@
           ]
         },
         {
+          "id": "gramatica-muy-mucho-estructura",
+          "title": "MUY y MUCHO/A/OS/AS: estructura",
+          "kind": "vocab",
+          "updated": "2026-11-16",
+          "notes": [
+            "MUY es un adverbio invariable: va delante de un adjetivo o de otro adverbio (muy alto, muy bien). MUCHO es variable cuando acompaña a un sustantivo: concuerda en género y número (mucho/mucha/muchos/muchas + sustantivo). MUCHO es invariable cuando acompaña a un verbo, como adverbio de cantidad (trabaja mucho)."
+          ],
+          "items": [
+            {
+              "es": "muy alto",
+              "fr": "très grand (muy + adjetivo, invariable)"
+            },
+            {
+              "es": "muy bien",
+              "fr": "très bien (muy + adverbio, invariable)"
+            },
+            {
+              "es": "mucho dinero",
+              "fr": "beaucoup d'argent (mucho + sustantivo masc. sing.)"
+            },
+            {
+              "es": "mucha suerte",
+              "fr": "beaucoup de chance (mucha + sustantivo fem. sing.)"
+            },
+            {
+              "es": "muchos libros",
+              "fr": "beaucoup de livres (muchos + sustantivo masc. pl.)"
+            },
+            {
+              "es": "muchas casas",
+              "fr": "beaucoup de maisons (muchas + sustantivo fem. pl.)"
+            },
+            {
+              "es": "Como mucho.",
+              "fr": "Je mange beaucoup. (mucho + verbo, invariable)"
+            },
+            {
+              "es": "Trabaja mucho.",
+              "fr": "Il/Elle travaille beaucoup. (mucho + verbo, invariable)"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-muy-mucho-frases",
+          "title": "Completa con MUY o MUCHO/A/OS/AS",
+          "kind": "phrase",
+          "updated": "2026-11-16",
+          "items": [
+            {
+              "es": "Este libro es muy interesante.",
+              "fr": "Ce livre est très intéressant.",
+              "blankWord": "muy",
+              "blankOptions": ["muy", "mucho", "mucha"]
+            },
+            {
+              "es": "Tengo mucho trabajo.",
+              "fr": "J'ai beaucoup de travail.",
+              "blankWord": "mucho",
+              "blankOptions": ["muy", "mucho", "mucha"]
+            },
+            {
+              "es": "Hay muchas personas en la fiesta.",
+              "fr": "Il y a beaucoup de personnes à la fête.",
+              "blankWord": "muchas",
+              "blankOptions": ["muy", "muchos", "muchas"]
+            },
+            {
+              "es": "Duerme mucho los fines de semana.",
+              "fr": "Il/Elle dort beaucoup le week-end.",
+              "blankWord": "mucho",
+              "blankOptions": ["muy", "mucho", "mucha"]
+            },
+            {
+              "es": "Mi hermana tiene muchos amigos.",
+              "fr": "Ma sœur a beaucoup d'amis.",
+              "blankWord": "muchos",
+              "blankOptions": ["muy", "muchos", "muchas"]
+            },
+            {
+              "es": "Él está muy nervioso.",
+              "fr": "Il est très nerveux.",
+              "blankWord": "muy",
+              "blankOptions": ["muy", "mucho", "muchos"]
+            },
+            {
+              "es": "Bebe mucha agua cada día.",
+              "fr": "Il/Elle boit beaucoup d'eau chaque jour.",
+              "blankWord": "mucha",
+              "blankOptions": ["muy", "mucho", "mucha"]
+            },
+            {
+              "es": "Hace mucho calor en verano.",
+              "fr": "Il fait très chaud en été.",
+              "blankWord": "mucho",
+              "blankOptions": ["muy", "mucho", "mucha"]
+            },
+            {
+              "es": "Las chicas están muy contentas.",
+              "fr": "Les filles sont très contentes.",
+              "blankWord": "muy",
+              "blankOptions": ["muy", "mucho", "muchas"]
+            },
+            {
+              "es": "Necesito mucha paciencia.",
+              "fr": "J'ai besoin de beaucoup de patience.",
+              "blankWord": "mucha",
+              "blankOptions": ["muy", "mucho", "mucha"]
+            }
+          ]
+        },
+        {
           "id": "posicion-preposiciones",
           "title": "Preposiciones de posición",
           "kind": "vocab",
