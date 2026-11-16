@@ -931,6 +931,10 @@
             {
               "es": "la isla bonita",
               "fr": "la belle île"
+            },
+            {
+              "es": "los actores conocidos",
+              "fr": "les acteurs connus"
             }
           ]
         },
@@ -2217,6 +2221,38 @@
             {
               "es": "Quiero ir a otro.",
               "fr": "Je veux aller ailleurs (dans un autre endroit)."
+            },
+            {
+              "es": "Es muy tarde, me voy a casa.",
+              "fr": "Il est très tard, je rentre à la maison."
+            },
+            {
+              "es": "para todos",
+              "fr": "pour tous / pour tout le monde"
+            },
+            {
+              "es": "No te preocupes.",
+              "fr": "Ne t'inquiète pas."
+            },
+            {
+              "es": "Es caro para mí.",
+              "fr": "C'est cher pour moi."
+            },
+            {
+              "es": "en mi país",
+              "fr": "dans mon pays"
+            },
+            {
+              "es": "cerca de aquí",
+              "fr": "près d'ici"
+            },
+            {
+              "es": "amor mío",
+              "fr": "mon amour"
+            },
+            {
+              "es": "Tengo que estudiar.",
+              "fr": "Je dois étudier."
             }
           ]
         },
@@ -2309,6 +2345,14 @@
             {
               "es": "llueve",
               "fr": "il pleut"
+            },
+            {
+              "es": "la telenovela",
+              "fr": "le feuilleton télévisé"
+            },
+            {
+              "es": "siempre",
+              "fr": "toujours"
             },
             {
               "es": "hoy",
