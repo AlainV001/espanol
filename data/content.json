@@ -3473,10 +3473,11 @@
           ]
         },
         {
-          "id": "gramatica-gustar-persona",
-          "title": "GUSTAR cuando el sujeto es una persona",
+          "id": "gramatica-gustar-persona-conjugacion",
+          "title": "GUSTAR cuando el sujeto es una persona: conjugación",
           "kind": "vocab",
-          "updated": "2026-11-15",
+          "lockDirection": "es-fr",
+          "updated": "2026-11-16",
           "notes": [
             "GUSTAR es un verbo regular en -AR con sus 6 personas (gusto, gustas, gusta, gustamos, gustáis, gustan). Casi siempre se usa en 3ª persona (gusta/gustan) porque lo que gusta suele ser una cosa. Pero si lo que gusta es una PERSONA, esa persona es el sujeto gramatical y el verbo se conjuga según ella. El pronombre sujeto puede ir antes o después del verbo: 'Tú me gustas' = 'Me gustas tú'."
           ],
@@ -3504,7 +3505,15 @@
             {
               "es": "ellos / ellas / ustedes",
               "fr": "gustan"
-            },
+            }
+          ]
+        },
+        {
+          "id": "gramatica-gustar-persona-frases",
+          "title": "GUSTAR cuando el sujeto es una persona (frases)",
+          "kind": "vocab",
+          "updated": "2026-11-16",
+          "items": [
             {
               "es": "Me gustas tú.",
               "fr": "Tu me plais."
