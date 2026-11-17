@@ -3866,59 +3866,53 @@
           "kind": "vocab",
           "updated": "2026-11-17",
           "notes": [
-            "PORQUE es una conjunción que introduce la causa o el motivo: siempre va seguida de un verbo conjugado (Estoy cansado porque trabajé mucho). POR y PARA son preposiciones y van seguidas de un sustantivo o un pronombre, nunca de un verbo conjugado (por la mañana, por ti, para Madrid). POR expresa causa, medio, intercambio, duración o movimiento a través de un lugar. PARA expresa finalidad, destino, destinatario, plazo u opinión."
+            "Para expresar un motivo actual: POR + sustantivo, o PORQUE + verbo conjugado (No salgo por la lluvia. No salgo porque llueve.).",
+            "Para expresar un plan o un motivo futuro: PARA + infinitivo, o PORQUE + quiero/quieres + infinitivo (Estudio para aprobar el examen. Estudio porque quiero aprobar el examen.)."
           ],
           "notesFr": [
-            "PORQUE est une conjonction qui introduit la cause ou le motif : elle est toujours suivie d'un verbe conjugué. POR et PARA sont des prépositions, suivies d'un nom ou d'un pronom, jamais d'un verbe conjugué. POR exprime la cause, le moyen, l'échange, la durée ou le mouvement à travers un lieu. PARA exprime le but, la destination, le destinataire, le délai ou l'opinion."
+            "Pour exprimer un motif actuel : POR plus un nom, ou PORQUE plus un verbe conjugué. Par exemple : No salgo por la lluvia, ou No salgo porque llueve.",
+            "Pour exprimer un plan ou un motif futur : PARA plus un infinitif, ou PORQUE plus quiero ou quieres plus un infinitif. Par exemple : Estudio para aprobar el examen, ou Estudio porque quiero aprobar el examen."
           ],
           "items": [
             {
-              "es": "Estoy cansado porque trabajé mucho.",
-              "fr": "Je suis fatigué parce que j'ai beaucoup travaillé. (conjonction + verbe conjugué)"
+              "es": "No salgo por la lluvia.",
+              "fr": "Je ne sors pas à cause de la pluie. (motif actuel : POR + nom)"
             },
             {
-              "es": "¿Por qué no vienes?",
-              "fr": "Pourquoi tu ne viens pas ? (question sur la cause)"
+              "es": "No salgo porque llueve.",
+              "fr": "Je ne sors pas parce qu'il pleut. (motif actuel : PORQUE + verbe conjugué)"
             },
             {
-              "es": "Lo hago por ti.",
-              "fr": "Je le fais pour toi. (cause, motif)"
+              "es": "Estoy cansado por el viaje.",
+              "fr": "Je suis fatigué à cause du voyage. (motif actuel : POR + nom)"
             },
             {
-              "es": "Viajamos por tren.",
-              "fr": "Nous voyageons en train. (moyen)"
+              "es": "Estoy cansado porque viajé mucho.",
+              "fr": "Je suis fatigué parce que j'ai beaucoup voyagé. (motif actuel : PORQUE + verbe conjugué)"
             },
             {
-              "es": "Pagué diez euros por el libro.",
-              "fr": "J'ai payé dix euros pour le livre. (échange)"
+              "es": "Estudio para aprobar el examen.",
+              "fr": "J'étudie pour réussir l'examen. (plan futur : PARA + infinitif)"
             },
             {
-              "es": "Caminamos por el parque.",
-              "fr": "Nous marchons dans le parc. (à travers un lieu)"
+              "es": "Estudio porque quiero aprobar el examen.",
+              "fr": "J'étudie parce que je veux réussir l'examen. (plan futur : PORQUE + quiero + infinitif)"
             },
             {
-              "es": "Trabajo por la mañana.",
-              "fr": "Je travaille le matin. (moment approximatif)"
+              "es": "Ahorro dinero para viajar.",
+              "fr": "J'économise de l'argent pour voyager. (plan futur : PARA + infinitif)"
             },
             {
-              "es": "Estudio para aprender.",
-              "fr": "J'étudie pour apprendre. (finalité, but)"
+              "es": "Ahorro dinero porque quiero viajar.",
+              "fr": "J'économise de l'argent parce que je veux voyager. (plan futur : PORQUE + quiero + infinitif)"
             },
             {
-              "es": "Este tren va para Madrid.",
-              "fr": "Ce train va à Madrid. (destination)"
+              "es": "Trabajas mucho para ganar más.",
+              "fr": "Tu travailles beaucoup pour gagner plus. (plan futur : PARA + infinitif)"
             },
             {
-              "es": "Este regalo es para ti.",
-              "fr": "Ce cadeau est pour toi. (destinataire)"
-            },
-            {
-              "es": "Necesito esto para el lunes.",
-              "fr": "J'ai besoin de ça pour lundi. (délai)"
-            },
-            {
-              "es": "Para mí, es muy difícil.",
-              "fr": "Pour moi, c'est très difficile. (opinion)"
+              "es": "Trabajas mucho porque quieres ganar más.",
+              "fr": "Tu travailles beaucoup parce que tu veux gagner plus. (plan futur : PORQUE + quieres + infinitif)"
             }
           ]
         },
