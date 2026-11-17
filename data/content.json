@@ -2259,7 +2259,7 @@
         {
           "id": "vocgen-mas-p4",
           "title": "Más palabras útiles P4",
-          "updated": "2026-11-15",
+          "updated": "2026-11-17",
           "kind": "vocab",
           "items": [
             {
@@ -2385,6 +2385,18 @@
             {
               "es": "un tiempo",
               "fr": "un certain temps"
+            },
+            {
+              "es": "la relación",
+              "fr": "la relation"
+            },
+            {
+              "es": "la cultura hispana",
+              "fr": "la culture hispanique"
+            },
+            {
+              "es": "la ficha",
+              "fr": "la fiche"
             }
           ]
         }
@@ -3768,6 +3780,121 @@
               "fr": "J'ai besoin de beaucoup de patience.",
               "blankWord": "mucha",
               "blankOptions": ["muy", "mucho", "mucha"]
+            }
+          ]
+        },
+        {
+          "id": "gramatica-porque-por-para-estructura",
+          "title": "PORQUE / POR / PARA: estructura",
+          "kind": "vocab",
+          "updated": "2026-11-17",
+          "notes": [
+            "PORQUE es una conjunción que introduce la causa o el motivo: siempre va seguida de un verbo conjugado (Estoy cansado porque trabajé mucho). POR y PARA son preposiciones y van seguidas de un sustantivo o un pronombre, nunca de un verbo conjugado (por la mañana, por ti, para Madrid). POR expresa causa, medio, intercambio, duración o movimiento a través de un lugar. PARA expresa finalidad, destino, destinatario, plazo u opinión."
+          ],
+          "items": [
+            {
+              "es": "Estoy cansado porque trabajé mucho.",
+              "fr": "Je suis fatigué parce que j'ai beaucoup travaillé. (conjonction + verbe conjugué)"
+            },
+            {
+              "es": "¿Por qué no vienes?",
+              "fr": "Pourquoi tu ne viens pas ? (question sur la cause)"
+            },
+            {
+              "es": "Lo hago por ti.",
+              "fr": "Je le fais pour toi. (cause, motif)"
+            },
+            {
+              "es": "Viajamos por tren.",
+              "fr": "Nous voyageons en train. (moyen)"
+            },
+            {
+              "es": "Pagué diez euros por el libro.",
+              "fr": "J'ai payé dix euros pour le livre. (échange)"
+            },
+            {
+              "es": "Caminamos por el parque.",
+              "fr": "Nous marchons dans le parc. (à travers un lieu)"
+            },
+            {
+              "es": "Trabajo por la mañana.",
+              "fr": "Je travaille le matin. (moment approximatif)"
+            },
+            {
+              "es": "Estudio para aprender.",
+              "fr": "J'étudie pour apprendre. (finalité, but)"
+            },
+            {
+              "es": "Este tren va para Madrid.",
+              "fr": "Ce train va à Madrid. (destination)"
+            },
+            {
+              "es": "Este regalo es para ti.",
+              "fr": "Ce cadeau est pour toi. (destinataire)"
+            },
+            {
+              "es": "Necesito esto para el lunes.",
+              "fr": "J'ai besoin de ça pour lundi. (délai)"
+            },
+            {
+              "es": "Para mí, es muy difícil.",
+              "fr": "Pour moi, c'est très difficile. (opinion)"
+            }
+          ]
+        },
+        {
+          "id": "gramatica-porque-por-para-frases",
+          "title": "Completa con PORQUE, POR o PARA",
+          "kind": "phrase",
+          "updated": "2026-11-17",
+          "items": [
+            {
+              "es": "No fui a la fiesta porque estaba enfermo.",
+              "fr": "Je ne suis pas allé à la fête parce que j'étais malade.",
+              "blankWord": "porque",
+              "blankOptions": ["porque", "por", "para"]
+            },
+            {
+              "es": "Este libro es para ti.",
+              "fr": "Ce livre est pour toi.",
+              "blankWord": "para",
+              "blankOptions": ["porque", "por", "para"]
+            },
+            {
+              "es": "Gracias por tu ayuda.",
+              "fr": "Merci pour ton aide.",
+              "blankWord": "por",
+              "blankOptions": ["porque", "por", "para"]
+            },
+            {
+              "es": "Viajamos por avión.",
+              "fr": "Nous voyageons en avion.",
+              "blankWord": "por",
+              "blankOptions": ["porque", "por", "para"]
+            },
+            {
+              "es": "Estudio español porque quiero trabajar en España.",
+              "fr": "J'étudie l'espagnol parce que je veux travailler en Espagne.",
+              "blankWord": "porque",
+              "blankOptions": ["porque", "por", "para"]
+            },
+            {
+              "es": "Necesito el informe para el viernes.",
+              "fr": "J'ai besoin du rapport pour vendredi.",
+              "blankWord": "para",
+              "blankOptions": ["porque", "por", "para"]
+            },
+            {
+              "es": "Caminamos por el centro de la ciudad.",
+              "fr": "Nous marchons à travers le centre-ville.",
+              "blankWord": "por",
+              "blankOptions": ["porque", "por", "para"]
+            },
+            {
+              "es": "Compré flores para mi madre.",
+              "fr": "J'ai acheté des fleurs pour ma mère.",
+              "blankWord": "para",
+              "blankOptions": ["porque", "por", "para"]
             }
           ]
         },
