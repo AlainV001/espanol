@@ -2397,6 +2397,14 @@
             {
               "es": "la ficha",
               "fr": "la fiche"
+            },
+            {
+              "es": "el lugar de residencia",
+              "fr": "le lieu de résidence"
+            },
+            {
+              "es": "las lenguas que habla",
+              "fr": "les langues qu'il/elle parle"
             }
           ]
         }
