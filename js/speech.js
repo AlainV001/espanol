@@ -78,7 +78,9 @@ async function speak(text, lang = 'es-ES') {
     utter.addEventListener('end', finish);
     utter.addEventListener('error', finish);
     window.speechSynthesis.speak(utter);
-    setTimeout(finish, 4000);
+    // Fallback only, in case 'end' never fires on some browsers — sized to the
+    // text length so it doesn't cut off longer sentences (e.g. grammar notes).
+    setTimeout(finish, Math.max(4000, text.length * 120));
   });
 }
 

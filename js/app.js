@@ -296,7 +296,7 @@ function renderSession(content, subsectionId, mode) {
     if (mode === 'flashcards') {
       window.Exercises.runFlashcards(container, subsectionId, items, cb, lockDirection);
     } else if (mode === 'listen') {
-      window.Exercises.runListening(container, subsectionId, items, cb, lockDirection);
+      window.Exercises.runListening(container, subsectionId, items, cb, lockDirection, subsection.notesFr);
     } else if (mode === 'quiz') {
       window.Exercises.runMultipleChoice(container, subsectionId, items, cb, lockDirection);
     } else if (mode === 'fillblank') {

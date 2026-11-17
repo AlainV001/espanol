@@ -100,7 +100,7 @@ function runFlashcards(container, subsectionId, items, onFinish, lockDirection) 
 }
 
 // ---------- Listening (auto-plays through every card with its translation) ----------
-function runListening(container, subsectionId, items, onFinish, lockDirection) {
+function runListening(container, subsectionId, items, onFinish, lockDirection, notesFr) {
   const order = orderForSession(subsectionId, items);
   let pos = 0;
   let playing = true;
@@ -191,8 +191,26 @@ function runListening(container, subsectionId, items, onFinish, lockDirection) {
     if (playing) playSequence();
   }
 
+  // Reads the grammar explanation aloud in French once, before the first card,
+  // so a driver hears the rule before the drill starts. Only runs at session
+  // start — pause/resume and navigation go straight to playSequence().
+  async function introAndPlay() {
+    const myToken = token;
+    const stillCurrent = () => container.isConnected && token === myToken && playing;
+    if (playing && notesFr && notesFr.length) {
+      for (const note of notesFr) {
+        if (!stillCurrent()) return;
+        await window.speak(note, 'fr-FR');
+        if (!stillCurrent()) return;
+        await wait(400);
+      }
+      if (!stillCurrent()) return;
+    }
+    playSequence();
+  }
+
   render();
-  playSequence();
+  introAndPlay();
 }
 
 // ---------- Auto-play (random section, read twice, then another section) ----------
@@ -255,6 +273,16 @@ function runAutoListening(container, allSubs) {
       if (!stillCurrent()) return;
       await wait(500);
       if (!stillCurrent()) return;
+      const notesFr = current.subsection.notesFr;
+      if (notesFr && notesFr.length) {
+        for (const note of notesFr) {
+          if (!stillCurrent()) return;
+          await window.speak(note, 'fr-FR');
+          if (!stillCurrent()) return;
+          await wait(400);
+        }
+        if (!stillCurrent()) return;
+      }
     }
     playSequence();
   }

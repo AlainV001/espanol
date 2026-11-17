@@ -2427,6 +2427,11 @@
             "Consonante final → + es (hotel → hoteles). El acento escrito puede desaparecer si ya no hace falta (alemán → alemanes, inglés → ingleses).",
             "\"z\" final → cambia a \"c\" + es (luz → luces, lápiz → lápices)."
           ],
+          "notesFr": [
+            "Voyelle finale : on ajoute un s. Italiano devient italianos.",
+            "Consonne finale : on ajoute es. Hotel devient hoteles. L'accent écrit peut disparaître s'il n'est plus nécessaire : alemán devient alemanes, inglés devient ingleses.",
+            "Le z final devient c, puis on ajoute es. Luz devient luces, lápiz devient lápices."
+          ],
           "items": [
             {
               "es": "italiano",
@@ -2483,6 +2488,14 @@
             "Algunos nombres son totalmente distintos: el hombre → la mujer, la madre → el padre.",
             "Los nombres terminados en -ista son invariables: el/la periodista."
           ],
+          "notesFr": [
+            "Les noms sont masculins ou féminins. En général, le masculin se termine en o et le féminin en a, avec des exceptions comme la mano, la moto, el problema, el planeta.",
+            "Terminaison en o ou en e : elle est remplacée par un a. El chico devient la chica. Exception : el ou la cantante.",
+            "Terminaison en consonne : on ajoute un a, et l'accent écrit peut disparaître. Un francés devient una francesa.",
+            "Autre terminaison particulière : el actor devient la actriz.",
+            "Certains noms sont complètement différents : el hombre et la mujer, la madre et el padre.",
+            "Les noms terminés en ista sont invariables : el ou la periodista."
+          ],
           "items": [
             {
               "es": "el chico",
@@ -2525,6 +2538,9 @@
           "lockDirection": "es-fr",
           "notes": [
             "El artículo determinado concuerda en género y número con el nombre: el (masc. sing.), la (fem. sing.), los (masc. pl.), las (fem. pl.)."
+          ],
+          "notesFr": [
+            "L'article défini s'accorde en genre et en nombre avec le nom : el au masculin singulier, la au féminin singulier, los au masculin pluriel, las au féminin pluriel."
           ],
           "items": [
             {
@@ -2608,6 +2624,9 @@
           "lockDirection": "es-fr",
           "notes": [
             "El artículo indeterminado también concuerda en género y número: un (masc. sing.), una (fem. sing.), unos (masc. pl.), unas (fem. pl.). \"Uno\" significa \"1\"."
+          ],
+          "notesFr": [
+            "L'article indéfini s'accorde aussi en genre et en nombre : un au masculin singulier, una au féminin singulier, unos au masculin pluriel, unas au féminin pluriel. Uno tout seul signifie le nombre un."
           ],
           "items": [
             {
@@ -2693,6 +2712,10 @@
             "Las nacionalidades siguen las mismas reglas de género: -o → -a (italiano → italiana), consonante → + a (francés → francesa, sin acento).",
             "Algunas son invariables: estadounidense, marroquí, belga (el/la mismo/a para los dos géneros)."
           ],
+          "notesFr": [
+            "Les nationalités suivent les mêmes règles de genre : o devient a, italiano devient italiana, et on ajoute un a après une consonne, francés devient francesa, sans accent.",
+            "Certaines sont invariables : estadounidense, marroquí, belga, la même forme pour les deux genres."
+          ],
           "items": [
             {
               "es": "italiano",
@@ -2760,6 +2783,9 @@
           "notes": [
             "SER se usa para una situación duradera que no cambia (o cambia lenta y difícilmente): la identidad, la nacionalidad, el carácter, la profesión, la apariencia física."
           ],
+          "notesFr": [
+            "SER s'utilise pour une situation durable qui ne change pas, ou qui change lentement et difficilement : l'identité, la nationalité, le caractère, la profession, l'apparence physique."
+          ],
           "items": [
             {
               "es": "yo",
@@ -2794,6 +2820,9 @@
           "lockDirection": "es-fr",
           "notes": [
             "ESTAR se usa para una situación momentánea que puede cambiar: el estado psicológico (humor), el estado físico (salud) y también la posición/ubicación (Recuerda: para expresar la posición se usa ESTAR)."
+          ],
+          "notesFr": [
+            "ESTAR s'utilise pour une situation momentanée qui peut changer : l'état psychologique, l'humeur, l'état physique, la santé, et aussi la position ou l'emplacement. Pour exprimer la position, on utilise toujours ESTAR."
           ],
           "items": [
             {
@@ -2832,6 +2861,10 @@
             "Terminaciones regulares -AR: -o, -as, -a, -amos, -áis, -an.",
             "Otros verbos en -AR: cantar, viajar, cocinar, estudiar."
           ],
+          "notesFr": [
+            "Terminaisons régulières des verbes en AR : o, as, a, amos, áis, an.",
+            "Autres verbes en AR : cantar, viajar, cocinar, estudiar."
+          ],
           "items": [
             {
               "es": "yo",
@@ -2868,6 +2901,10 @@
           "notes": [
             "Terminaciones regulares -ER: -o, -es, -e, -emos, -éis, -en.",
             "Otros verbos en -ER: ver, comer, beber."
+          ],
+          "notesFr": [
+            "Terminaisons régulières des verbes en ER : o, es, e, emos, éis, en.",
+            "Autres verbes en ER : ver, comer, beber."
           ],
           "items": [
             {
@@ -2906,6 +2943,10 @@
             "Terminaciones regulares -IR: -o, -es, -e, -imos, -ís, -en.",
             "Otros verbos en -IR: escribir, asistir, abrir."
           ],
+          "notesFr": [
+            "Terminaisons régulières des verbes en IR : o, es, e, imos, ís, en.",
+            "Autres verbes en IR : escribir, asistir, abrir."
+          ],
           "items": [
             {
               "es": "yo",
@@ -2940,6 +2981,10 @@
           "notes": [
             "SER: situación duradera → identidad, nacionalidad, carácter, profesión, apariencia física (Soy Pedro. Soy peruano. Soy simpático. Soy camarero.).",
             "ESTAR: situación momentánea → estado psicológico, estado físico, y la posición/ubicación (Estoy cansado. Estoy resfriado. Estoy en Caracas.)."
+          ],
+          "notesFr": [
+            "SER exprime une situation durable : l'identité, la nationalité, le caractère, la profession, l'apparence physique.",
+            "ESTAR exprime une situation momentanée : l'état psychologique, l'état physique, et la position ou l'emplacement."
           ],
           "items": [
             {
@@ -3180,6 +3225,9 @@
           "notes": [
             "Este/esta/estos/estas = aquí, cerca de quien habla. Ese/esa/esos/esas = ahí, cerca de la persona con quien hablas. Aquel/aquella/aquellos/aquellas = allí/allá, lejos de los dos."
           ],
+          "notesFr": [
+            "Este, esta, estos, estas désignent ce qui est près de la personne qui parle. Ese, esa, esos, esas désignent ce qui est près de la personne à qui l'on parle. Aquel, aquella, aquellos, aquellas désignent ce qui est loin des deux."
+          ],
           "diagram": "<svg viewBox='0 0 600 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='este, ese, aquel'><line x1='70' y1='90' x2='560' y2='90' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><polygon points='560,90 548,84 548,96' fill='var(--muted)'/><text x='560' y='115' text-anchor='end' font-size='12' fill='var(--muted)'>+ lejos</text><circle cx='35' cy='78' r='10' fill='var(--primary)'/><rect x='25' y='88' width='20' height='26' rx='6' fill='var(--primary)'/><text x='35' y='140' text-anchor='middle' font-size='14' fill='var(--text)'>yo</text><circle cx='170' cy='90' r='18' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='170' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>este (aquí)</text><circle cx='350' cy='90' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='350' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>ese (ahí)</text><circle cx='520' cy='90' r='11' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='520' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>aquel (allí/allá)</text></svg>",
           "items": [
             {
@@ -3357,6 +3405,9 @@
           "notes": [
             "GUSTAR funciona al revés que en francés: el sujeto gramatical es la cosa que gusta, no la persona. Se usa siempre con un pronombre de objeto indirecto: me, te, le, nos, os, les."
           ],
+          "notesFr": [
+            "GUSTAR fonctionne à l'envers du français : le sujet grammatical est la chose qui plaît, pas la personne. Il s'utilise toujours avec un pronom d'objet indirect : me, te, le, nos, os, les."
+          ],
           "items": [
             {
               "es": "me gusta",
@@ -3391,6 +3442,9 @@
           "updated": "2026-11-15",
           "notes": [
             "GUSTA se usa delante de un infinitivo (o varios infinitivos juntos) y delante de un sustantivo singular. GUSTAN se usa delante de un sustantivo plural."
+          ],
+          "notesFr": [
+            "GUSTA s'utilise devant un infinitif, ou plusieurs infinitifs ensemble, et devant un nom singulier. GUSTAN s'utilise devant un nom pluriel."
           ],
           "items": [
             {
@@ -3434,6 +3488,9 @@
           "updated": "2026-11-15",
           "notes": [
             "Para insistir o aclarar a quién le gusta algo, se puede añadir 'a + pronombre tónico' delante del pronombre normal: a mí me, a ti te, a él/ella le, a nosotros nos, a vosotros os, a ellos/ellas les."
+          ],
+          "notesFr": [
+            "Pour insister ou préciser à qui quelque chose plaît, on peut ajouter à plus un pronom tonique devant le pronom normal : a mí me, a ti te, a él ou a ella le, a nosotros nos, a vosotros os, a ellos ou a ellas les."
           ],
           "items": [
             {
@@ -3526,6 +3583,9 @@
           "notes": [
             "Para decir cuánto te gusta algo, se añade un adverbio de grado después de gusta/gustan: muchísimo, mucho, bastante, un poco. En la forma negativa, 'nada' refuerza la negación. ENCANTAR sustituye a GUSTAR para el grado más alto."
           ],
+          "notesFr": [
+            "Pour dire à quel point on aime quelque chose, on ajoute un adverbe d'intensité après gusta ou gustan : muchísimo, mucho, bastante, un poco. À la forme négative, nada renforce la négation. ENCANTAR remplace GUSTAR pour le degré le plus élevé."
+          ],
           "items": [
             {
               "es": "Me encanta.",
@@ -3568,6 +3628,9 @@
           "updated": "2026-11-15",
           "notes": [
             "Para estar de acuerdo con una frase afirmativa se usa TAMBIÉN (a mí también = moi aussi). Para estar de acuerdo con una frase negativa se usa TAMPOCO (a mí tampoco = moi non plus). Para decir lo contrario de lo que dice la otra persona se usa NO (si ella dijo algo positivo) o SÍ (si ella dijo algo negativo)."
+          ],
+          "notesFr": [
+            "Pour être d'accord avec une phrase affirmative, on utilise también, qui veut dire aussi. Pour être d'accord avec une phrase négative, on utilise tampoco, qui veut dire non plus. Pour dire le contraire de ce que dit l'autre personne, on utilise no si elle a dit quelque chose de positif, ou sí si elle a dit quelque chose de négatif."
           ],
           "items": [
             {
@@ -3612,6 +3675,9 @@
           "updated": "2026-11-16",
           "notes": [
             "GUSTAR es un verbo regular en -AR con sus 6 personas (gusto, gustas, gusta, gustamos, gustáis, gustan). Casi siempre se usa en 3ª persona (gusta/gustan) porque lo que gusta suele ser una cosa. Pero si lo que gusta es una PERSONA, esa persona es el sujeto gramatical y el verbo se conjuga según ella. El pronombre sujeto puede ir antes o después del verbo: 'Tú me gustas' = 'Me gustas tú'."
+          ],
+          "notesFr": [
+            "GUSTAR est un verbe régulier en AR avec ses six personnes. Il s'utilise presque toujours à la troisième personne, parce que ce qui plaît est généralement une chose. Mais si ce qui plaît est une personne, cette personne devient le sujet grammatical et le verbe se conjugue selon elle. Le pronom sujet peut se placer avant ou après le verbe."
           ],
           "items": [
             {
@@ -3687,6 +3753,9 @@
           "updated": "2026-11-16",
           "notes": [
             "MUY es un adverbio invariable: va delante de un adjetivo o de otro adverbio (muy alto, muy bien). MUCHO es variable cuando acompaña a un sustantivo: concuerda en género y número (mucho/mucha/muchos/muchas + sustantivo). MUCHO es invariable cuando acompaña a un verbo, como adverbio de cantidad (trabaja mucho)."
+          ],
+          "notesFr": [
+            "MUY est un adverbe invariable : il se place devant un adjectif ou devant un autre adverbe. MUCHO est variable quand il accompagne un nom : il s'accorde en genre et en nombre. MUCHO est invariable quand il accompagne un verbe, comme adverbe de quantité."
           ],
           "items": [
             {
@@ -3798,6 +3867,9 @@
           "updated": "2026-11-17",
           "notes": [
             "PORQUE es una conjunción que introduce la causa o el motivo: siempre va seguida de un verbo conjugado (Estoy cansado porque trabajé mucho). POR y PARA son preposiciones y van seguidas de un sustantivo o un pronombre, nunca de un verbo conjugado (por la mañana, por ti, para Madrid). POR expresa causa, medio, intercambio, duración o movimiento a través de un lugar. PARA expresa finalidad, destino, destinatario, plazo u opinión."
+          ],
+          "notesFr": [
+            "PORQUE est une conjonction qui introduit la cause ou le motif : elle est toujours suivie d'un verbe conjugué. POR et PARA sont des prépositions, suivies d'un nom ou d'un pronom, jamais d'un verbe conjugué. POR exprime la cause, le moyen, l'échange, la durée ou le mouvement à travers un lieu. PARA exprime le but, la destination, le destinataire, le délai ou l'opinion."
           ],
           "items": [
             {
@@ -3999,6 +4071,9 @@
           "kind": "vocab",
           "notes": [
             "Aquí = muy cerca de quien habla. Ahí = cerca de la persona con quien hablas. Allí = lejos de los dos. Allá = todavía más lejos, o de forma imprecisa (muy usado en América Latina)."
+          ],
+          "notesFr": [
+            "Aquí veut dire tout près de la personne qui parle. Ahí veut dire près de la personne à qui l'on parle. Allí veut dire loin des deux. Allá veut dire encore plus loin, ou de façon imprécise — c'est très utilisé en Amérique latine."
           ],
           "diagram": "<svg viewBox='0 0 600 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Distancia: aquí, ahí, allí, allá'><line x1='70' y1='90' x2='560' y2='90' stroke='var(--muted)' stroke-width='2' stroke-dasharray='4 4'/><polygon points='560,90 548,84 548,96' fill='var(--muted)'/><text x='560' y='115' text-anchor='end' font-size='12' fill='var(--muted)'>+ lejos</text><circle cx='35' cy='78' r='10' fill='var(--primary)'/><rect x='25' y='88' width='20' height='26' rx='6' fill='var(--primary)'/><text x='35' y='140' text-anchor='middle' font-size='14' fill='var(--text)'>yo</text><circle cx='140' cy='90' r='16' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='140' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>aquí</text><circle cx='280' cy='90' r='14' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='280' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>ahí</text><circle cx='410' cy='90' r='12' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='410' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>allí</text><circle cx='530' cy='90' r='10' fill='#f2b134' stroke='#c98a12' stroke-width='2'/><text x='530' y='140' text-anchor='middle' font-size='15' fill='var(--text)'>allá</text></svg>",
           "items": [
